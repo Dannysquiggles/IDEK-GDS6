@@ -54,6 +54,7 @@
       <sprite>sprites\spr_aibody</sprite>
     </sprites>
     <sprite>sprites\spr_lookinghead</sprite>
+    <sprite>sprites\spr_blankcube</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_endsad</background>
@@ -167,8 +168,14 @@
       <object>objects\obj_person2meet</object>
       <object>objects\obj_party_bubble</object>
     </objects>
+    <objects name="chat">
+      <object>objects\obj_chat_partner</object>
+      <object>objects\obj_chat_player</object>
+      <object>objects\obj_chat_manager</object>
+    </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_chat</room>
     <room>rooms\rm_menu</room>
     <room>rooms\rm_watchers</room>
     <room>rooms\rm_meetppl</room>
