@@ -149,6 +149,10 @@ Ptalking = 0;
 Ftalking = 1; //say that friend is talking
 talkcountF += 1;
 }
+if (talkcountP &gt;= 4)
+{
+    room_goto(5)
+}
 
 </string>
           </argument>
@@ -243,6 +247,7 @@ draw_rectangle_colour(x+25, y+25, x+125, y+75, c_purple,c_purple,c_purple,c_purp
 if (Ptalking = 1){
 draw_rectangle_colour(x-25, y+25, x-125, y+75, c_green,c_green,c_green,c_green,0) //draw speachbubble
 }
+
 
 </string>
           </argument>
