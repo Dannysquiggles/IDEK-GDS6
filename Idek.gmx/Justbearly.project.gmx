@@ -72,6 +72,7 @@
   <scripts name="scripts">
     <script>scripts\scr_dialrotator.gml</script>
     <script>scripts\scr_textManager.gml</script>
+    <script>scripts\scr_textManager_pre.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_bebas</font>
@@ -80,6 +81,9 @@
     <font>fonts\fnt_sk3</font>
   </fonts>
   <objects name="objects">
+    <objects name="preroom">
+      <object>objects\obj_txt_manage_generic</object>
+    </objects>
     <objects name="coffee room">
       <object>objects\obj_rmManager_coffee</object>
       <object>objects\obj_barrista</object>
@@ -175,6 +179,7 @@
     </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_preroomgeneric</room>
     <room>rooms\rm_chat</room>
     <room>rooms\rm_menu</room>
     <room>rooms\rm_watchers</room>
