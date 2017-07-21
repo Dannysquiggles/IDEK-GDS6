@@ -75,7 +75,8 @@ dir = 'left';
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if wave == false
+            <string>///waving animation
+if wave == false
 {
     if mouse_check_button(mb_left) or keyboard_check_released(vk_space)
     {
