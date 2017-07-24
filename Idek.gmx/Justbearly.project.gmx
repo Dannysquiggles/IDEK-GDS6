@@ -182,11 +182,10 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_preroomgeneric</room>
-    <room>rooms\rm_prewave</room>
-    <room>rooms\rm_crowdwave</room>
     <room>rooms\rm_prechat</room>
     <room>rooms\rm_chat</room>
+    <room>rooms\rm_prewave</room>
+    <room>rooms\rm_crowdwave</room>
     <room>rooms\rm_menu</room>
     <room>rooms\rm_watchers</room>
     <room>rooms\rm_meetppl</room>
@@ -197,6 +196,7 @@
     <room>rooms\Rm_dialdialoguetest</room>
     <room>rooms\rm_ending_happy</room>
     <room>rooms\rm_ending_sad</room>
+    <room>rooms\rm_preroomgeneric</room>
     <room>rooms\eyecontact</room>
   </rooms>
   <help>
