@@ -160,7 +160,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>message = "You probably have a lot in common"
+            <string>///change message
+message = "You probably have a lot in common"
 </string>
           </argument>
         </arguments>
@@ -183,7 +184,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if global.oc == 2
+            <string>///change message
+
+if global.oc == 2
 {
     message = "Yeah never mind. They look busy."
 }

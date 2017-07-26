@@ -86,6 +86,11 @@
       <object>objects\obj_txt_manage_generic</object>
       <object>objects\obj_txt_wave</object>
       <object>objects\obj_txt_chat</object>
+      <object>objects\obj_txt_meetppl</object>
+      <object>objects\obj_txt_lecture</object>
+      <object>objects\obj_txt_eyeline</object>
+      <object>objects\obj_txt_frems</object>
+      <object>objects\obj_txt_predialogue</object>
     </objects>
     <objects name="coffee room">
       <object>objects\obj_rmManager_coffee</object>
@@ -182,22 +187,25 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_prechat</room>
-    <room>rooms\rm_chat</room>
+    <room>rooms\rm_predialogue</room>
+    <room>rooms\Rm_dialdialoguetest</room>
+    <room>rooms\rm_pre_frems</room>
+    <room>rooms\rm_frems</room>
+    <room>rooms\rm_pre_eyeline</room>
+    <room>rooms\rm_eyeline</room>
+    <room>rooms\rm_premeetppl</room>
+    <room>rooms\rm_meetppl</room>
     <room>rooms\rm_prewave</room>
     <room>rooms\rm_crowdwave</room>
-    <room>rooms\rm_menu</room>
-    <room>rooms\rm_watchers</room>
-    <room>rooms\rm_meetppl</room>
-    <room>rooms\rm_lectureroom2</room>
+    <room>rooms\rm_prechat</room>
+    <room>rooms\rm_chat</room>
+    <room>rooms\rm_preLecture</room>
     <room>rooms\rm_lecture</room>
-    <room>rooms\rm_eyeline</room>
-    <room>rooms\rm_frems</room>
-    <room>rooms\Rm_dialdialoguetest</room>
-    <room>rooms\rm_ending_happy</room>
-    <room>rooms\rm_ending_sad</room>
+    <room>rooms\rm_lectureroom2</room>
     <room>rooms\rm_preroomgeneric</room>
     <room>rooms\eyecontact</room>
+    <room>rooms\rm_menu</room>
+    <room>rooms\rm_watchers</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

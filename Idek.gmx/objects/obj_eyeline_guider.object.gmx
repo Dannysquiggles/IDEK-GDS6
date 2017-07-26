@@ -59,7 +59,8 @@ alarm[0] = 120;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>pointX = random_range(roomlimitL,roomlimitR);
+            <string>///frem eye leader
+pointX = random_range(roomlimitL,roomlimitR);
 pointY = random_range(roomlimitDown,roomlimitUp);
 
 rate = random_range(1,5);

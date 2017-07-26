@@ -53,7 +53,7 @@ instance_create(x,y,obj_no);
             <kind>1</kind>
             <string>if global.imageindex &gt; image_number
 {
-    room_goto(rm_menu)
+   room_goto_next();
 }
 </string>
           </argument>

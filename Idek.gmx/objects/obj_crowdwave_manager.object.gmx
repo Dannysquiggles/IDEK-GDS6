@@ -35,23 +35,17 @@ global.oc = 0;
     <event eventtype="2" enumb="0">
       <action>
         <libid>1</libid>
-        <id>224</id>
+        <id>222</id>
         <kind>0</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>0</useapplyto>
         <exetype>1</exetype>
-        <functionname>action_another_room</functionname>
+        <functionname>action_next_room</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>11</kind>
-            <room>rm_menu</room>
-          </argument>
-        </arguments>
       </action>
     </event>
     <event eventtype="3" enumb="0">
