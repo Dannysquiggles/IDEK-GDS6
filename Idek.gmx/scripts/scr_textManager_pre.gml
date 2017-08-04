@@ -6,6 +6,8 @@ width = 500;
 height = 200;
 padding = 8;
 press = 0;
+draw_set_halign(fa_center);
+draw_set_font(fnt_bebas);
 //alarm[0] = 30;
 
 // Keep track of the starting line

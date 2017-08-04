@@ -8,6 +8,9 @@
     <sound>sound\sound0</sound>
   </sounds>
   <sprites name="sprites">
+    <sprites name="backgrounds">
+      <sprite>sprites\spr_bg_night</sprite>
+    </sprites>
     <sprites name="dials">
       <sprite>sprites\spr_dialogueouter</sprite>
       <sprite>sprites\spr_dialoguedial</sprite>
@@ -67,6 +70,7 @@
     <background>background\bg_street</background>
     <background>background\background8</background>
     <background>background\background9</background>
+    <background>background\background10</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -82,6 +86,12 @@
     <font>fonts\fnt_sk3</font>
   </fonts>
   <objects name="objects">
+    <objects name="start screen">
+      <object>objects\obj_morning</object>
+      <object>objects\obj_bg_night</object>
+      <object>objects\obj_morning2</object>
+      <object>objects\obj_GAMEMANAGER</object>
+    </objects>
     <objects name="preroom">
       <object>objects\obj_txt_manage_generic</object>
       <object>objects\obj_txt_wave</object>
@@ -142,15 +152,10 @@
       <object>objects\obj_cfspicker</object>
       <object>objects\obj_party</object>
       <object>objects\obj_train</object>
-      <object>objects\obj_watchpicker</object>
       <object>objects\obj_lecture</object>
       <object>objects\obj_fbpisker</object>
     </objects>
     <object>objects\obj_fonttest</object>
-    <objects name="watchingroom">
-      <object>objects\obj_watchplayer</object>
-      <object>objects\obj_watcher</object>
-    </objects>
     <objects name="CrowdWave">
       <object>objects\obj_friendhead</object>
       <object>objects\obj_friend</object>
@@ -187,25 +192,44 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_predialogue</room>
-    <room>rooms\Rm_dialdialoguetest</room>
+    <rooms name="rm_v2">
+      <room>rooms\rm_nightv2</room>
+    </rooms>
+    <room>rooms\rm_morning</room>
+    <rooms name="train">
+      <room>rooms\rm_pre_eyeline</room>
+      <room>rooms\rm_eyeline</room>
+    </rooms>
+    <rooms name="cafe">
+      <room>rooms\rm_predialogue</room>
+      <room>rooms\Rm_dialdialoguetest</room>
+    </rooms>
+    <rooms name="lecture">
+      <room>rooms\rm_preLecture</room>
+      <room>rooms\rm_lecture</room>
+      <room>rooms\rm_lectureroom2</room>
+    </rooms>
+    <room>rooms\rm_morning_2</room>
+    <rooms name="trainm2">
+      <room>rooms\rm_pre_eyeline_new</room>
+      <room>rooms\rm_eyeline_new</room>
+    </rooms>
+    <rooms name="cafe2">
+      <room>rooms\rm_predialogue_new</room>
+      <room>rooms\Rm_dialdialoguetest_new</room>
+    </rooms>
+    <rooms name="wave">
+      <room>rooms\rm_prewave</room>
+      <room>rooms\rm_crowdwave</room>
+    </rooms>
     <room>rooms\rm_pre_frems</room>
     <room>rooms\rm_frems</room>
-    <room>rooms\rm_pre_eyeline</room>
-    <room>rooms\rm_eyeline</room>
+    <room>rooms\rm_morning_3</room>
     <room>rooms\rm_premeetppl</room>
     <room>rooms\rm_meetppl</room>
-    <room>rooms\rm_prewave</room>
-    <room>rooms\rm_crowdwave</room>
-    <room>rooms\rm_prechat</room>
     <room>rooms\rm_chat</room>
-    <room>rooms\rm_preLecture</room>
-    <room>rooms\rm_lecture</room>
-    <room>rooms\rm_lectureroom2</room>
+    <room>rooms\rm_prechat</room>
     <room>rooms\rm_preroomgeneric</room>
-    <room>rooms\eyecontact</room>
-    <room>rooms\rm_menu</room>
-    <room>rooms\rm_watchers</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
