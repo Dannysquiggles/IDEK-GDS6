@@ -28,6 +28,9 @@
       <sprite>sprites\spr_playerwalk</sprite>
       <sprite>sprites\spr_croud</sprite>
       <sprite>sprites\spr_curser</sprite>
+      <sprite>sprites\spr_sitting_player</sprite>
+      <sprite>sprites\spr_sittinghead</sprite>
+      <sprite>sprites\spr_walk</sprite>
     </sprites>
     <sprite>sprites\spr_space</sprite>
     <sprite>sprites\spr_watcher</sprite>
@@ -39,6 +42,7 @@
     </sprites>
     <sprite>sprites\spr_till</sprite>
     <sprite>sprites\spr_no</sprite>
+    <sprite>sprites\spr_listday1</sprite>
     <sprite>sprites\spr_fly</sprite>
     <sprite>sprites\spr_block</sprite>
     <sprite>sprites\spr_clearblock</sprite>
@@ -206,13 +210,18 @@
       <object>objects\obj_upperlid</object>
       <object>objects\obj_lowerlid</object>
       <object>objects\obj_morning_manager</object>
+      <object>objects\obj_playersit</object>
+      <object>objects\obj_notes</object>
+      <object>objects\obj_head</object>
+      <object>objects\obj_sidewalk</object>
     </objects>
   </objects>
   <rooms name="rooms">
     <rooms name="rm_v2">
+      <room>rooms\rm_streetwalk</room>
       <room>rooms\rm_nightv2</room>
+      <room>rooms\rm_morning2</room>
     </rooms>
-    <room>rooms\rm_morning</room>
     <rooms name="train">
       <room>rooms\rm_pre_eyeline</room>
       <room>rooms\rm_eyeline</room>
@@ -246,6 +255,7 @@
     <room>rooms\rm_meetppl</room>
     <room>rooms\rm_chat</room>
     <room>rooms\rm_prechat</room>
+    <room>rooms\rm_morning</room>
     <room>rooms\rm_preroomgeneric</room>
   </rooms>
   <help>
