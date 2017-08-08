@@ -28,6 +28,7 @@
             <string>///counts for days and activities
 global.day = 0;
 global.rm = 0;
+
 </string>
           </argument>
         </arguments>

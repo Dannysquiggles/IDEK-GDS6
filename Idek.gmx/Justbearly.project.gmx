@@ -10,6 +10,8 @@
   <sprites name="sprites">
     <sprites name="backgrounds">
       <sprite>sprites\spr_bg_night</sprite>
+      <sprite>sprites\sprl_idup</sprite>
+      <sprite>sprites\spr_liddown</sprite>
     </sprites>
     <sprites name="dials">
       <sprite>sprites\spr_dialogueouter</sprite>
@@ -25,6 +27,7 @@
       <sprite>sprites\spr_stranger2</sprite>
       <sprite>sprites\spr_playerwalk</sprite>
       <sprite>sprites\spr_croud</sprite>
+      <sprite>sprites\spr_curser</sprite>
     </sprites>
     <sprite>sprites\spr_space</sprite>
     <sprite>sprites\spr_watcher</sprite>
@@ -41,6 +44,9 @@
     <sprite>sprites\spr_clearblock</sprite>
     <sprite>sprites\spr_hand</sprite>
     <sprite>sprites\spr_wave</sprite>
+    <sprites name="text assets">
+      <sprite>sprites\spr_title</sprite>
+    </sprites>
     <sprite>sprites\spr_bubble</sprite>
     <sprite>sprites\spr_bubble_2</sprite>
     <sprite>sprites\spr_confetti</sprite>
@@ -62,13 +68,16 @@
   <backgrounds name="background">
     <background>background\bg_endsad</background>
     <background>background\background1</background>
+    <background>background\bg_morning2</background>
     <background>background\bg_train</background>
     <background>background\background3</background>
     <background>background\bar</background>
     <background>background\background5</background>
     <background>background\background6</background>
+    <background>background\fg_morning2</background>
     <background>background\bg_street</background>
-    <background>background\background8</background>
+    <background>background\fg_vignette</background>
+    <background>background\bg_morning1</background>
     <background>background\background9</background>
     <background>background\background10</background>
   </backgrounds>
@@ -84,6 +93,7 @@
     <font>fonts\fnt_sk1</font>
     <font>fonts\fnt_sk2</font>
     <font>fonts\fnt_sk3</font>
+    <font>fonts\fnt_marker</font>
   </fonts>
   <objects name="objects">
     <objects name="start screen">
@@ -189,6 +199,13 @@
       <object>objects\obj_chat_partner</object>
       <object>objects\obj_chat_player</object>
       <object>objects\obj_chat_manager</object>
+    </objects>
+    <objects name="morningassets">
+      <object>objects\obj_title</object>
+      <object>objects\obj_curser</object>
+      <object>objects\obj_upperlid</object>
+      <object>objects\obj_lowerlid</object>
+      <object>objects\obj_morning_manager</object>
     </objects>
   </objects>
   <rooms name="rooms">
