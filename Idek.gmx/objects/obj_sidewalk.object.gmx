@@ -26,6 +26,10 @@
           <argument>
             <kind>1</kind>
             <string>walk = 0
+image_speed = 0
+image_index = 7
+image_xscale = 1.5
+image_yscale = 1.5
 </string>
           </argument>
         </arguments>
@@ -50,20 +54,34 @@
             <kind>1</kind>
             <string>if walk = 1
 {
-    move_towards_point(mouse_x,y, 5)
+    image_speed = 0.6
+    move_towards_point(mouse_x,y, 7)
     if x &gt; mouse_x
     {
-        image_xscale = -1
+        image_xscale = -1.5
     }
     else
     {
-        image_xscale = 1
+        image_xscale = 1.5
     }
 }
-else
+else if walk = 0
 {
     move_towards_point(x,y,0)
+    image_speed = 0;
+    image_index = 7
 }
+if x &gt; room_width * 0.7
+{
+    walk = 2
+    x += 7
+    image_speed = 0.6
+    if (instance_number(obj_swipe) &lt; 1)
+    {
+        instance_create(room_width, 0, obj_swipe)
+    }
+}
+
 </string>
           </argument>
         </arguments>

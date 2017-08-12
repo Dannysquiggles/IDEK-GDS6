@@ -29,6 +29,7 @@
 spacecount = 0;
 image_speed = 0.5;
 alarm[0] = 60;
+//og_view = view_wview[0];
 
 </string>
           </argument>
@@ -137,6 +138,32 @@ image_speed = 0;
         </arguments>
       </action>
     </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if mouse_check_button_released(mb_left) &amp;&amp; global.oc == 0
+{
+    with obj_rmManager_coffee {grow = true}
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="6" enumb="56">
       <action>
         <libid>1</libid>
@@ -154,16 +181,7 @@ image_speed = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if spacecount == 0
-{
-    if instance_number(obj_dialpointer) == 0
-    {
-    instance_create(room_width/2,room_height/2, obj_dialpointer);
-    spacecount += 1;
-    }
-}
-
-</string>
+            <string></string>
           </argument>
         </arguments>
       </action>
@@ -189,7 +207,7 @@ image_speed = 0;
 {
     if instance_number(obj_dialpointer) == 0
     {
-    instance_create(room_width/2,room_height/2, obj_dialpointer);
+    instance_create(obj_player_cafe.x,obj_player_cafe.x, obj_dialpointer);
     spacecount += 1;
     }
 }

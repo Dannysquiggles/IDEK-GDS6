@@ -32,7 +32,7 @@ message = global.message;
 //draw_set_alpha( 1 );
 
 //set the color white
-draw_set_color( color);
+draw_set_color(color);
 
 //are we past the width? insert a ling break
 

@@ -53,13 +53,13 @@
   <instances>
     <instance objName="obj_morning_manager" x="480" y="160" name="inst_F6D5DBF5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_curser" x="1216" y="512" name="inst_16F7031B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_playersit" x="928" y="704" name="inst_523DEE24" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_head" x="990" y="380" name="inst_8ED36E79" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_playersit" x="608" y="704" name="inst_523DEE24" locked="0" code="" scaleX="1.10000002384186" scaleY="1.10000002384186" colour="4294967295" rotation="0"/>
+    <instance objName="obj_head" x="672" y="352" name="inst_8ED36E79" locked="0" code="" scaleX="1.10000002384186" scaleY="1.10000002384186" colour="4294967295" rotation="0"/>
     <instance objName="obj_notes" x="1376" y="1024" name="inst_C6754FD9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_swipespawner" x="0" y="384" name="inst_512CD3EE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
   </instances>
   <tiles>
-    <tile bgName="fg_vignette" x="16" y="16" w="1920" h="1080" xo="0" yo="0" id="10000018" name="inst_D1F48F78" depth="-1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="fg_morning2" x="121" y="540" w="1159" h="522" xo="0" yo="0" id="10000019" name="inst_DF099CEB" depth="-1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="fg_morning2" x="0" y="576" w="1159" h="522" xo="0" yo="0" id="10000019" name="inst_DF099CEB" depth="-1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>

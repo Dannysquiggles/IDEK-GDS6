@@ -15,7 +15,11 @@
     </sprites>
     <sprites name="dials">
       <sprite>sprites\spr_dialogueouter</sprite>
+      <sprite>sprites\spr_outeroc2</sprite>
+      <sprite>sprites\spr_outeroc3</sprite>
+      <sprite>sprites\spr_outeroc1</sprite>
       <sprite>sprites\spr_dialoguedial</sprite>
+      <sprite>sprites\spr_pointerblink</sprite>
       <sprite>sprites\spr_meter</sprite>
     </sprites>
     <sprites name="characters">
@@ -31,6 +35,9 @@
       <sprite>sprites\spr_sitting_player</sprite>
       <sprite>sprites\spr_sittinghead</sprite>
       <sprite>sprites\spr_walk</sprite>
+      <sprite>sprites\spr_daydis</sprite>
+      <sprite>sprites\spr_dayword</sprite>
+      <sprite>sprites\spr_playercafe</sprite>
     </sprites>
     <sprite>sprites\spr_space</sprite>
     <sprite>sprites\spr_watcher</sprite>
@@ -68,12 +75,14 @@
     </sprites>
     <sprite>sprites\spr_lookinghead</sprite>
     <sprite>sprites\spr_blankcube</sprite>
+    <sprite>sprites\spr_swipe</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_endsad</background>
-    <background>background\background1</background>
+    <background>background\bg_cafe</background>
     <background>background\bg_morning2</background>
     <background>background\bg_train</background>
+    <background>background\bg_streetwalk</background>
     <background>background\background3</background>
     <background>background\bar</background>
     <background>background\background5</background>
@@ -83,7 +92,7 @@
     <background>background\fg_vignette</background>
     <background>background\bg_morning1</background>
     <background>background\background9</background>
-    <background>background\background10</background>
+    <background>background\fg_still</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -91,6 +100,8 @@
     <script>scripts\scr_textManager.gml</script>
     <script>scripts\scr_textManager_pre.gml</script>
     <script>scripts\random__room_picker.gml</script>
+    <script>scripts\scr_shrink_camera.gml</script>
+    <script>scripts\scr_grow_camera.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_bebas</font>
@@ -139,6 +150,7 @@
       </objects>
       <object>objects\obj_bubble</object>
       <object>objects\obj_till</object>
+      <object>objects\obj_player_cafe</object>
     </objects>
     <objects name="facebook">
       <object>objects\obj_frem_requ</object>
@@ -212,15 +224,21 @@
       <object>objects\obj_morning_manager</object>
       <object>objects\obj_playersit</object>
       <object>objects\obj_notes</object>
+      <object>objects\obj_swipespawner</object>
+      <object>objects\obj_swipe</object>
       <object>objects\obj_head</object>
       <object>objects\obj_sidewalk</object>
+      <object>objects\obj_day</object>
     </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_cafev2</room>
     <rooms name="rm_v2">
-      <room>rooms\rm_streetwalk</room>
-      <room>rooms\rm_nightv2</room>
-      <room>rooms\rm_morning2</room>
+      <rooms name="morning">
+        <room>rooms\rm_nightv2</room>
+        <room>rooms\rm_morning2</room>
+        <room>rooms\rm_streetwalk</room>
+      </rooms>
     </rooms>
     <rooms name="train">
       <room>rooms\rm_pre_eyeline</room>

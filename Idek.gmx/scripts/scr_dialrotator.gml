@@ -1,5 +1,5 @@
 // spins and stopps dialogue dial. reads possitions and sets text variables.
-if stop == "false" //&& image_angle > maxangle
+if stop == "false" //SPIN DIAL BACK AND FORTH
     {
     if dir == 0
     {
@@ -27,24 +27,43 @@ if stop == "false" //&& image_angle > maxangle
     }
     }
 else
+//select outcome
 {
-    if image_angle > bracket_1
+    if image_angle > bracket_1 //blink outcome one, set alarm[0]
     {
-        global.oc = 1;
+        if al == false
+        {
+        with obj_dialouter {sprite_index = (spr_outeroc1)}
+        alarm[0] = 20;
+        al = true;
+        }
+       /* global.oc = 1;
         global.message = otc1_text
-        global.col = 'black'
+        global.col = 'black'*/
     }
     else if image_angle > bracket_2
     {
-        global.oc = 2;
-        global.message = otc2_text
-        global.col = 'black'
+        if al == false
+        {
+            with obj_dialouter {sprite_index = (spr_outeroc2)}
+            alarm[1] = 20;
+                    al = true;
+        }
+        //global.oc = 2;
+        //global.message = otc2_text
+        //global.col = 'black'
     }
     else if image_angle >= bracket_3
     {
-        global.oc = 3;
-        global.message = otc3_text
-        global.col = 'black'
+        if al == false
+        {
+            with obj_dialouter {sprite_index = (spr_outeroc3)}
+            alarm[2] = 20
+                    al = true;
+        }
+       // global.oc = 3;
+        //global.message = otc3_text
+        //global.col = 'black'
     }
         /*else
     {
