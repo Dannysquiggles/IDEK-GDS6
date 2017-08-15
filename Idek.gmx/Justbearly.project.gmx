@@ -44,15 +44,14 @@
     <sprite>sprites\spr_friend_request</sprite>
     <sprite>sprites\spr_topdown_face</sprite>
     <sprite>sprites\spr_sure</sprite>
-    <sprites name="eyeline">
-      <sprite>sprites\spr_eyelineCone</sprite>
-    </sprites>
     <sprite>sprites\spr_till</sprite>
     <sprite>sprites\spr_no</sprite>
     <sprite>sprites\spr_listday1</sprite>
     <sprite>sprites\spr_fly</sprite>
     <sprite>sprites\spr_block</sprite>
+    <sprite>sprites\spr_shitdoor</sprite>
     <sprite>sprites\spr_clearblock</sprite>
+    <sprite>sprites\spr_lucture_peeps</sprite>
     <sprite>sprites\spr_hand</sprite>
     <sprite>sprites\spr_wave</sprite>
     <sprites name="text assets">
@@ -71,11 +70,17 @@
       <sprite>sprites\spr_eyecontact</sprite>
       <sprite>sprites\spr_playerhead</sprite>
       <sprite>sprites\spr_aihead</sprite>
+      <sprite>sprites\spr_viewweye</sprite>
       <sprite>sprites\spr_aibody</sprite>
+      <sprites name="eyeline">
+        <sprite>sprites\spr_eyelineCone</sprite>
+      </sprites>
+      <sprite>sprites\spr_redback</sprite>
     </sprites>
     <sprite>sprites\spr_lookinghead</sprite>
     <sprite>sprites\spr_blankcube</sprite>
     <sprite>sprites\spr_swipe</sprite>
+    <sprite>sprites\spr_eyeclosed</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_endsad</background>
@@ -83,6 +88,7 @@
     <background>background\bg_morning2</background>
     <background>background\bg_train</background>
     <background>background\bg_streetwalk</background>
+    <background>background\bg_eyes</background>
     <background>background\background3</background>
     <background>background\bar</background>
     <background>background\background5</background>
@@ -93,6 +99,7 @@
     <background>background\bg_morning1</background>
     <background>background\background9</background>
     <background>background\fg_still</background>
+    <background>background\bg_trainv2</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -101,6 +108,7 @@
     <script>scripts\scr_textManager_pre.gml</script>
     <script>scripts\random__room_picker.gml</script>
     <script>scripts\scr_shrink_camera.gml</script>
+    <script>scripts\scr_shrink_camera_lecture.gml</script>
     <script>scripts\scr_grow_camera.gml</script>
   </scripts>
   <fonts name="fonts">
@@ -167,6 +175,8 @@
       <object>objects\obj_eyeline_player</object>
       <object>objects\playerhead</object>
       <object>objects\obj_redface</object>
+      <object>objects\obj_eyeclosed</object>
+      <object>objects\obj_colour_</object>
       <object>objects\obj_eyecontact</object>
       <object>objects\obj_aibody</object>
       <object>objects\fg_chairs</object>
@@ -202,6 +212,7 @@
       <object>objects\obj_playerdialogue</object>
       <object>objects\obj_boundingbox</object>
       <object>objects\object67</object>
+      <object>objects\obj_peeps</object>
     </objects>
     <objects name="meetppl">
       <object>objects\player_mash_</object>
@@ -232,7 +243,6 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_cafev2</room>
     <rooms name="rm_v2">
       <rooms name="morning">
         <room>rooms\rm_nightv2</room>
@@ -240,6 +250,9 @@
         <room>rooms\rm_streetwalk</room>
       </rooms>
     </rooms>
+    <room>rooms\rm_trainv2</room>
+    <room>rooms\rm_lecturev2</room>
+    <room>rooms\rm_cafev2</room>
     <rooms name="train">
       <room>rooms\rm_pre_eyeline</room>
       <room>rooms\rm_eyeline</room>

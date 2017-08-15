@@ -26,6 +26,35 @@
           <argument>
             <kind>1</kind>
             <string>awkscount = 0;
+with obj_colour_{image_alpha = 0}
+alarm[0] = 90
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>with obj_eyeclosed {instance_destroy()}
+if instance_number(obj_eyeline) == 0
+{
+    instance_create(obj_aihead.x, obj_aihead.y, obj_eyeline)
+}
 </string>
           </argument>
         </arguments>
@@ -55,19 +84,23 @@ image_angle = point_direction(x,y,mouse_x,mouse_y);
 if place_meeting(x,y,obj_eyeline) 
 {
     awkscount += 1;
+    with obj_colour_ {image_alpha += 0.033}
+    //tile_set_alpha(bg_eyes, tile_get_alpha(bg_eyes) + 0.033)
 }
 else
 {
     if awkscount &gt; 0
     {
-        awkscount -=0.5
-    }
+        awkscount -= 1
+        with obj_colour_ {if image_alpha &gt;= 0 {image_alpha -= 0.033}}
+        //tile_set_alpha(bg_eyes, tile_get_alpha(bg_eyes) - 0.033)
+        }
 }
-if awkscount &gt;= 10
+if awkscount &gt;= 30
 {
     if instance_number(obj_redface) == 0{
     instance_create(0,0, obj_redface)
-    instance_create(0,0, obj_eyecontact)}
+    /*instance_create(0,0, obj_eyecontact)*/}
     with(obj_timer_train){instance_destroy()}
     global.stop = 1;
 }

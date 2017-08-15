@@ -71,7 +71,7 @@
     <instance objName="obj_headlooking" x="736" y="480" name="inst_AF026E8F" locked="0" code="" scaleX="4.125" scaleY="3.85714292526245" colour="4294967295" rotation="0"/>
     <instance objName="obj_playerdialogue" x="117" y="116" name="inst_7F8A1741" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="fect_shake" x="416" y="320" name="inst_BA414FC9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="object67" x="352" y="192" name="inst_A63BFEBB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="object67" x="544" y="192" name="inst_A63BFEBB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

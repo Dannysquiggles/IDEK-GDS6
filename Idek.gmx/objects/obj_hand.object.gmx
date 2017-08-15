@@ -28,8 +28,98 @@
             <string>///follow mouse slowly.
 pointX = obj_handLead.x;
 pointY = obj_handLead.y;
+stop = 0;
+og_view = view_wview[0]
+og_xview = view_xview;
+og_yview = view_yview;
+og_hview = view_hview;
+col = false;
+grow = false;
 
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if instance_number(fect_shake)&lt;1
+{
+    instance_create(x,y,fect_shake)
+    instance_create(room_width,0, obj_swipe)
+}
+alarm[1] = 30
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if instance_number(fect_shake)&lt;1
+{
+    instance_create(x,y,fect_shake)
+}
+alarm[2] = 30
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>stop = 2
+if instance_number(fect_shake)&lt;1
+{
+    instance_create(x,y,fect_shake)
+}
+alarm[1] = 30
 </string>
           </argument>
         </arguments>
@@ -52,10 +142,30 @@ pointY = obj_handLead.y;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>pointX = obj_handLead.x;
+            <string>if stop == 0
+{
+pointX = obj_handLead.x;
 pointY = obj_handLead.y;
 
 move_towards_point(pointX, pointY, 10);
+}
+if stop = 2
+{
+move_towards_point(x,room_height,10)
+}
+/*if grow == true
+{
+    scr_shrink_camera_lecture()
+}
+else if grow == 2
+{
+    scr_grow_camera()
+}
+/*if stop = 1
+{
+alarm[0] = 30
+
+}
 </string>
           </argument>
         </arguments>
@@ -64,21 +174,35 @@ move_towards_point(pointX, pointY, 10);
     <event eventtype="4" ename="obj_boundingbox">
       <action>
         <libid>1</libid>
-        <id>224</id>
-        <kind>0</kind>
+        <id>603</id>
+        <kind>7</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_another_room</functionname>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>11</kind>
-            <room>rm_lectureroom2</room>
+            <kind>1</kind>
+            <string>if col == false{
+
+stop = 1
+move_towards_point(x,room_height,0)
+with obj_peeps {image_index = 1}
+//grow = true;
+alarm[0] = 90;
+if instance_number(obj_playerdialogue) == 0 //&amp;&amp; global.oc == 0
+    {
+    instance_create(832,480, obj_playerdialogue);
+    instance_create(928,512, object67);
+    }
+col = true;
+}
+</string>
           </argument>
         </arguments>
       </action>

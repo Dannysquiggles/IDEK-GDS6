@@ -70,7 +70,7 @@ else
 
 if awkscount &gt;= 10
 {
-    room_goto(rm_ending_sad)
+    //room_goto(rm_ending_sad)
 }
 if image_angle &lt; 45 or image_angle &gt; 315 //lookright
 {
