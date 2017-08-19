@@ -83,7 +83,15 @@ if global.open &lt; 2
 {
 if still = false //&amp;&amp; y &gt; startpos
 {
+    nextpos = mouse_y - offset
+    if nextpos &gt; startpos
+    {
     move_towards_point(startx,mouse_y-offset, 30)
+    }
+    else
+    {
+    y = startpos
+    }
 }
 else if y &gt; startpos
 {

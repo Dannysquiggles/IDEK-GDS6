@@ -27,7 +27,11 @@
             <kind>1</kind>
             <string>x = obj_aihead.x //- 50
 y = obj_aihead.y + 10
-if global.stop == 0 {image_angle = point_direction(x,y, obj_eyeline_guider.x, obj_eyeline_guider.y)}
+point = point_direction(x,y, obj_eyeline_guider.x, obj_eyeline_guider.y)
+if (point &lt; 224) &amp;&amp; (point &gt; 145)
+{
+if global.stop == 0 {image_angle = point}
+}
 </string>
           </argument>
         </arguments>

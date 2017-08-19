@@ -49,16 +49,16 @@
           <argument>
             <kind>1</kind>
             <string>
-if mouse_x &gt; x
+if mouse_x &gt; x + 200
 {
     image_xscale = 1;
     image_yscale = 1;
-    if mouse_y &lt;610 &amp;&amp; mouse_y &gt;130
+    if mouse_y &lt;610 &amp;&amp; mouse_y &gt;130 
     {
     image_angle = point_direction(x,y,mouse_x,mouse_y);
     }
 }
-else
+else if mouse_x &lt; x - 200
 {
     //image_xscale = -1;
     image_yscale = -1;
