@@ -112,6 +112,7 @@
     <script>scripts\scr_shrink_camera.gml</script>
     <script>scripts\scr_shrink_camera_lecture.gml</script>
     <script>scripts\scr_grow_camera.gml</script>
+    <script>scripts\scr_noinput.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_bebas</font>
