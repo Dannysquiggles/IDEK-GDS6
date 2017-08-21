@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>global.stop = 0;
+global.track = 'guide';
 image_speed = 0;
 awkscount = 0;
 ox = x;
@@ -107,6 +108,7 @@ else if image_angle &gt; 225 and image_angle &lt; 315 // lookdown
     image_yscale = 1;
 }
 }
+
 </string>
           </argument>
         </arguments>
