@@ -86,7 +86,7 @@ if still = false //&amp;&amp; y &gt; startpos
     nextpos = mouse_y - offset
     if nextpos &gt; startpos
     {
-    move_towards_point(startx,mouse_y-offset, 30)
+    move_towards_point(startx,mouse_y-offset, global.rate)
     }
     else
     {
@@ -95,7 +95,7 @@ if still = false //&amp;&amp; y &gt; startpos
 }
 else if y &gt; startpos
 {
-move_towards_point(x,startpos, rate)
+move_towards_point(x,startpos, global.resist)
 }
 else
 {

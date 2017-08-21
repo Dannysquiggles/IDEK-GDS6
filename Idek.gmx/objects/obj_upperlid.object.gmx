@@ -89,7 +89,7 @@ if global.open &lt; 2
         if nextpos &lt; startpos
         {
             
-            move_towards_point(startx,mouse_y-offset, 30)
+            move_towards_point(startx,mouse_y-offset, global.rate)
         }
         else 
         {
@@ -98,7 +98,7 @@ if global.open &lt; 2
     }
     else if y &lt; startpos
         {
-        move_towards_point(x,startpos, rate)
+        move_towards_point(x,startpos, global.resist)
         }
     else
         {

@@ -29,6 +29,8 @@
 minim = 0.8;
 maxtime = 3600;
 timer = 0;
+global.rate = 45;
+global.resist = 2;
 global.Daycount = 1;
 
 </string>

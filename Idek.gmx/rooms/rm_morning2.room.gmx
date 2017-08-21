@@ -54,7 +54,7 @@
     <instance objName="obj_morning_manager" x="480" y="160" name="inst_F6D5DBF5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_playersit" x="992" y="736" name="inst_523DEE24" locked="0" code="" scaleX="1.10000002384186" scaleY="1.10000002384186" colour="4294967295" rotation="0"/>
     <instance objName="obj_head" x="1038" y="363" name="inst_8ED36E79" locked="0" code="" scaleX="1.10000002384186" scaleY="1.10000002384186" colour="4294967295" rotation="0"/>
-    <instance objName="obj_swipespawner" x="189" y="375" name="inst_512CD3EE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_swipespawner" x="480" y="320" name="inst_512CD3EE" locked="0" code="" scaleX="6.34375" scaleY="19.65625" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="fg_morning2" x="176" y="581" w="1159" h="522" xo="0" yo="0" id="10000019" name="inst_DF099CEB" depth="-1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
