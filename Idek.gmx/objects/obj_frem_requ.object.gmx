@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.imageindex = 0;
+            <string>size = sprite_width
+buffer = 20
+global.imageindex = 0;
 </string>
           </argument>
         </arguments>
@@ -52,7 +54,7 @@
           </argument>
           <argument>
             <kind>0</kind>
-            <string>x+305</string>
+            <string>x+size+buffer</string>
           </argument>
           <argument>
             <kind>0</kind>

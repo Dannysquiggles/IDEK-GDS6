@@ -79,7 +79,25 @@ stop = false;
           <argument>
             <kind>1</kind>
             <string>//determine gap between eyes and head angle
+if global.track == 'guide' // if player has been moving their eyeline, follow the random guide
+{
 point = point_direction(x,y, obj_eyeline_guider.x, obj_eyeline_guider.y)
+if (point &lt; 224) &amp;&amp; (point &gt; 145)
+{
+if global.stop == 0 {targetpoint = point}
+scr_rotatetowardspoint();
+}
+}
+else if global.track == 'eyeline' //if player doesn't move, follow mouse
+{
+point = point_direction(x,y, mouse_x-200, mouse_y)
+//if (point &lt; 224) &amp;&amp; (point &gt; 145)
+//{
+if global.stop == 0 {targetpoint = point }
+scr_rotatetowardspoint();
+//}
+}
+/*point = point_direction(x,y, obj_eyeline_guider.x, obj_eyeline_guider.y)
 if (stop == false &amp;&amp; point &lt; 227) &amp;&amp; (stop == false &amp;&amp; point &gt; 150)
 {
 if instance_exists(obj_eyeline){
@@ -87,12 +105,12 @@ buffer = obj_eyeline.image_angle - image_angle
 
 if global.stop == 0
 {
-//if buffer &gt; 0.2
-//{
+if buffer &gt; 0.2
+{
 
 image_angle = point_direction(x,y, obj_eyeline_guider.x, obj_eyeline_guider.y)
 }
-//}
+
 }
 else
 {

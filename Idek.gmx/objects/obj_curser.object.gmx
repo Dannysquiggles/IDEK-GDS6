@@ -3,7 +3,7 @@
   <spriteName>spr_curser</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-1000</depth>
+  <depth>-100000</depth>
   <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -32,6 +32,8 @@ timer = 0;
 global.rate = 45;
 global.resist = 2;
 global.Daycount = 1;
+global.laf = 0;
+//global.rand = false;
 
 </string>
           </argument>

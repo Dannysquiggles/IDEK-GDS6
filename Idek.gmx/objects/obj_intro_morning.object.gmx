@@ -131,12 +131,12 @@ alarm[1] = 15
             <string>///move on?
 if instance_exists(obj_lowerlid) &amp;&amp; instance_exists(obj_upperlid)
 {
-    if obj_lowerlid.y &lt; obj_lowerlid.startpos or obj_upperlid.y &gt; obj_upperlid.startpos
+    if obj_lowerlid.y &gt; obj_lowerlid.startpos or obj_upperlid.y &lt; obj_upperlid.startpos
     {
         if start == true
         {
         
-            alarm[2] = 1
+            alarm[2] = 15
             message = "";
             start = false;
         }

@@ -30,7 +30,7 @@ y = playerhead.y
  awkscount = 0;
 with obj_colour_{image_alpha = 0}
 alarm[0] = 90
-alarm[1] = 360//endgame
+alarm[1] = 660//endgame
 
 </string>
           </argument>
@@ -168,7 +168,9 @@ else
 if awkscount &gt;= 30
 {
     if instance_number(obj_redface) == 0{
-    instance_create(0,0, obj_redface)
+    instance_create(room_width/2,room_height/2, obj_redface)
+    global.rate -= 5;
+    global.resist += 0.5;
     /*instance_create(0,0, obj_eyecontact)*/}
     with(obj_timer_train){instance_destroy()}
     global.stop = 1;

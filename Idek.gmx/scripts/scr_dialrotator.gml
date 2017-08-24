@@ -34,7 +34,8 @@ else
         if al == false
         {
         with obj_dialouter {sprite_index = (spr_outeroc1)}
-        alarm[0] = 20;
+        alarm[0] = 40;
+        instance_create(x,y, fect_shake)
         al = true;
         }
        /* global.oc = 1;
@@ -46,7 +47,8 @@ else
         if al == false
         {
             with obj_dialouter {sprite_index = (spr_outeroc2)}
-            alarm[1] = 20;
+            alarm[1] = 40;
+            instance_create(x,y, fect_shake)
                     al = true;
         }
         //global.oc = 2;
@@ -58,7 +60,7 @@ else
         if al == false
         {
             with obj_dialouter {sprite_index = (spr_outeroc3)}
-            alarm[2] = 20
+            alarm[2] = 40
                     al = true;
         }
        // global.oc = 3;

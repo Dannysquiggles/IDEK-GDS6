@@ -120,6 +120,8 @@ alarm[1] = 30
             <string>if instance_number(fect_shake)&lt;1
 {
     instance_create(x,y,fect_shake)
+    global.rate -= 5;
+    global.resist += 0.5;
 }
 alarm[2] = 30
 </string>

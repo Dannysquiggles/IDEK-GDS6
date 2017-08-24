@@ -18,7 +18,7 @@ if instance_number(obj_dialpointer) == 0 && global.oc == 0
     }
 else if instance_number(obj_lafmeter) == 0
     {
-    instance_create(obj_player_cafe.x+10,obj_player_cafe.y+77, obj_lafmeter);
+    instance_create(obj_player_cafe.x+10,obj_player_cafe.y + 30, obj_lafmeter);
     }
 grow = false
 
