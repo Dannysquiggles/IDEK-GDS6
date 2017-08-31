@@ -302,19 +302,21 @@ else if stop == 1
     if y &gt; bracket_1 &amp;&amp; al == false
     {
         sprite_index = spr_pointerblink
-        alarm[0] = 30   
+        alarm[0] = 40 
+        instance_create(x,y, fect_shake)  
         al = true     
     }
     else if y &gt; bracket_2 &amp;&amp; al == false
     {
         sprite_index = spr_pointerblink
-        alarm[1] = 30
+        alarm[1] = 40
         al = true
     }
     else if al == false
     {
     sprite_index = spr_pointerblink
-    alarm[2] = 30
+    alarm[2] = 40
+    instance_create(x,y, fect_shake)
     al = true
     }
 }

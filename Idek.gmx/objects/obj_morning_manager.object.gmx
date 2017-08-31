@@ -48,7 +48,23 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto_next()
+            <string>if global.Daycount &gt; 2
+{
+    randomize()
+    rm = irandom_range(0,3);
+    if rm == 1
+    {
+        room_goto(rm_morning2)
+    }
+    else
+    {
+        room_goto(rm_morning2_2)
+    }
+}
+else
+{
+    room_goto_next();
+}
 </string>
           </argument>
         </arguments>

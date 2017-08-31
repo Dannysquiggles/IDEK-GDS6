@@ -3,7 +3,7 @@
   <spriteName>spr_liddown</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-1</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -83,11 +83,19 @@ if global.open &lt; 2
 {
 if still = false //&amp;&amp; y &gt; startpos
 {
-    move_towards_point(startx,mouse_y-offset, 30)
+    nextpos = mouse_y - offset
+    if nextpos &gt; startpos
+    {
+    move_towards_point(startx,mouse_y-offset, global.rate)
+    }
+    else
+    {
+    y = startpos
+    }
 }
 else if y &gt; startpos
 {
-move_towards_point(x,startpos, rate)
+move_towards_point(x,startpos, global.resist)
 }
 else
 {

@@ -11,7 +11,11 @@
     <sprites name="backgrounds">
       <sprite>sprites\spr_bg_night</sprite>
       <sprite>sprites\sprl_idup</sprite>
+      <sprite>sprites\spr_liduphint</sprite>
+      <sprite>sprites\liddownhint</sprite>
       <sprite>sprites\spr_liddown</sprite>
+      <sprite>sprites\spr_lidshadowdown</sprite>
+      <sprite>sprites\spr_lidshadowup</sprite>
     </sprites>
     <sprites name="dials">
       <sprite>sprites\spr_dialogueouter</sprite>
@@ -53,6 +57,8 @@
     <sprite>sprites\spr_clearblock</sprite>
     <sprite>sprites\spr_lucture_peeps</sprite>
     <sprite>sprites\spr_hand</sprite>
+    <sprite>sprites\spr_debugblock</sprite>
+    <sprite>sprites\spr_handmask</sprite>
     <sprite>sprites\spr_wave</sprite>
     <sprites name="text assets">
       <sprite>sprites\spr_title</sprite>
@@ -84,6 +90,7 @@
   </sprites>
   <backgrounds name="background">
     <background>background\bg_endsad</background>
+    <background>background\bg_black</background>
     <background>background\bg_cafe</background>
     <background>background\bg_morning2</background>
     <background>background\bg_train</background>
@@ -91,8 +98,11 @@
     <background>background\bg_eyes</background>
     <background>background\background3</background>
     <background>background\bar</background>
+    <background>background\fg_tree</background>
+    <background>background\fg_large_tree</background>
     <background>background\background5</background>
     <background>background\background6</background>
+    <background>background\fg_car</background>
     <background>background\fg_morning2</background>
     <background>background\bg_street</background>
     <background>background\fg_vignette</background>
@@ -110,15 +120,33 @@
     <script>scripts\scr_shrink_camera.gml</script>
     <script>scripts\scr_shrink_camera_lecture.gml</script>
     <script>scripts\scr_grow_camera.gml</script>
+    <script>scripts\scr_noinput.gml</script>
+    <script>scripts\scr_rotatetowardspoint.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_bebas</font>
+    <font>fonts\fnt_bebus_large</font>
     <font>fonts\fnt_sk1</font>
     <font>fonts\fnt_sk2</font>
     <font>fonts\fnt_sk3</font>
     <font>fonts\fnt_marker</font>
   </fonts>
   <objects name="objects">
+    <objects name="train">
+      <object>objects\obj_eyeline</object>
+      <object>objects\obj_aihead</object>
+      <object>objects\obj_eyeline_guider</object>
+      <object>objects\obj_eyeline_player</object>
+      <object>objects\playerhead</object>
+      <object>objects\obj_redface</object>
+      <object>objects\obj_eyeclosed</object>
+      <object>objects\obj_colour_</object>
+      <object>objects\obj_eyecontact</object>
+      <object>objects\obj_aibody</object>
+      <object>objects\fg_chairs</object>
+      <object>objects\obj_timer_train</object>
+      <object>objects\obj_body</object>
+    </objects>
     <objects name="start screen">
       <object>objects\obj_morning</object>
       <object>objects\obj_bg_night</object>
@@ -128,6 +156,15 @@
     <objects name="preroom">
       <object>objects\obj_txt_manage_generic</object>
       <object>objects\obj_txt_wave</object>
+      <objects name="textv2">
+        <object>objects\obj_intro_blank</object>
+        <object>objects\obj_intro_cafe</object>
+        <object>objects\obj_intro_paty</object>
+        <object>objects\obj_intro_morning</object>
+        <object>objects\obj_intro_street</object>
+        <object>objects\obj_intro_train</object>
+        <object>objects\obj_intro_lecture</object>
+      </objects>
       <object>objects\obj_txt_chat</object>
       <object>objects\obj_txt_meetppl</object>
       <object>objects\obj_txt_lecture</object>
@@ -140,6 +177,7 @@
       <object>objects\obj_barrista</object>
       <objects name="grp_effects">
         <object>objects\fect_shake</object>
+        <object>objects\fect_shakeL</object>
         <object>objects\obj_endmanager</object>
       </objects>
       <objects name="grp_dials">
@@ -168,21 +206,6 @@
       <object>objects\obj_endscript</object>
       <object>objects\obj_no</object>
     </objects>
-    <objects name="eyeline">
-      <object>objects\obj_eyeline</object>
-      <object>objects\obj_aihead</object>
-      <object>objects\obj_eyeline_guider</object>
-      <object>objects\obj_eyeline_player</object>
-      <object>objects\playerhead</object>
-      <object>objects\obj_redface</object>
-      <object>objects\obj_eyeclosed</object>
-      <object>objects\obj_colour_</object>
-      <object>objects\obj_eyecontact</object>
-      <object>objects\obj_aibody</object>
-      <object>objects\fg_chairs</object>
-      <object>objects\obj_timer_train</object>
-      <object>objects\obj_body</object>
-    </objects>
     <objects name="grp_menu">
       <object>objects\obj_street</object>
       <object>objects\obj_cfspicker</object>
@@ -205,9 +228,13 @@
     <object>objects\obj_font_changer</object>
     <object>objects\obj_timer</object>
     <objects name="lecturefly">
+      <object>objects\obj_handmask</object>
       <object>objects\obj_hand</object>
       <object>objects\obj_handLead</object>
       <object>objects\obj_headlooking</object>
+      <object>objects\obj_guidespot1</object>
+      <object>objects\obj_guidespot2</object>
+      <object>objects\obj_guidespot3</object>
       <object>objects\obj_fly</object>
       <object>objects\obj_playerdialogue</object>
       <object>objects\obj_boundingbox</object>
@@ -230,29 +257,69 @@
     <objects name="morningassets">
       <object>objects\obj_title</object>
       <object>objects\obj_curser</object>
+      <object>objects\obj_upperlidshadow</object>
+      <object>objects\hintup</object>
+      <object>objects\object104</object>
+      <object>objects\hintdown</object>
       <object>objects\obj_upperlid</object>
+      <object>objects\obj_headguider</object>
       <object>objects\obj_lowerlid</object>
       <object>objects\obj_morning_manager</object>
       <object>objects\obj_playersit</object>
       <object>objects\obj_notes</object>
       <object>objects\obj_swipespawner</object>
       <object>objects\obj_swipe</object>
+      <object>objects\obj_nightcome</object>
       <object>objects\obj_head</object>
       <object>objects\obj_sidewalk</object>
       <object>objects\obj_day</object>
     </objects>
   </objects>
   <rooms name="rooms">
-    <rooms name="rm_v2">
+    <rooms name="DAY 1">
       <rooms name="morning">
         <room>rooms\rm_nightv2</room>
         <room>rooms\rm_morning2</room>
+      </rooms>
+      <rooms name="trainv2">
+        <room>rooms\rm_pre_train</room>
+        <room>rooms\rm_trainv2</room>
+      </rooms>
+      <rooms name="lecturev3">
+        <room>rooms\rm_pre_lecture</room>
+        <room>rooms\rm_lecturev2</room>
+      </rooms>
+      <rooms name="street">
+        <room>rooms\rm_pre_street</room>
         <room>rooms\rm_streetwalk</room>
       </rooms>
+      <rooms name="cafev2">
+        <room>rooms\rm_pre_cafe</room>
+        <room>rooms\rm_cafev2</room>
+      </rooms>
     </rooms>
-    <room>rooms\rm_trainv2</room>
-    <room>rooms\rm_lecturev2</room>
-    <room>rooms\rm_cafev2</room>
+    <rooms name="DAY 2">
+      <rooms name="morning">
+        <room>rooms\rm_night_second</room>
+        <room>rooms\rm_morning2_2</room>
+      </rooms>
+      <rooms name="street">
+        <room>rooms\rm_pre_street2</room>
+        <room>rooms\rm_street</room>
+      </rooms>
+      <rooms name="train">
+        <room>rooms\rm_pre_train2</room>
+        <room>rooms\rm_trainv2_2</room>
+      </rooms>
+      <rooms name="cafe2">
+        <room>rooms\rm_pre_cafe2</room>
+        <room>rooms\rm_cafe_2</room>
+      </rooms>
+      <rooms name="facebookv2">
+        <room>rooms\rm_pre_facebook</room>
+        <room>rooms\rm_facebookv2</room>
+      </rooms>
+    </rooms>
     <rooms name="train">
       <room>rooms\rm_pre_eyeline</room>
       <room>rooms\rm_eyeline</room>
@@ -266,11 +333,12 @@
       <room>rooms\rm_lecture</room>
       <room>rooms\rm_lectureroom2</room>
     </rooms>
-    <room>rooms\rm_morning_2</room>
     <rooms name="trainm2">
       <room>rooms\rm_pre_eyeline_new</room>
       <room>rooms\rm_eyeline_new</room>
     </rooms>
+    <room>rooms\rm_pre_partay</room>
+    <room>rooms\rm_party</room>
     <rooms name="cafe2">
       <room>rooms\rm_predialogue_new</room>
       <room>rooms\Rm_dialdialoguetest_new</room>
@@ -281,12 +349,10 @@
     </rooms>
     <room>rooms\rm_pre_frems</room>
     <room>rooms\rm_frems</room>
-    <room>rooms\rm_morning_3</room>
     <room>rooms\rm_premeetppl</room>
     <room>rooms\rm_meetppl</room>
     <room>rooms\rm_chat</room>
     <room>rooms\rm_prechat</room>
-    <room>rooms\rm_morning</room>
     <room>rooms\rm_preroomgeneric</room>
   </rooms>
   <help>

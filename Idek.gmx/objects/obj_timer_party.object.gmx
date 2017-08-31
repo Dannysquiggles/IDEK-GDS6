@@ -28,6 +28,7 @@
             <string>image_xscale = 22
 image_speed = 0.5
 global.oc = 0;
+alarm[1] = 150
 </string>
           </argument>
         </arguments>

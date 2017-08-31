@@ -26,6 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>image_speed = 0;
+size = sprite_width
+buffer = 20
 image_index = global.imageindex;
 global.imageindex += 1;
 instance_create(x,y,obj_no);
@@ -53,7 +55,10 @@ instance_create(x,y,obj_no);
             <kind>1</kind>
             <string>if global.imageindex &gt; image_number
 {
-    room_goto_next();
+        if !instance_exists(obj_nightcome)
+    {
+        instance_create(room_width/2,room_height/2, obj_nightcome)
+    }
 }
 </string>
           </argument>
@@ -79,7 +84,7 @@ instance_create(x,y,obj_no);
           </argument>
           <argument>
             <kind>0</kind>
-            <string>x+305</string>
+            <string>x+size+buffer</string>
           </argument>
           <argument>
             <kind>0</kind>

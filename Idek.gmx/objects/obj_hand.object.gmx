@@ -35,8 +35,35 @@ og_yview = view_yview;
 og_hview = view_hview;
 col = false;
 grow = false;
+alarm[3] = 360;
 
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="3">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string> if !instance_exists(obj_nightcome)
+    {
+    instance_create(room_width/2,room_height/2, obj_nightcome)
+    }
 </string>
           </argument>
         </arguments>
@@ -62,7 +89,10 @@ grow = false;
             <string>if instance_number(fect_shake)&lt;1
 {
     instance_create(x,y,fect_shake)
-    instance_create(room_width,0, obj_swipe)
+    if !instance_exists(obj_nightcome)
+    {
+    instance_create(room_width/2,room_height/2, obj_nightcome)
+    }
 }
 alarm[1] = 30
 </string>
@@ -90,6 +120,8 @@ alarm[1] = 30
             <string>if instance_number(fect_shake)&lt;1
 {
     instance_create(x,y,fect_shake)
+    global.rate -= 5;
+    global.resist += 0.5;
 }
 alarm[2] = 30
 </string>
