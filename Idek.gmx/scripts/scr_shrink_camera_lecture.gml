@@ -19,7 +19,7 @@ if instance_number(obj_playerdialogue) == 0 //&& global.oc == 0
     instance_create(832,480, obj_playerdialogue);
     instance_create(928,512, object67);
     }
-
+global.color = false;
 grow = false
 
 }

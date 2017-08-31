@@ -13,5 +13,6 @@ else
 {
 view_wview[0] = og_view;
 view_hview[0] = og_hview;
+global.color = true;
 grow = false
 }

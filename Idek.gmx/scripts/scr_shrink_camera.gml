@@ -15,10 +15,12 @@ else
 if instance_number(obj_dialpointer) == 0 && global.oc == 0
     {
     instance_create(obj_player_cafe.x,obj_player_cafe.y, obj_dialpointer);
+    global.color = false;
     }
 else if instance_number(obj_lafmeter) == 0
     {
     instance_create(obj_player_cafe.x+10,obj_player_cafe.y + 30, obj_lafmeter);
+    global.color = false;
     }
 grow = false
 

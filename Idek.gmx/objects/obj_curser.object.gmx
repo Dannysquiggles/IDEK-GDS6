@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>///minimum size
+global.color = true;
 minim = 0.8;
 maxtime = 3600;
 timer = 0;
@@ -60,6 +61,15 @@ global.laf = 0;
             <string>///move to mouse, click
 x = mouse_x;
 y = mouse_y;
+if global.color == true
+{
+    image_alpha = 255
+}
+else
+{
+    image_alpha = 0
+}
+
 </string>
           </argument>
         </arguments>

@@ -26,8 +26,10 @@
           <argument>
             <kind>1</kind>
             <string>///set position start
-startpos = y
-startx = x
+y = room_height / 2
+x = room_width / 2
+startpos = room_height / 2
+startx = room_width / 2
 endpos = 1080;
 still = true;
 rate = 0;
