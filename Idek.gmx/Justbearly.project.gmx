@@ -57,6 +57,8 @@
     <sprite>sprites\spr_clearblock</sprite>
     <sprite>sprites\spr_lucture_peeps</sprite>
     <sprite>sprites\spr_hand</sprite>
+    <sprite>sprites\spr_debugblock</sprite>
+    <sprite>sprites\spr_handmask</sprite>
     <sprite>sprites\spr_wave</sprite>
     <sprites name="text assets">
       <sprite>sprites\spr_title</sprite>
@@ -157,6 +159,7 @@
       <objects name="textv2">
         <object>objects\obj_intro_blank</object>
         <object>objects\obj_intro_cafe</object>
+        <object>objects\obj_intro_paty</object>
         <object>objects\obj_intro_morning</object>
         <object>objects\obj_intro_street</object>
         <object>objects\obj_intro_train</object>
@@ -225,9 +228,13 @@
     <object>objects\obj_font_changer</object>
     <object>objects\obj_timer</object>
     <objects name="lecturefly">
+      <object>objects\obj_handmask</object>
       <object>objects\obj_hand</object>
       <object>objects\obj_handLead</object>
       <object>objects\obj_headlooking</object>
+      <object>objects\obj_guidespot1</object>
+      <object>objects\obj_guidespot2</object>
+      <object>objects\obj_guidespot3</object>
       <object>objects\obj_fly</object>
       <object>objects\obj_playerdialogue</object>
       <object>objects\obj_boundingbox</object>
@@ -255,6 +262,7 @@
       <object>objects\object104</object>
       <object>objects\hintdown</object>
       <object>objects\obj_upperlid</object>
+      <object>objects\obj_headguider</object>
       <object>objects\obj_lowerlid</object>
       <object>objects\obj_morning_manager</object>
       <object>objects\obj_playersit</object>
@@ -273,21 +281,21 @@
         <room>rooms\rm_nightv2</room>
         <room>rooms\rm_morning2</room>
       </rooms>
-      <rooms name="street">
-        <room>rooms\rm_pre_street</room>
-        <room>rooms\rm_streetwalk</room>
-      </rooms>
       <rooms name="trainv2">
         <room>rooms\rm_pre_train</room>
         <room>rooms\rm_trainv2</room>
       </rooms>
-      <rooms name="cafev2">
-        <room>rooms\rm_pre_cafe</room>
-        <room>rooms\rm_cafev2</room>
-      </rooms>
       <rooms name="lecturev3">
         <room>rooms\rm_pre_lecture</room>
         <room>rooms\rm_lecturev2</room>
+      </rooms>
+      <rooms name="street">
+        <room>rooms\rm_pre_street</room>
+        <room>rooms\rm_streetwalk</room>
+      </rooms>
+      <rooms name="cafev2">
+        <room>rooms\rm_pre_cafe</room>
+        <room>rooms\rm_cafev2</room>
       </rooms>
     </rooms>
     <rooms name="DAY 2">
@@ -329,6 +337,8 @@
       <room>rooms\rm_pre_eyeline_new</room>
       <room>rooms\rm_eyeline_new</room>
     </rooms>
+    <room>rooms\rm_pre_partay</room>
+    <room>rooms\rm_party</room>
     <rooms name="cafe2">
       <room>rooms\rm_predialogue_new</room>
       <room>rooms\Rm_dialdialoguetest_new</room>

@@ -29,6 +29,7 @@
 image_angle = obj_aihead.image_angle
 dir = 0
 targetpoint = 0
+
 </string>
           </argument>
         </arguments>
@@ -53,6 +54,12 @@ targetpoint = 0
             <kind>1</kind>
             <string>x = obj_aihead.x //- 50
 y = obj_aihead.y + 10
+//rotate towards mouse
+if targetpoint == 0
+{
+image_angle = point_direction(x, obj_eyeline_guider.x - 200, y, obj_eyeline_guider.y)
+}
+/*
 if global.track == 'guide' // if player has been moving their eyeline, follow the random guide
 {
 point = point_direction(x,y, obj_eyeline_guider.x, obj_eyeline_guider.y)

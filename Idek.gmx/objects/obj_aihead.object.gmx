@@ -30,6 +30,7 @@ image_index = 1;
 image_speed = 0;
 stop = true;
 alarm[0] = 90;
+image_angle = point_direction(x, obj_eyeline_guider.x,y,obj_eyeline_guider.y)
 </string>
           </argument>
         </arguments>
@@ -79,7 +80,9 @@ stop = false;
           <argument>
             <kind>1</kind>
             <string>//determine gap between eyes and head angle
-if global.track == 'guide' // if player has been moving their eyeline, follow the random guide
+image_angle = point_direction(x, obj_eyeline_guider.x-200, y, obj_eyeline_guider.y)
+
+/*if global.track == 'guide' // if player has been moving their eyeline, follow the random guide
 {
 point = point_direction(x,y, obj_eyeline_guider.x, obj_eyeline_guider.y)
 if (point &lt; 224) &amp;&amp; (point &gt; 145)
