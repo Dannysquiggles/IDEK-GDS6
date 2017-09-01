@@ -38,6 +38,7 @@
       <sprite>sprites\spr_curser</sprite>
       <sprite>sprites\spr_sitting_player</sprite>
       <sprite>sprites\spr_sittinghead</sprite>
+      <sprite>sprites\spr_sittingheadforward</sprite>
       <sprite>sprites\spr_walk</sprite>
       <sprite>sprites\spr_daydis</sprite>
       <sprite>sprites\spr_dayword</sprite>

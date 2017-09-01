@@ -31,14 +31,14 @@ roomlimitL = 0;
 roomlimitUp= 0;
 roomlimitDown = room_height;
 
-pointX = 0;
-pointY = 0;
+pointX = random_range(roomlimitL,roomlimitR);
+pointY = random_range(roomlimitDown,roomlimitUp);
 
 rate = 10
 ;
 
 //guider picker
-global.guide = 1;
+global.guides = 1;
 guide = 0 // when target = 0, follow random, when target = 1, follow guide
 alarm[0] = 120;
 </string>

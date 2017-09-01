@@ -51,7 +51,7 @@
             <string>/// track if fly touches the item
 if place_meeting(x,y, obj_fly) &amp;&amp; touched == false
 {
-    global.guide += 1
+    global.guides -= 1
     touched = true;
 } 
 </string>
