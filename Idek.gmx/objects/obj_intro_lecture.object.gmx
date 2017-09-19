@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>ox = mouse_x;
+            <string>global.symbol = 'eye'
+ox = mouse_x;
 oy = mouse_y;
 buffer = 250;
 

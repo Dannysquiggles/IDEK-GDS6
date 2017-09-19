@@ -51,11 +51,9 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="player_mash_" x="288" y="768" name="inst_60523C55" locked="0" code="" scaleX="-2" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="obj_person2meet" x="1728" y="608" name="inst_2C9E92C6" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="obj_text_meetpple" x="288" y="96" name="inst_94E61E51" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_party_bubble" x="480" y="128" name="inst_D3F750AE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_timer_party" x="512" y="672" name="inst_0337D87D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="player_mash_" x="288" y="640" name="inst_60523C55" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_person2meet" x="1568" y="768" name="inst_2C9E92C6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_bgchar" x="477" y="523" name="inst_825B929D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="background5" x="608" y="512" w="1" h="1" xo="0" yo="0" id="10000012" name="inst_17A96923" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>text1 = "MASH"// the action to be instructed
+            <string>global.symbol = 'mash'
+text1 = "MASH"// the action to be instructed
 text2 = "MASH MOUSE"// the control to use
 message = "" 
 start = false //whether the control can allow.

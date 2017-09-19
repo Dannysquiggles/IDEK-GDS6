@@ -63,9 +63,9 @@ if global.oc == 2 or global.oc == 3
 }
 else
 {
-y = obj_friend.y;
-image_xscale = obj_friend.image_xscale;
-image_yscale = obj_friend.image_yscale;
+y += 0.01
+image_yscale += 0.001
+image_xscale += 0.001
 ogy = y;
 }
 </string>

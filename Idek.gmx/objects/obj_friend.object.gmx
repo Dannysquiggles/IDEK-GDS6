@@ -38,6 +38,56 @@
         </arguments>
       </action>
     </event>
+    <event eventtype="2" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if !instance_exists(obj_swipe)
+{
+    instance_create(room_width, 0, obj_swipe)
+}
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>global.oc = 1;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="2" enumb="0">
       <action>
         <libid>1</libid>
@@ -55,7 +105,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto_next()
+            <string>if !instance_exists(obj_swipe)
+{
+    instance_create(room_width, 0, obj_swipe)
+}
 
 </string>
           </argument>
@@ -81,15 +134,17 @@
             <kind>1</kind>
             <string>if global.stop == 1
 {
-    if place_meeting(x,y, obj_stranger)
+    if place_meeting(x,y, obj_stranger) or place_meeting(x,y, obj_stranger_2)
     {
         with obj_timer {instance_destroy()}
-        global.oc = 1;
+        global.oc = 0.1;
         global.stop = 2;
+        alarm[1] = 13;
+        alarm[2] = 120;
     }
     else
     {
-        //alarm[0] = 60;
+        alarm[0] = 90;
         with obj_timer {instance_destroy()}
         global.oc = 2
         global.stop = 2;
@@ -101,14 +156,15 @@ y += 0.01
 image_yscale += 0.001
 image_xscale += 0.001
 }
-if place_meeting(x,y, obj_stranger)
+if place_meeting(x,y, obj_stranger) or place_meeting(x,y, obj_stranger_2)
     {
-        with obj_colour {image_index = 0}
+        //with obj_colour {image_index = 0}
+        background_index[0] = bg_streetR
     }
 else
 {
-with obj_colour {image_index = 1}
-
+    //with obj_colour {image_index = 1}
+    background_index[0] = bg_streetg
 }
 </string>
           </argument>

@@ -150,7 +150,7 @@ else if image_angle &gt; 225 and image_angle &lt; 315 // lookdown
     image_yscale = 1;
 }
 }
-if place_meeting(x,y,obj_eyeline) 
+if place_meeting(x,y,obj_eyeline) or place_meeting(x,y, obj_eyeline2)
 {
     awkscount += 1;
     with obj_colour_ {image_alpha += 0.033}

@@ -29,12 +29,36 @@
 y = room_height/2
 alpha = 0;
 fill = true;
+message = ''
 draw_set_font(fnt_marker)
 draw_set_colour(c_white);
 draw_set_halign(fa_center); 
 draw_set_valign(fa_center);
 //image_speed = 0
 alarm[0] = 60
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>message = 'Finally # rest'
 </string>
           </argument>
         </arguments>
@@ -107,6 +131,53 @@ if fill == 2 &amp;&amp; alpha &lt;= 0
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>//pick text
+if global.Daycount == 1
+{
+    message = "Five days, just five days."
+}
+else if global.Daycount == 2
+{
+    message = "Four days, four days untill the weekend"
+}
+else if global.Daycount == 3
+{
+    message = "Just three more days"
+}
+else if global.Daycount == 4
+{
+    message = "Two days, then I can relax"
+}
+else if global.Daycount == 5
+{
+    message = "...Just, just one more day. Then I can stay at home"
+}
+/*else if global.Daycount == 6
+{
+    message = "finally"
+    alarm[1] = 30
+    global.Daycount = 6.1
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
     </event>
     <event eventtype="6" enumb="56">
       <action>
@@ -125,7 +196,11 @@ if fill == 2 &amp;&amp; alpha &lt;= 0
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>fill = 2;
+            <string>//if !global.Daycount &gt;= 6
+//{
+    fill = 2;
+//}
+
 </string>
           </argument>
         </arguments>
@@ -150,11 +225,11 @@ if fill == 2 &amp;&amp; alpha &lt;= 0
             <kind>1</kind>
             <string>if global.Daycount == 4
 {
-draw_text_transformed_colour(x,y,"DAY FOUR", 2, 2, 0,c_white,c_white,c_white,c_white,alpha)
+draw_text_transformed_colour(x,y, message , 0.7, 0.7, 0,c_white,c_white,c_white,c_white,alpha)
 }
 else
 {
-draw_text_transformed_colour(x,y,"DAY" + string(global.Daycount), 2, 2, 0,c_white,c_white,c_white,c_white,alpha)
+draw_text_transformed_colour(x,y,message, 0.7, 0.7, 0,c_white,c_white,c_white,c_white,alpha)
 }
 
 </string>

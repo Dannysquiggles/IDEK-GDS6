@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>global.stop = 0;
 global.oc = 0;
+global.picked = 0;
 </string>
           </argument>
         </arguments>
@@ -75,7 +76,7 @@ global.oc = 0;
 }
 if global.oc == 1
 {
-    if view_wview[0] &gt; 514
+   /* if view_wview[0] &gt; 514
     {
         view_wview[0] *= 0.9;
         view_hview[0] *= 0.9;
@@ -86,7 +87,7 @@ if global.oc == 1
         view_hview[0] -= 50
         //view_hport[0] -= 10
     }
-       */ if view_xview[0] &lt; 170
+       if view_xview[0] &lt; 170
     {
         view_xview[0] += 50
         //view_xport[0] += 10
@@ -101,10 +102,10 @@ if global.oc == 1
     alarm[0] = 90;
     }
     }
-    }
+  */  }
 else if global.oc == 2
 {
-alarm[0] = 30;
+//alarm[0] = 30;
 global.oc = 3;
 }
     
@@ -113,24 +114,26 @@ global.oc = 3;
         </arguments>
       </action>
     </event>
-    <event eventtype="9" enumb="82">
+    <event eventtype="6" enumb="7">
       <action>
         <libid>1</libid>
-        <id>224</id>
-        <kind>0</kind>
+        <id>603</id>
+        <kind>7</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_another_room</functionname>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>11</kind>
-            <room>-1</room>
+            <kind>1</kind>
+            <string>alarm[1] = 60
+global.stop = 1;
+</string>
           </argument>
         </arguments>
       </action>

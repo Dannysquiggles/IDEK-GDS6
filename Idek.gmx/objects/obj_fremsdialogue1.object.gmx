@@ -117,7 +117,7 @@ ds_list_destroy(start);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Draw string/ box
+            <string>/*/// Draw string/ box
 
 
 
@@ -154,30 +154,6 @@ str = string_copy( message, ds_list_find_value( start, line), count - ds_list_fi
 
 draw_text( x+padding, y+padding, message); 
 </string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>526</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_font</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>12</kind>
-            <font>fnt_bebas</font>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>1</string>
           </argument>
         </arguments>
       </action>

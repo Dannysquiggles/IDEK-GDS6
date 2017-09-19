@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>text1 = "CLICK"// the action to be instructed
+            <string>global.symbol = 'hand'
+text1 = "CLICK"// the action to be instructed
 text2 = "CLICK DRAG"// the control to use
 message = "" 
 start = false //whether the control can allow.

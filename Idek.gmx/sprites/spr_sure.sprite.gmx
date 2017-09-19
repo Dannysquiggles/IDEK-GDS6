@@ -7,10 +7,10 @@
   <coltolerance>0</coltolerance>
   <sepmasks>0</sepmasks>
   <bboxmode>2</bboxmode>
-  <bbox_left>27</bbox_left>
-  <bbox_right>207</bbox_right>
-  <bbox_top>79</bbox_top>
-  <bbox_bottom>149</bbox_bottom>
+  <bbox_left>30</bbox_left>
+  <bbox_right>214</bbox_right>
+  <bbox_top>83</bbox_top>
+  <bbox_bottom>141</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroups>
@@ -31,6 +31,5 @@
     <frame index="8">images\spr_sure_8.png</frame>
     <frame index="9">images\spr_sure_9.png</frame>
     <frame index="10">images\spr_sure_10.png</frame>
-    <frame index="11">images\spr_sure_11.png</frame>
   </frames>
 </sprite>

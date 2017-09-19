@@ -3,7 +3,7 @@
   <spriteName>spr_curser</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-100000</depth>
+  <depth>-10000000</depth>
   <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -26,7 +26,9 @@
           <argument>
             <kind>1</kind>
             <string>///minimum size
+image_speed = 0.16
 global.color = true;
+global.symbol = 'hand'
 minim = 0.8;
 maxtime = 3600;
 timer = 0;
@@ -70,6 +72,19 @@ else
     image_alpha = 0
 }
 
+//pick symbol
+if global.symbol == 'hand'
+{
+    sprite_index = spr_curser;
+} 
+else if global.symbol == 'mash'
+{
+    sprite_index = spr_curser_mash;
+} 
+else if global.symbol == 'eye'
+{
+    sprite_index = spr_curser_eye;
+} 
 </string>
           </argument>
         </arguments>

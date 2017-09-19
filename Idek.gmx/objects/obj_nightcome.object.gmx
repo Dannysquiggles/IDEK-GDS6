@@ -51,8 +51,15 @@ global.Daycount += 1;
             <kind>1</kind>
             <string>if image_index == image_number - 1
 {
+    if !global.Daycount &gt;= 6
+    {
     image_speed = 0
     room_goto(rm_night_second)
+    }
+    else
+    {
+    room_goto_next()
+    }
 }
 </string>
           </argument>

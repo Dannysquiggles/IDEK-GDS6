@@ -320,7 +320,7 @@ if global.oc == 1
 {
     if keyboard_check_pressed(vk_space) or mouse_check_button_released(mb_left)
     {
-    global.message = "BARISTA: Ummmm... fine? WHAT CAN I GET YOU?"
+    global.message = "BARISTA: Ummmm... fine? WHAT CAN I GET YOU!?"
     global.col = 'white';
     with (obj_barrista) 
     { image_speed = 0.5;
@@ -350,7 +350,7 @@ else if global.oc == 3 //SPAWN LAF MAYBE, DEPENDS ON OUTCOME
     {
     //  "that'll be 3.20 thanks"
     global.message = "BARISTA: that'll be $3.20, thanks"
-    with (obj_barrista) 
+    with (obj_barrista) //change to new smile animation
     global.col = 'white';
     { image_speed = 0.5;
     alarm[0] = 60;}
@@ -418,12 +418,12 @@ if global.oc == 5.1
 {
     if keyboard_check_pressed(vk_space)or mouse_check_button_pressed(mb_left)
     {
-    global.message = "BARISTA:... $3.50 ... dick"
+    global.message = "BARISTA:... $3.50 ... "
     instance_create(x,y, fect_shakeL)
     global.col = 'white';
     global.rate -= 5;
     global.resist += 0.5;
-    with (obj_barrista) 
+    with (obj_barrista) //change animation to dissapointed.
     { image_speed = 0.5;
     alarm[1] = 15;}
     alarm[1] = 160;
@@ -447,7 +447,7 @@ else if global.oc == 5.3
 {
     if keyboard_check_pressed(vk_space)or mouse_check_button_pressed(mb_left)
     {
-    global.message = "BARISTA: ............. "
+    global.message = "BARISTA: .................."
     instance_create(x,y, fect_shakeL)
     global.rate -= 5;
     global.resist += 0.5;

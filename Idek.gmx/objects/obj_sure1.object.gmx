@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_speed = 0;
+            <string>touched = false
+image_speed = 0;
 size = sprite_width
 buffer = 20
 image_index = global.imageindex;
@@ -53,12 +54,29 @@ instance_create(x,y,obj_no);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if global.imageindex &gt; image_number
+            <string>if touched == false
+{
+
+if global.imageindex &gt; (image_number - 1)
 {
     if !instance_exists(obj_nightcome)
     {
         instance_create(room_width/2,room_height/2, obj_nightcome)
     }
+}
+
+//messure how far you are form the boarder. start a new line if two close.
+
+if room_width &gt; (x + (size*2) + (buffer*2))
+{
+    instance_create(x + size + buffer, y, obj_sure1)
+}
+else
+{
+    instance_create(room_width/2, y + sprite_height + buffer, obj_sure1)
+}
+
+touched = true
 }
 </string>
           </argument>
@@ -80,11 +98,11 @@ instance_create(x,y,obj_no);
         <arguments>
           <argument>
             <kind>10</kind>
-            <object>obj_sure2</object>
+            <object>obj_sure_block</object>
           </argument>
           <argument>
             <kind>0</kind>
-            <string>x+size+buffer</string>
+            <string>x</string>
           </argument>
           <argument>
             <kind>0</kind>

@@ -48,22 +48,33 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if global.Daycount &gt; 2
+            <string>if global.Daycount = 2
 {
-    randomize()
-    rm = irandom_range(0,3);
-    if rm == 1
-    {
-        room_goto(rm_morning2)
-    }
-    else
-    {
+    //randomize()
+    //rm = irandom_range(0,3);
+    //if rm == 1
+    //{
+       // room_goto(rm_morning2)
+   // }
+    //else
+    //{
         room_goto(rm_morning2_2)
-    }
+}
+else if global.Daycount = 3
+{
+    room_goto(rm_morning2_3)
+}
+else if global.Daycount = 4
+{
+    room_goto(rm_morning2_4)
+}
+else if global.Daycount = 5
+{
+    room_goto(rm_morning2_5)
 }
 else
 {
-    room_goto_next();
+    room_goto_next()
 }
 </string>
           </argument>
