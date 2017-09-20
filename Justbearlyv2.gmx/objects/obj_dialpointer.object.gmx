@@ -53,7 +53,7 @@ bracket_2 = -120
 bracket_3 = -190;
 
 //outcomes
-if global.con == 1{
+if global.con == 1 {
 
 //outcome_1 = 0;
 otc1_text = "ME: Good thanks"
@@ -76,6 +76,20 @@ otc2_text = "ME: ... HOLOCAUSTE! I mean..."
 
 //outcome_3 = 0;
 otc3_text = "ME: I'll grab a latte"
+
+otc4_text = "ME: ... "
+}
+else if global.con == 4{
+rate = 20
+instance_create(x,y+30, obj_timer_coffee)
+//outcome_1 = 0;
+otc1_text = "ME: I'm okay thanks."
+
+//outcome_2 = 0;
+otc2_text = "ME: ... HOLOCAUSTE! I mean..."
+
+//outcome_3 = 0;
+otc3_text = "ME: How much is a medium latte again?"
 
 otc4_text = "ME: ... "
 }

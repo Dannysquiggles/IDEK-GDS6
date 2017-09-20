@@ -216,12 +216,14 @@
       <object>objects\obj_rmManager_coffee</object>
       <object>objects\obj_rmManager_coffee2</object>
       <object>objects\obj_rmManager_coffee3</object>
+      <object>objects\obj_rmManager_coffee5</object>
       <object>objects\obj_rmManager_coffee4</object>
       <object>objects\obj_barrista</object>
       <object>objects\obj_barrista_remake</object>
       <objects name="grp_effects">
         <object>objects\fect_shake</object>
         <object>objects\fect_shakeL</object>
+        <object>objects\fect_shake_big</object>
         <object>objects\obj_endmanager</object>
       </objects>
       <objects name="grp_dials">
@@ -320,8 +322,26 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_cafe_swaptext</room>
-    <room>rooms\rm_cafe_simple</room>
+    <rooms name="staystill">
+      <room>rooms\rm_pre_staystill</room>
+      <room>rooms\rm_staystill</room>
+      <room>rooms\rm_tempend</room>
+    </rooms>
+    <rooms name="ROOMS SPARE">
+      <rooms name="cafe">
+        <room>rooms\rm_cafe_laf</room>
+        <room>rooms\rm_cafe_simple</room>
+        <room>rooms\rm_cafe_timer</room>
+        <room>rooms\rm_cafe_swaptext</room>
+      </rooms>
+      <rooms name="wavev2">
+        <room>rooms\rm_pre_wave</room>
+        <room>rooms\rm_wave</room>
+        <room>rooms\rm_wave2</room>
+        <room>rooms\rm_wavev3</room>
+        <room>rooms\rm_wave_4</room>
+      </rooms>
+    </rooms>
     <rooms name="DAY 1">
       <rooms name="morning">
         <room>rooms\rm_nightv2</room>
@@ -388,21 +408,9 @@
     <rooms name="DAY 5">
       <room>rooms\rm_morning2_5</room>
     </rooms>
-    <rooms name="staystill">
-      <room>rooms\rm_pre_staystill</room>
-      <room>rooms\rm_staystill</room>
-      <room>rooms\rm_tempend</room>
-    </rooms>
     <rooms name="tilttrain">
       <room>rooms\rm_pre_train_tilt</room>
       <room>rooms\rm_tilttrain</room>
-    </rooms>
-    <rooms name="wavev2">
-      <room>rooms\rm_pre_wave</room>
-      <room>rooms\rm_wave</room>
-      <room>rooms\rm_wave2</room>
-      <room>rooms\rm_wavev3</room>
-      <room>rooms\rm_wave_4</room>
     </rooms>
     <room>rooms\rm_chat</room>
     <room>rooms\rm_prechat</room>
