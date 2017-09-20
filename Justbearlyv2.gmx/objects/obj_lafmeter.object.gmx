@@ -68,6 +68,7 @@ image_speed = 0.5
         global.col = 'black'
 //zoomout
 with obj_rmManager_coffee {grow = 2}
+global.grow = 2
 
 </string>
           </argument>
@@ -138,7 +139,7 @@ with obj_rmManager_coffee {grow = 2}
         global.col = 'black'
 //zoomout
 with obj_rmManager_coffee {grow = 2}
-
+global.grow = 2
 </string>
           </argument>
         </arguments>
@@ -204,27 +205,14 @@ with obj_rmManager_coffee {grow = 2}
           <argument>
             <kind>1</kind>
             <string>global.message = "ME: ... "
-        global.oc = 5.1
-        global.col = 'black'
+global.oc = 5.1
+global.col = 'black'
 //zoomout
 with obj_rmManager_coffee {grow = 2}
+global.grow = 2;
 </string>
           </argument>
         </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>203</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_kill_object</functionname>
-        <codestring></codestring>
-        <whoName>obj_blankscrn</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
       </action>
       <action>
         <libid>1</libid>
