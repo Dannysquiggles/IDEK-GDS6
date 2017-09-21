@@ -60,6 +60,7 @@
     <instance objName="obj_aihead_rest" x="1518" y="416" name="inst_8E639420" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="225"/>
     <instance objName="obj_eyeline_playerv2" x="512" y="416" name="inst_7D5A9940" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_train_manager" x="224" y="128" name="inst_66AAB516" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="fect_shake_growing_hor" x="864" y="128" name="inst_6A19DD00" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_eyes" x="20" y="480" w="1920" h="490" xo="0" yo="0" id="10000046" name="inst_6A44711F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
