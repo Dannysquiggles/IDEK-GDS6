@@ -10,7 +10,7 @@
   <persistent>0</persistent>
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
-  <code></code>
+  <code>global.train = 2</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
@@ -51,18 +51,19 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="obj_aibody" x="1120" y="448" name="inst_3EF697FB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_aihead" x="1345" y="466" name="inst_076F302F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="225"/>
-    <instance objName="obj_eyeline_player" x="320" y="384" name="inst_9CA888BB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_aibody" x="1280" y="448" name="inst_3EF697FB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_aihead" x="1504" y="450" name="inst_076F302F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="225"/>
+    <instance objName="obj_eyeline_player" x="500" y="384" name="inst_9CA888BB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_eyeline_guider" x="928" y="896" name="inst_83C25C7F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_body" x="160" y="320" name="inst_0BB9AD94" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="playerhead" x="341" y="397" name="inst_7782C85F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="-90"/>
+    <instance objName="obj_body" x="340" y="320" name="inst_0BB9AD94" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="playerhead" x="521" y="397" name="inst_7782C85F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="-90"/>
     <instance objName="obj_colour_" x="19" y="-207" name="inst_2470ED76" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_colour_" x="17" y="95" name="inst_443FAD01" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_colour_" x="32" y="160" name="inst_443FAD01" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_eyes" x="20" y="480" w="1920" h="490" xo="0" yo="0" id="10000046" name="inst_6A44711F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_trainv2" x="20" y="20" w="1920" h="1080" xo="0" yo="0" id="10000041" name="inst_C5A81CA4" depth="900000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="fg_trainbar" x="1548" y="111" w="80" h="988" xo="0" yo="0" id="10000056" name="inst_B825EC2B" depth="-10000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>

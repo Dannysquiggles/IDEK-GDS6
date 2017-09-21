@@ -31,7 +31,7 @@
     <yoffset>0</yoffset>
   </makerSettings>
   <backgrounds>
-    <background visible="-1" foreground="0" name="bg_train" x="0" y="0" htiled="-1" vtiled="-1" hspeed="30" vspeed="0" stretch="0"/>
+    <background visible="-1" foreground="0" name="bg_train2" x="0" y="0" htiled="-1" vtiled="-1" hspeed="30" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -51,20 +51,25 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="obj_aibody" x="1280" y="416" name="inst_3EF697FB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_eyeline_guider" x="928" y="896" name="inst_83C25C7F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_body" x="320" y="320" name="inst_0BB9AD94" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="playerhead" x="480" y="384" name="inst_7782C85F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="-90"/>
-    <instance objName="obj_colour_" x="0" y="256" name="inst_2470ED76" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_colour_" x="0" y="-64" name="inst_443FAD01" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_aihead_rest" x="1518" y="416" name="inst_8E639420" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="225"/>
-    <instance objName="obj_eyeline_playerv2" x="512" y="416" name="inst_7D5A9940" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_train_manager" x="224" y="128" name="inst_66AAB516" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_aibody" x="1216" y="448" name="inst_3EF697FB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_body" x="416" y="320" name="inst_0BB9AD94" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="playerhead" x="596" y="390" name="inst_7782C85F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="-90"/>
+    <instance objName="obj_colour_" x="32" y="-224" name="inst_2470ED76" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_colour_" x="32" y="-192" name="inst_443FAD01" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_aibody" x="224" y="448" name="inst_0F37D3F8" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_aihead2" x="0" y="480" name="inst_63FA3F82" locked="0" code="" scaleX="1" scaleY="-1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_eyeline2" x="-11" y="498" name="inst_B0B32144" locked="0" code="" scaleX="1" scaleY="-1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_eyeline_guider2" x="224" y="32" name="inst_67A0A647" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_danger" x="928" y="96" name="inst_1419D09A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_curser" x="960" y="1024" name="inst_EF50F693" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_eyeline_playerv2" x="608" y="416" name="inst_0E092688" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_aihead_rest" x="1460" y="444" name="inst_DB53002C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="225"/>
+    <instance objName="obj_train_manager" x="256" y="864" name="inst_394F6377" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_eyeline_guider" x="928" y="864" name="inst_14DC8BFB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_eyes" x="20" y="480" w="1920" h="490" xo="0" yo="0" id="10000046" name="inst_6A44711F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_trainv2" x="20" y="20" w="1920" h="1080" xo="0" yo="0" id="10000041" name="inst_C5A81CA4" depth="900000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="fg_trainbar" x="1548" y="110" w="80" h="988" xo="0" yo="0" id="10000057" name="inst_AF1F2D0D" depth="-900000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>

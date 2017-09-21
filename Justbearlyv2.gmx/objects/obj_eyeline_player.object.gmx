@@ -29,8 +29,8 @@
 y = playerhead.y
  awkscount = 0;
 with obj_colour_{image_alpha = 0}
-alarm[0] = 90
-alarm[1] = 360//endgame
+//alarm[0] = 90
+//alarm[1] = 360//endgame
 
 </string>
           </argument>
@@ -115,7 +115,7 @@ if instance_number(obj_eyeline) == 0
 point = point_direction(x,y,mouse_x,mouse_y) // find direction
 
 
-if (global.stop == 0 &amp;&amp; point &lt; 45) or (global.stop == 0 &amp;&amp; point &gt; 225) //if point is in bounds, rotate image
+if (global.stopall == 0 &amp;&amp; point &lt; 45) or (global.stopall == 0 &amp;&amp; point &gt; 225) //if point is in bounds, rotate image
 
 {
 x = playerhead.x
@@ -150,7 +150,8 @@ else if image_angle &gt; 225 and image_angle &lt; 315 // lookdown
     image_yscale = 1;
 }
 }
-if place_meeting(x,y,obj_eyeline) or place_meeting(x,y, obj_eyeline2)
+//if place_meeting(x,y,obj_eyeline) or place_meeting(x,y, obj_eyeline2)
+if place_meeting(x,y, obj_danger)
 {
     awkscount += 1;
     with obj_colour_ {image_alpha += 0.033}
@@ -167,12 +168,7 @@ else
 }
 if awkscount &gt;= 30
 {
-    if instance_number(obj_redface) == 0{
-    instance_create(room_width/2,room_height/2, obj_redface)
-    global.rate -= 5;
-    global.resist += 0.5;
-    /*instance_create(0,0, obj_eyecontact)*/}
-    with(obj_timer_train){instance_destroy()}
+    global.finish = 'lose'
     global.stop = 1;
 }
 

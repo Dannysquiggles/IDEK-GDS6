@@ -117,6 +117,7 @@
     <background>background\bar</background>
     <background>background\fg_tree</background>
     <background>background\fg_large_tree</background>
+    <background>background\fg_trainbar</background>
     <background>background\background5</background>
     <background>background\background6</background>
     <background>background\fg_car</background>
@@ -154,19 +155,26 @@
   <objects name="objects">
     <objects name="train">
       <object>objects\obj_eyeline</object>
+      <object>objects\obj_danger</object>
       <object>objects\obj_eyeline2</object>
       <object>objects\obj_aihead</object>
       <object>objects\obj_aihead2</object>
-      <object>objects\obj_eyeline_guider</object>
       <object>objects\obj_eyeline_guider2</object>
       <object>objects\obj_eyeline_player</object>
+      <object>objects\obj_eyeline_playerv2</object>
       <object>objects\playerhead</object>
       <object>objects\obj_redface</object>
       <object>objects\obj_eyeclosed</object>
       <object>objects\obj_colour_</object>
       <object>objects\obj_eyecontact</object>
-      <object>objects\obj_aibody</object>
       <object>objects\fg_chairs</object>
+      <objects name="train assets re-make">
+        <object>objects\obj_eyeline_rest</object>
+        <object>objects\obj_eyeline_guider</object>
+        <object>objects\obj_aihead_rest</object>
+        <object>objects\obj_aibody</object>
+        <object>objects\obj_train_manager</object>
+      </objects>
       <object>objects\obj_timer_train</object>
       <object>objects\obj_body</object>
     </objects>
@@ -322,6 +330,14 @@
     </objects>
   </objects>
   <rooms name="rooms">
+    <rooms name="train home">
+      <rooms name="trainv2">
+        <room>rooms\rm_pre_train</room>
+        <room>rooms\rm_trainv2</room>
+      </rooms>
+      <room>rooms\rm_pre_trian3</room>
+      <room>rooms\rm_train_2passangers</room>
+    </rooms>
     <rooms name="staystill">
       <room>rooms\rm_pre_staystill</room>
       <room>rooms\rm_staystill</room>
@@ -350,10 +366,6 @@
       <rooms name="street">
         <room>rooms\rm_pre_street</room>
         <room>rooms\rm_streetwalk</room>
-      </rooms>
-      <rooms name="trainv2">
-        <room>rooms\rm_pre_train</room>
-        <room>rooms\rm_trainv2</room>
       </rooms>
       <rooms name="cafev2">
         <room>rooms\rm_pre_cafe</room>
@@ -391,10 +403,6 @@
       <rooms name="street">
         <room>rooms\rm_pre_street3</room>
         <room>rooms\rrm_street3</room>
-      </rooms>
-      <rooms name="train home">
-        <room>rooms\rm_pre_trian3</room>
-        <room>rooms\rm_train_home</room>
       </rooms>
       <rooms name="Partay">
         <room>rooms\rm_pre_partay</room>

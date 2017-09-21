@@ -63,6 +63,8 @@
     <instance objName="obj_aihead2" x="0" y="480" name="inst_63FA3F82" locked="0" code="" scaleX="1" scaleY="-1" colour="4294967295" rotation="0"/>
     <instance objName="obj_eyeline2" x="-11" y="498" name="inst_B0B32144" locked="0" code="" scaleX="1" scaleY="-1" colour="4294967295" rotation="0"/>
     <instance objName="obj_eyeline_guider2" x="224" y="32" name="inst_67A0A647" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_danger" x="928" y="96" name="inst_1419D09A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_curser" x="960" y="1024" name="inst_EF50F693" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_eyes" x="20" y="480" w="1920" h="490" xo="0" yo="0" id="10000046" name="inst_6A44711F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

@@ -25,20 +25,47 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///set limits to random direction
-roomlimitR = room_width;
-roomlimitL = 0;
-roomlimitUp= 0;
-roomlimitDown = room_height;
+            <string>///set global variables
+global.stopall = true
+global.stopai = true
+global.finish = false
 
-pointX = 0;
-pointY = 0;
+//set wake up alarms
+alarm[0] = 1 //* room_speed // start movement
+alarm[1] = 3 * room_speed //start any resting ai
 
-rate = 4;
-target = 0; //follow mouse
-alarm[0] = 120;
-move = false
-alarm[1] = 90
+//level timer
+alarm[2] = 12 * room_speed //the level ends as a win if you survive this long
+
+//adjust mouse starting position
+window_mouse_set(room_width/2, room_height/2)
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///end game
+if !instance_exists(obj_swipe)
+{
+    instance_create(room_width,0,obj_swipe)
+}
 </string>
           </argument>
         </arguments>
@@ -61,8 +88,8 @@ alarm[1] = 90
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//make move
-move = true;
+            <string>///activate resting ai
+global.stopai = false;
 </string>
           </argument>
         </arguments>
@@ -85,13 +112,8 @@ move = true;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///frem eye leader
-pointX = random_range(roomlimitL,roomlimitR);
-pointY = random_range(roomlimitDown,roomlimitUp);
-
-rate = random_range(1,5);
-
-alarm[0] = 120;
+            <string>///activate items
+global.stopall = false;
 </string>
           </argument>
         </arguments>
@@ -114,18 +136,20 @@ alarm[0] = 120;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// switch between mouse and point
-if global.stopall == false &amp;&amp; global.stopai == false
+            <string>///react to ending events
+
+//losing sequence
+if global.finish == 'lose'
 {
-    if target == 0 &amp;&amp; move == true//mouse 
+    global.stopall = true;
+    alarm[2] = -1
+    if !instance_exists(obj_redface)
     {
-        move_towards_point(mouse_x,mouse_y,rate)
-    }
-    else if target == 1 &amp;&amp; move == true//random point
-    {
-        move_towards_point(pointX,pointY,rate)
+        instance_create(room_width/2, room_height/2, obj_redface)
     }
 }
+
+    
 </string>
           </argument>
         </arguments>
