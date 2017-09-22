@@ -44,10 +44,13 @@ global.con = 4
 
 global.message = "Barista: Make it quick";
 
+with obj_barrista_remake {sprite_index = spr_catrista}
+
 global.col = 'white';
 color = c_black;
 draw_set_font(fnt_bebas)
 draw_set_halign(fa_center)
+draw_set_valign(fa_center)
 </string>
           </argument>
         </arguments>
@@ -317,12 +320,12 @@ if grow == 2 or global.grow == 2
 // change colors
 if global.col == 'white'
 {
-    with obj_bubble {sprite_index = spr_bubble_2;}
+    with obj_bubble {sprite_index = spr_speechbubble_white;}
     color = c_black;
 }
 if global.col == 'black'
 {
-    with obj_bubble {sprite_index = spr_bubble;}
+    with obj_bubble {sprite_index = spr_speechbubble_black;}
     color = c_white;
 }
     
@@ -334,10 +337,8 @@ if global.oc == 1
     {
     global.message = "BARISTA: ... move"
     global.col = 'white';
-    with (obj_barrista) 
-    {sprite_index = spr_barrista2 
-    image_speed = 0.5;
-    alarm[0] = 60;}
+    with (obj_barrista_remake) 
+    {image_index = 1;}
     alarm[4] = 30;
     instance_create(x,y, fect_shake)
     global.oc = 0.1;
@@ -349,8 +350,8 @@ else if global.oc == 2
     {
     global.col = 'white';
     global.message = "BARISTA: ...what?..."
-    with (obj_barrista) 
-    {alarm[1] = 30;}
+    with (obj_barrista_remake) 
+    {image_index = 1;}
     instance_create(x,y, fect_shake)
     global.oc = 2.5
     }
@@ -390,6 +391,8 @@ else if global.oc == 4
     {
     global.col = 'white';
     global.message = "Barista: Ummm....Excuse me? your order?";
+    with obj_barrista_remake
+    {image_index = 1}
     instance_create(x,y, fect_shake_big)
     alarm[4] = 40;
     global.oc = 0.1;

@@ -36,6 +36,8 @@ global.oc4 = 0;
 
 global.con = 1
 
+with obj_barrista_remake {sprite_index = spr_barrista_down}
+
 og_view = view_wview[0];
 og_hview = view_hview[0];
 og_xview = view_xview[0];
@@ -50,6 +52,7 @@ global.col = 'white';
 color = c_black;
 draw_set_font(fnt_bebas)
 draw_set_halign(fa_center)
+draw_set_valign(fa_center)
 </string>
           </argument>
         </arguments>
@@ -319,12 +322,12 @@ if grow == 2 or global.grow == 2
 // change colors
 if global.col == 'white'
 {
-    with obj_bubble {sprite_index = spr_bubble_2;}
+    with obj_bubble {sprite_index = spr_speechbubble_white;}
     color = c_black;
 }
 if global.col == 'black'
 {
-    with obj_bubble {sprite_index = spr_bubble;}
+    with obj_bubble {sprite_index = spr_speechbubble_black;}
     color = c_white;
 }
     
@@ -336,9 +339,8 @@ if global.oc == 1
     {
     global.message = "BARISTA: Ummmm... Ok. WHAT CAN I GET YOU!?"
     global.col = 'white';
-    with (obj_barrista_remake) 
-    {alarm[1] = 30;
-    alarm[0] = 60;}
+    with (obj_barrista_remake) //change to confused frame
+    {image_index = 1}
     alarm[0] = 30; //set ending bad ending to happen
     global.oc = 0.1;
     }
@@ -350,7 +352,7 @@ else if global.oc == 2
     global.col = 'white';
     global.message = "BARISTA: ...what?..."
     with (obj_barrista_remake) 
-    {alarm[1] = 30;}
+    {image_index = 2}
     instance_create(x,y, fect_shake)
     global.oc = 2.5
     }
@@ -365,9 +367,9 @@ else if global.oc == 3 //SPAWN LAF MAYBE, DEPENDS ON OUTCOME
     //  "that'll be 3.20 thanks"
     global.message = "BARISTA: that'll be $3.20, thanks"
     global.col = 'white';
-    with (obj_barrista_remake) //change to new smile animation
-    {image_speed = 0.5;
-    alarm[0] = 60;}
+    //with (obj_barrista_remake) //change to new smile animation
+    //{image_speed = 0.5;
+    //alarm[0] = 60;}
     alarm[5] = 60;
     //global.laf = 1;
     global.oc = 7

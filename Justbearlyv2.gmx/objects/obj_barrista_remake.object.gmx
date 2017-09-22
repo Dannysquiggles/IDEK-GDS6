@@ -27,8 +27,8 @@
             <kind>1</kind>
             <string>//global.message = "Barista: What can I get you?";
 spacecount = 0;
-image_speed = 0.5;
-alarm[0] = 60;
+image_speed = 0;
+//alarm[0] = 60;
 //og_view = view_wview[0];
 
 </string>
@@ -76,15 +76,15 @@ alarm[0] = 60;
         <arguments>
           <argument>
             <kind>5</kind>
-            <sprite>spr_barrista2</sprite>
+            <sprite>spr_barrista_joke</sprite>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>2</string>
           </argument>
           <argument>
             <kind>0</kind>
             <string>0</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>1</string>
           </argument>
         </arguments>
       </action>
@@ -104,11 +104,11 @@ alarm[0] = 60;
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>image_number-1</string>
+            <string>2 * room_speed</string>
           </argument>
           <argument>
             <kind>4</kind>
-            <string>2</string>
+            <string>0</string>
           </argument>
         </arguments>
       </action>
@@ -131,8 +131,7 @@ alarm[0] = 60;
           <argument>
             <kind>1</kind>
             <string>///stop animation
-image_index = 0;
-image_speed = 0;
+image_index = 1
 </string>
           </argument>
         </arguments>

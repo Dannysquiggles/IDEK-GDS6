@@ -35,9 +35,20 @@
       <sprite>sprites\spr_bar_outter</sprite>
     </sprites>
     <sprites name="characters">
-      <sprite>sprites\spr_barrista</sprite>
-      <sprite>sprites\spr_barrista2</sprite>
+      <sprites name="barrista">
+        <sprite>sprites\spr_barrista_dissapointed</sprite>
+        <sprite>sprites\spr_barrista_joke</sprite>
+        <sprite>sprites\spr_barrista2</sprite>
+        <sprite>sprites\spr_barrista</sprite>
+        <sprite>sprites\spr_barrista_down</sprite>
+        <sprites name="barrista(cat)">
+          <sprite>sprites\spr_catrista</sprite>
+          <sprite>sprites\spr_angercloud</sprite>
+        </sprites>
+      </sprites>
       <sprite>sprites\spr_friendhead</sprite>
+      <sprite>sprites\spr_speechbubble_black</sprite>
+      <sprite>sprites\spr_speechbubble_white</sprite>
       <sprite>sprites\spr_wave_friend</sprite>
       <sprite>sprites\spr_stranger</sprite>
       <sprite>sprites\spr_stranger2</sprite>
@@ -333,6 +344,12 @@
     </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_cafe_laf</room>
+    <rooms name="cafe">
+      <room>rooms\rm_cafe_simple</room>
+      <room>rooms\rm_cafe_timer</room>
+      <room>rooms\rm_cafe_swaptext</room>
+    </rooms>
     <rooms name="train home">
       <rooms name="trainv2">
         <room>rooms\rm_pre_train</room>
@@ -347,12 +364,6 @@
       <room>rooms\rm_tempend</room>
     </rooms>
     <rooms name="ROOMS SPARE">
-      <rooms name="cafe">
-        <room>rooms\rm_cafe_laf</room>
-        <room>rooms\rm_cafe_simple</room>
-        <room>rooms\rm_cafe_timer</room>
-        <room>rooms\rm_cafe_swaptext</room>
-      </rooms>
       <rooms name="wavev2">
         <room>rooms\rm_pre_wave</room>
         <room>rooms\rm_wave</room>

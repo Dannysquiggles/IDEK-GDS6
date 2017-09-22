@@ -20,6 +20,6 @@
   <width>345</width>
   <height>479</height>
   <frames>
-    <frame index="0">images\spr_barrista2_0.png</frame>
+    <frame index="0">images\spr_barrista_dissapointed_0.png</frame>
   </frames>
 </sprite>
