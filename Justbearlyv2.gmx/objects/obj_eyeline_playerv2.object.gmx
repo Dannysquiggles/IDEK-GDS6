@@ -115,6 +115,7 @@ else
 }
 if awkscount &gt;= 30
 {
+    with fect_shake_growing_hor {stop = 1}
     //if instance_number(obj_redface) == 0{
     //instance_create(room_width/2,room_height/2, obj_redface)
     //global.rate -= 5;

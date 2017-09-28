@@ -52,13 +52,16 @@
   </views>
   <instances>
     <instance objName="obj_aibody" x="1280" y="448" name="inst_3EF697FB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_aihead" x="1504" y="450" name="inst_076F302F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="225"/>
     <instance objName="obj_eyeline_player" x="500" y="384" name="inst_9CA888BB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_eyeline_guider" x="928" y="896" name="inst_83C25C7F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_body" x="340" y="320" name="inst_0BB9AD94" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="playerhead" x="521" y="397" name="inst_7782C85F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="-90"/>
-    <instance objName="obj_colour_" x="19" y="-207" name="inst_2470ED76" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_colour_" x="32" y="160" name="inst_443FAD01" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_colour_" x="20" y="107" name="inst_2470ED76" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_colour_" x="32" y="-192" name="inst_443FAD01" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_danger" x="288" y="192" name="inst_80ADCF2F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_aihead_rest" x="1508" y="473" name="inst_522762BE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="180"/>
+    <instance objName="obj_train_manager_fast" x="160" y="736" name="inst_96F47A95" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="fect_shake_growing_hor" x="160" y="416" name="inst_07958849" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_eyes" x="20" y="480" w="1920" h="490" xo="0" yo="0" id="10000046" name="inst_6A44711F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

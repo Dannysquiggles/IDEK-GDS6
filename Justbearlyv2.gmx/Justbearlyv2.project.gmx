@@ -32,6 +32,7 @@
       <sprite>sprites\spr_pointerblink</sprite>
       <sprite>sprites\spr_meter</sprite>
       <sprite>sprites\spr_bar_inner</sprite>
+      <sprite>sprites\spr_bar_top</sprite>
       <sprite>sprites\spr_bar_outter</sprite>
     </sprites>
     <sprites name="characters">
@@ -45,6 +46,18 @@
           <sprite>sprites\spr_catrista</sprite>
           <sprite>sprites\spr_angercloud</sprite>
         </sprites>
+      </sprites>
+      <sprites name="player_tilttrain">
+        <sprite>sprites\spr_tiltplayer_sad_neutral</sprite>
+        <sprite>sprites\spr_tiltplayer_neutral</sprite>
+        <sprite>sprites\spr_tiltplayer_looking</sprite>
+        <sprite>sprites\spr_tiltplayer_away</sprite>
+        <sprite>sprites\spr_tiltplayer_walk</sprite>
+      </sprites>
+      <sprites name="LI">
+        <sprite>sprites\spr_LIbody_walk</sprite>
+        <sprite>sprites\spr_LIhead</sprite>
+        <sprite>sprites\spr_LIbody_still</sprite>
       </sprites>
       <sprite>sprites\spr_friendhead</sprite>
       <sprite>sprites\spr_speechbubble_black</sprite>
@@ -62,15 +75,24 @@
       <sprite>sprites\spr_sitting_player</sprite>
       <sprite>sprites\spr_sittinghead</sprite>
       <sprite>sprites\spr_sittingheadforward</sprite>
+      <sprite>sprites\spr_topdown_face</sprite>
+      <sprite>sprites\sprite89</sprite>
       <sprite>sprites\spr_walk</sprite>
       <sprite>sprites\spr_daydis</sprite>
       <sprite>sprites\spr_dayword</sprite>
       <sprite>sprites\spr_playercafe</sprite>
+      <sprite>sprites\spr_lookinghead</sprite>
+      <sprite>sprites\spr_wall</sprite>
     </sprites>
     <sprite>sprites\spr_space</sprite>
     <sprite>sprites\spr_watcher</sprite>
     <sprite>sprites\spr_friend_request</sprite>
-    <sprite>sprites\spr_topdown_face</sprite>
+    <sprites name="lecturehall">
+      <sprite>sprites\spr_hand</sprite>
+      <sprite>sprites\spr_lucture_peeps</sprite>
+      <sprite>sprites\spr_handmask</sprite>
+      <sprite>sprites\spr_wave</sprite>
+    </sprites>
     <sprite>sprites\spr_sure</sprite>
     <sprite>sprites\spr_blockbutton</sprite>
     <sprite>sprites\spr_till</sprite>
@@ -80,17 +102,13 @@
     <sprite>sprites\spr_block</sprite>
     <sprite>sprites\spr_shitdoor</sprite>
     <sprite>sprites\spr_clearblock</sprite>
-    <sprite>sprites\spr_lucture_peeps</sprite>
-    <sprite>sprites\spr_hand</sprite>
-    <sprite>sprites\spr_wave</sprite>
     <sprite>sprites\spr_debugblock</sprite>
-    <sprite>sprites\spr_handmask</sprite>
     <sprites name="text assets">
       <sprite>sprites\spr_title</sprite>
+      <sprite>sprites\spr_bubble_2</sprite>
+      <sprite>sprites\spr_bubblesmall</sprite>
+      <sprite>sprites\spr_bubble</sprite>
     </sprites>
-    <sprite>sprites\spr_bubble</sprite>
-    <sprite>sprites\spr_bubble_2</sprite>
-    <sprite>sprites\spr_bubblesmall</sprite>
     <sprite>sprites\spr_confetti</sprite>
     <sprite>sprites\spr_levels</sprite>
     <sprite>sprites\spr_cardback</sprite>
@@ -101,15 +119,16 @@
       <sprite>sprites\spr_colours</sprite>
       <sprite>sprites\spr_eyecontact</sprite>
       <sprite>sprites\spr_playerhead</sprite>
+      <sprite>sprites\spr_playerhead2</sprite>
       <sprite>sprites\spr_aihead</sprite>
       <sprite>sprites\spr_viewweye</sprite>
       <sprite>sprites\spr_aibody</sprite>
       <sprites name="eyeline">
         <sprite>sprites\spr_eyelineCone</sprite>
+        <sprite>sprites\spr_eyeline_front</sprite>
       </sprites>
       <sprite>sprites\spr_redback</sprite>
     </sprites>
-    <sprite>sprites\spr_lookinghead</sprite>
     <sprite>sprites\spr_blankcube</sprite>
     <sprite>sprites\spr_swipe</sprite>
     <sprite>sprites\spr_eyeclosed</sprite>
@@ -141,7 +160,9 @@
     <background>background\fg_still</background>
     <background>background\bg_trainv2</background>
   </backgrounds>
-  <paths name="paths"/>
+  <paths name="paths">
+    <path>paths\path0</path>
+  </paths>
   <scripts name="scripts">
     <script>scripts\scr_dialrotator.gml</script>
     <script>scripts\scr_textManager.gml</script>
@@ -151,6 +172,7 @@
     <script>scripts\scr_shrink_camera.gml</script>
     <script>scripts\scr_camera_shrink_wave.gml</script>
     <script>scripts\scr_shrink_camera_lecture.gml</script>
+    <script>scripts\scr_camerafollow_tween.gml</script>
     <script>scripts\scr_grow_camera.gml</script>
     <script>scripts\scr_noinput.gml</script>
     <script>scripts\scr_rotatetowardspoint.gml</script>
@@ -164,12 +186,18 @@
     <font>fonts\fnt_marker</font>
   </fonts>
   <objects name="objects">
+    <objects name="bats">
+      <object>objects\obj_player_top_mask</object>
+      <object>objects\obj_wall</object>
+      <object>objects\obj_player_topdown</object>
+    </objects>
     <objects name="grp_effects">
       <object>objects\fect_shake</object>
       <object>objects\fect_shake_growing_hor</object>
       <object>objects\fect_shake_growing_ver</object>
       <object>objects\fect_shake_growing_bi</object>
       <object>objects\fect_shakeL</object>
+      <object>objects\obj_camera_ease</object>
       <object>objects\fect_shake_big</object>
       <object>objects\obj_endmanager</object>
     </objects>
@@ -182,6 +210,7 @@
       <object>objects\obj_eyeline_guider2</object>
       <object>objects\obj_eyeline_player</object>
       <object>objects\playerhead</object>
+      <object>objects\obj_train_ai_front</object>
       <object>objects\obj_redface</object>
       <object>objects\obj_eyeclosed</object>
       <object>objects\obj_colour_</object>
@@ -190,10 +219,13 @@
       <objects name="train assets re-make">
         <object>objects\obj_eyeline_rest</object>
         <object>objects\obj_eyeline_playerv2</object>
+        <object>objects\obj_eyeline_front</object>
         <object>objects\obj_eyeline_guider</object>
+        <object>objects\obj_eyeline_guide_front</object>
         <object>objects\obj_aihead_rest</object>
         <object>objects\obj_aibody</object>
         <object>objects\obj_train_manager</object>
+        <object>objects\obj_train_manager_fast</object>
       </objects>
       <object>objects\obj_timer_train</object>
       <object>objects\obj_body</object>
@@ -202,6 +234,7 @@
       <object>objects\obj_friend_dontmove</object>
       <object>objects\obj_player_dontmove</object>
       <object>objects\obj_bar_outer</object>
+      <object>objects\object151</object>
       <object>objects\obj_bar_inner</object>
     </objects>
     <objects name="tilttrain">
@@ -344,26 +377,36 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_cafe_laf</room>
-    <rooms name="cafe">
-      <room>rooms\rm_cafe_simple</room>
-      <room>rooms\rm_cafe_timer</room>
-      <room>rooms\rm_cafe_swaptext</room>
-    </rooms>
-    <rooms name="train home">
-      <rooms name="trainv2">
-        <room>rooms\rm_pre_train</room>
-        <room>rooms\rm_trainv2</room>
-      </rooms>
-      <room>rooms\rm_pre_trian3</room>
-      <room>rooms\rm_train_2passangers</room>
-    </rooms>
-    <rooms name="staystill">
-      <room>rooms\rm_pre_staystill</room>
-      <room>rooms\rm_staystill</room>
-      <room>rooms\rm_tempend</room>
-    </rooms>
     <rooms name="ROOMS SPARE">
+      <rooms name="staystill">
+        <rooms name="morning">
+          <room>rooms\rm_nightv2</room>
+          <room>rooms\rm_morning2</room>
+        </rooms>
+        <room>rooms\rm_pre_staystill</room>
+        <room>rooms\rm_staystill</room>
+        <room>rooms\rm_tempend</room>
+      </rooms>
+      <rooms name="train home">
+        <rooms name="train">
+          <room>rooms\rm_train_crouded1</room>
+          <room>rooms\rm_bats</room>
+          <room>rooms\rm_pre_train2</room>
+          <room>rooms\rm_trainv2_2</room>
+        </rooms>
+        <rooms name="trainv2">
+          <room>rooms\rm_pre_train</room>
+          <room>rooms\rm_trainv2</room>
+        </rooms>
+        <room>rooms\rm_pre_trian3</room>
+        <room>rooms\rm_train_2passangers</room>
+      </rooms>
+      <rooms name="cafe">
+        <room>rooms\rm_cafe_simple</room>
+        <room>rooms\rm_cafe_timer</room>
+        <room>rooms\rm_cafe_swaptext</room>
+        <room>rooms\rm_cafe_laf</room>
+      </rooms>
       <rooms name="wavev2">
         <room>rooms\rm_pre_wave</room>
         <room>rooms\rm_wave</room>
@@ -372,11 +415,8 @@
         <room>rooms\rm_wave_4</room>
       </rooms>
     </rooms>
+    <room>rooms\empty_train</room>
     <rooms name="DAY 1">
-      <rooms name="morning">
-        <room>rooms\rm_nightv2</room>
-        <room>rooms\rm_morning2</room>
-      </rooms>
       <rooms name="street">
         <room>rooms\rm_pre_street</room>
         <room>rooms\rm_streetwalk</room>
@@ -398,10 +438,6 @@
       <rooms name="street">
         <room>rooms\rm_pre_street2</room>
         <room>rooms\rm_street</room>
-      </rooms>
-      <rooms name="train">
-        <room>rooms\rm_pre_train2</room>
-        <room>rooms\rm_trainv2_2</room>
       </rooms>
       <rooms name="cafe2">
         <room>rooms\rm_pre_cafe2</room>
