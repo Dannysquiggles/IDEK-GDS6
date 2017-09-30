@@ -13,7 +13,7 @@
     <TextureGroup0>0</TextureGroup0>
   </TextureGroups>
   <For3D>0</For3D>
-  <width>5376</width>
-  <height>893</height>
+  <width>3840</width>
+  <height>1080</height>
   <data>images\bg_train.png</data>
 </background>

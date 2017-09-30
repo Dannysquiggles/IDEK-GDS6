@@ -83,6 +83,7 @@
       <sprite>sprites\spr_playercafe</sprite>
       <sprite>sprites\spr_lookinghead</sprite>
       <sprite>sprites\spr_wall</sprite>
+      <sprite>sprites\spr_player_fb</sprite>
     </sprites>
     <sprite>sprites\spr_space</sprite>
     <sprite>sprites\spr_watcher</sprite>
@@ -94,6 +95,7 @@
       <sprite>sprites\spr_wave</sprite>
     </sprites>
     <sprite>sprites\spr_sure</sprite>
+    <sprite>sprites\spr_fb_end</sprite>
     <sprite>sprites\spr_blockbutton</sprite>
     <sprite>sprites\spr_till</sprite>
     <sprite>sprites\spr_no</sprite>
@@ -119,6 +121,8 @@
       <sprite>sprites\spr_colours</sprite>
       <sprite>sprites\spr_eyecontact</sprite>
       <sprite>sprites\spr_playerhead</sprite>
+      <sprite>sprites\spr_playerheadleft</sprite>
+      <sprite>sprites\spr_playerheaddown</sprite>
       <sprite>sprites\spr_playerhead2</sprite>
       <sprite>sprites\spr_aihead</sprite>
       <sprite>sprites\spr_viewweye</sprite>
@@ -183,6 +187,9 @@
     <font>fonts\fnt_sk1</font>
     <font>fonts\fnt_sk2</font>
     <font>fonts\fnt_sk3</font>
+    <font>fonts\fnt_Mmaker1</font>
+    <font>fonts\fnt_Mmaker2</font>
+    <font>fonts\fnt_Mmaker3</font>
     <font>fonts\fnt_marker</font>
   </fonts>
   <objects name="objects">
@@ -307,6 +314,7 @@
       <object>objects\obj_sure_block</object>
       <object>objects\obj_sure2</object>
       <object>objects\obj_sure3</object>
+      <object>objects\obj_facebookplayer</object>
       <object>objects\obj_endscript</object>
       <object>objects\obj_no</object>
     </objects>
@@ -377,46 +385,16 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <rooms name="ROOMS SPARE">
-      <rooms name="staystill">
-        <rooms name="morning">
-          <room>rooms\rm_nightv2</room>
-          <room>rooms\rm_morning2</room>
-        </rooms>
-        <room>rooms\rm_pre_staystill</room>
-        <room>rooms\rm_staystill</room>
-        <room>rooms\rm_tempend</room>
-      </rooms>
-      <rooms name="train home">
-        <rooms name="train">
-          <room>rooms\rm_train_crouded1</room>
-          <room>rooms\rm_bats</room>
-          <room>rooms\rm_pre_train2</room>
-          <room>rooms\rm_trainv2_2</room>
-        </rooms>
-        <rooms name="trainv2">
-          <room>rooms\rm_pre_train</room>
-          <room>rooms\rm_trainv2</room>
-        </rooms>
-        <room>rooms\rm_pre_trian3</room>
-        <room>rooms\rm_train_2passangers</room>
-      </rooms>
-      <rooms name="cafe">
-        <room>rooms\rm_cafe_simple</room>
-        <room>rooms\rm_cafe_timer</room>
-        <room>rooms\rm_cafe_swaptext</room>
-        <room>rooms\rm_cafe_laf</room>
-      </rooms>
-      <rooms name="wavev2">
-        <room>rooms\rm_pre_wave</room>
-        <room>rooms\rm_wave</room>
-        <room>rooms\rm_wave2</room>
-        <room>rooms\rm_wavev3</room>
-        <room>rooms\rm_wave_4</room>
-      </rooms>
+    <rooms name="facebookv2">
+      <room>rooms\rm_pre_facebook</room>
+      <room>rooms\rm_facebookv2</room>
     </rooms>
-    <room>rooms\empty_train</room>
+    <room>rooms\rm_trainv2_2</room>
     <rooms name="DAY 1">
+      <rooms name="morning">
+        <room>rooms\rm_nightv2</room>
+        <room>rooms\rm_morning2</room>
+      </rooms>
       <rooms name="street">
         <room>rooms\rm_pre_street</room>
         <room>rooms\rm_streetwalk</room>
@@ -443,11 +421,41 @@
         <room>rooms\rm_pre_cafe2</room>
         <room>rooms\rm_cafe_2</room>
       </rooms>
-      <rooms name="facebookv2">
-        <room>rooms\rm_pre_facebook</room>
-        <room>rooms\rm_facebookv2</room>
+    </rooms>
+    <rooms name="ROOMS SPARE">
+      <rooms name="staystill">
+        <room>rooms\rm_pre_staystill</room>
+        <room>rooms\rm_staystill</room>
+        <room>rooms\rm_tempend</room>
+      </rooms>
+      <rooms name="train home">
+        <rooms name="train">
+          <room>rooms\rm_train_crouded1</room>
+          <room>rooms\rm_bats</room>
+          <room>rooms\rm_pre_train2</room>
+        </rooms>
+        <rooms name="trainv2">
+          <room>rooms\rm_pre_train</room>
+          <room>rooms\rm_trainv2</room>
+        </rooms>
+        <room>rooms\rm_pre_trian3</room>
+        <room>rooms\rm_train_2passangers</room>
+      </rooms>
+      <rooms name="cafe">
+        <room>rooms\rm_cafe_simple</room>
+        <room>rooms\rm_cafe_timer</room>
+        <room>rooms\rm_cafe_swaptext</room>
+        <room>rooms\rm_cafe_laf</room>
+      </rooms>
+      <rooms name="wavev2">
+        <room>rooms\rm_pre_wave</room>
+        <room>rooms\rm_wave</room>
+        <room>rooms\rm_wave2</room>
+        <room>rooms\rm_wavev3</room>
+        <room>rooms\rm_wave_4</room>
       </rooms>
     </rooms>
+    <room>rooms\empty_train</room>
     <rooms name="DAY 3">
       <room>rooms\rm_morning2_3</room>
       <rooms name="street">
