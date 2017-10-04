@@ -35,7 +35,7 @@ roomlimitL = -100;
 roomlimitUp= -100;
 roomlimitDown = room_height + 100;
 
-newsize = random_range (2.8, 3) //size variable
+newsize = random_range (0.8, 1) //size variable
 dir = 0; //find direction
 alarm[0] = 3;
 rate = random_range(5,20);

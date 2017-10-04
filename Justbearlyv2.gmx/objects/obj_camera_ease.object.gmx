@@ -30,7 +30,7 @@ x = room_width/2
 y = room_height/2
 ox = x
 oy = y
-range = 10
+range = 5
 //generate random position
 randomize()
 nx = random_range(ox+range,ox-range)

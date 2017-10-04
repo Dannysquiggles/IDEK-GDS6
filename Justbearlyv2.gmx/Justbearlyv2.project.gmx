@@ -87,6 +87,7 @@
     </sprites>
     <sprite>sprites\spr_space</sprite>
     <sprite>sprites\spr_watcher</sprite>
+    <sprite>sprites\spr_fg_tree</sprite>
     <sprite>sprites\spr_friend_request</sprite>
     <sprites name="lecturehall">
       <sprite>sprites\spr_hand</sprite>
@@ -95,6 +96,7 @@
       <sprite>sprites\spr_wave</sprite>
     </sprites>
     <sprite>sprites\spr_sure</sprite>
+    <sprite>sprites\spr_test_sure</sprite>
     <sprite>sprites\spr_fb_end</sprite>
     <sprite>sprites\spr_blockbutton</sprite>
     <sprite>sprites\spr_till</sprite>
@@ -141,6 +143,7 @@
     <background>background\bg_endsad</background>
     <background>background\bg_black</background>
     <background>background\bg_cafe</background>
+    <background>background\bg_yes_no</background>
     <background>background\bg_morning2</background>
     <background>background\bg_train</background>
     <background>background\bg_train2</background>
@@ -151,6 +154,7 @@
     <background>background\bar</background>
     <background>background\fg_tree</background>
     <background>background\fg_large_tree</background>
+    <background>background\bg_streetnocolour</background>
     <background>background\fg_trainbar</background>
     <background>background\background5</background>
     <background>background\background6</background>
@@ -171,6 +175,7 @@
     <script>scripts\scr_dialrotator.gml</script>
     <script>scripts\scr_textManager.gml</script>
     <script>scripts\scr_textManager_pre.gml</script>
+    <script>scripts\scr_spawn_yes_no.gml</script>
     <script>scripts\scr_bar_outer.gml</script>
     <script>scripts\random__room_picker.gml</script>
     <script>scripts\scr_shrink_camera.gml</script>
@@ -253,6 +258,8 @@
       <object>objects\obj_trainfriend</object>
       <object>objects\obj_trainfriend_mask</object>
     </objects>
+    <object>objects\obj_yes_no_spawner</object>
+    <object>objects\obj_yes_no_prompts</object>
     <objects name="start screen">
       <object>objects\obj_morning</object>
       <object>objects\obj_bg_night</object>
@@ -385,12 +392,15 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <rooms name="facebookv2">
-      <room>rooms\rm_pre_facebook</room>
-      <room>rooms\rm_facebookv2</room>
-    </rooms>
-    <room>rooms\rm_trainv2_2</room>
+    <room>rooms\rm_yes_no</room>
     <rooms name="DAY 1">
+      <rooms name="wavev2">
+        <room>rooms\rm_pre_wave</room>
+        <room>rooms\rm_wave</room>
+        <room>rooms\rm_wave2</room>
+        <room>rooms\rm_wavev3</room>
+        <room>rooms\rm_wave_4</room>
+      </rooms>
       <rooms name="morning">
         <room>rooms\rm_nightv2</room>
         <room>rooms\rm_morning2</room>
@@ -401,13 +411,17 @@
       </rooms>
       <rooms name="cafev2">
         <room>rooms\rm_pre_cafe</room>
-        <room>rooms\rm_cafev2</room>
       </rooms>
       <rooms name="lecturev3">
         <room>rooms\rm_pre_lecture</room>
         <room>rooms\rm_lecturev2</room>
       </rooms>
     </rooms>
+    <rooms name="facebookv2">
+      <room>rooms\rm_pre_facebook</room>
+      <room>rooms\rm_facebookv2</room>
+    </rooms>
+    <room>rooms\rm_trainv2_2</room>
     <rooms name="DAY 2">
       <rooms name="morning">
         <room>rooms\rm_night_second</room>
@@ -446,13 +460,6 @@
         <room>rooms\rm_cafe_timer</room>
         <room>rooms\rm_cafe_swaptext</room>
         <room>rooms\rm_cafe_laf</room>
-      </rooms>
-      <rooms name="wavev2">
-        <room>rooms\rm_pre_wave</room>
-        <room>rooms\rm_wave</room>
-        <room>rooms\rm_wave2</room>
-        <room>rooms\rm_wavev3</room>
-        <room>rooms\rm_wave_4</room>
       </rooms>
     </rooms>
     <room>rooms\empty_train</room>

@@ -164,7 +164,7 @@ if place_meeting(x,y, obj_stranger) or place_meeting(x,y, obj_stranger_2)
 else
 {
     //with obj_colour {image_index = 1}
-    background_index[0] = bg_streetg
+   background_index[0] = bg_streetg
 }
 </string>
           </argument>
