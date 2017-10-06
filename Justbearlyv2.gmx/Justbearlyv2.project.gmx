@@ -392,7 +392,44 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_yes_no</room>
+    <rooms name="ROOMS SPARE">
+      <rooms name="staystill">
+        <room>rooms\rm_pre_staystill</room>
+        <room>rooms\rm_staystill</room>
+        <rooms name="tilttrain">
+          <room>rooms\rm_pre_train_tilt</room>
+          <room>rooms\rm_tilttrain</room>
+        </rooms>
+        <room>rooms\rm_tempend</room>
+      </rooms>
+      <rooms name="facebookv2">
+        <room>rooms\rm_pre_facebook</room>
+        <room>rooms\rm_facebookv2</room>
+      </rooms>
+      <rooms name="train home">
+        <rooms name="train">
+          <room>rooms\rm_train_crouded1</room>
+          <room>rooms\rm_bats</room>
+          <room>rooms\rm_pre_train2</room>
+        </rooms>
+        <rooms name="trainv2">
+          <room>rooms\rm_pre_train</room>
+          <room>rooms\rm_trainv2</room>
+        </rooms>
+        <room>rooms\rm_pre_trian3</room>
+        <room>rooms\rm_train_2passangers</room>
+      </rooms>
+      <rooms name="chat">
+        <room>rooms\rm_prechat</room>
+        <room>rooms\rm_chat</room>
+      </rooms>
+      <rooms name="cafe">
+        <room>rooms\rm_cafe_simple</room>
+        <room>rooms\rm_cafe_timer</room>
+        <room>rooms\rm_cafe_swaptext</room>
+        <room>rooms\rm_cafe_laf</room>
+      </rooms>
+    </rooms>
     <rooms name="DAY 1">
       <rooms name="wavev2">
         <room>rooms\rm_pre_wave</room>
@@ -417,10 +454,6 @@
         <room>rooms\rm_lecturev2</room>
       </rooms>
     </rooms>
-    <rooms name="facebookv2">
-      <room>rooms\rm_pre_facebook</room>
-      <room>rooms\rm_facebookv2</room>
-    </rooms>
     <room>rooms\rm_trainv2_2</room>
     <rooms name="DAY 2">
       <rooms name="morning">
@@ -436,32 +469,7 @@
         <room>rooms\rm_cafe_2</room>
       </rooms>
     </rooms>
-    <rooms name="ROOMS SPARE">
-      <rooms name="staystill">
-        <room>rooms\rm_pre_staystill</room>
-        <room>rooms\rm_staystill</room>
-        <room>rooms\rm_tempend</room>
-      </rooms>
-      <rooms name="train home">
-        <rooms name="train">
-          <room>rooms\rm_train_crouded1</room>
-          <room>rooms\rm_bats</room>
-          <room>rooms\rm_pre_train2</room>
-        </rooms>
-        <rooms name="trainv2">
-          <room>rooms\rm_pre_train</room>
-          <room>rooms\rm_trainv2</room>
-        </rooms>
-        <room>rooms\rm_pre_trian3</room>
-        <room>rooms\rm_train_2passangers</room>
-      </rooms>
-      <rooms name="cafe">
-        <room>rooms\rm_cafe_simple</room>
-        <room>rooms\rm_cafe_timer</room>
-        <room>rooms\rm_cafe_swaptext</room>
-        <room>rooms\rm_cafe_laf</room>
-      </rooms>
-    </rooms>
+    <room>rooms\rm_yes_no</room>
     <room>rooms\empty_train</room>
     <rooms name="DAY 3">
       <room>rooms\rm_morning2_3</room>
@@ -481,12 +489,6 @@
     <rooms name="DAY 5">
       <room>rooms\rm_morning2_5</room>
     </rooms>
-    <rooms name="tilttrain">
-      <room>rooms\rm_pre_train_tilt</room>
-      <room>rooms\rm_tilttrain</room>
-    </rooms>
-    <room>rooms\rm_chat</room>
-    <room>rooms\rm_prechat</room>
     <room>rooms\rm_preroomgeneric</room>
   </rooms>
   <help>
