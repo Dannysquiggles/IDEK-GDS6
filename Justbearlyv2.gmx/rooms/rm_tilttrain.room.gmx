@@ -53,11 +53,12 @@
   <instances>
     <instance objName="obj_traintilt" x="960" y="1088" name="inst_B41C723A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_player_tilt" x="736" y="1088" name="inst_FC4116C6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
-    <instance objName="obj_trainfriend" x="960" y="1088" name="inst_CDFFC066" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_trainfriend" x="1248" y="1184" name="inst_CDFFC066" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_guide_tilt" x="704" y="384" name="inst_A4E09D87" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_trainfriend_mask" x="960" y="1088" name="inst_50728FAF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_train_colour_tilt" x="0" y="0" name="inst_018836D4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_train_colour_tilt2" x="32" y="0" name="inst_8B335E6B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_trainfriend_mask" x="1248" y="1184" name="inst_50728FAF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_train_colour_tilt" x="0" y="32" name="inst_018836D4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_train_colour_tilt2" x="0" y="-32" name="inst_8B335E6B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_camera_ease" x="992" y="608" name="inst_999082E8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

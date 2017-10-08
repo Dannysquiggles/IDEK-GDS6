@@ -54,8 +54,8 @@
     <instance objName="obj_aibody" x="1298" y="440" name="inst_3EF697FB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_body" x="416" y="320" name="inst_0BB9AD94" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="playerhead" x="596" y="390" name="inst_7782C85F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="-90"/>
-    <instance objName="obj_colour_" x="128" y="-704" name="inst_2470ED76" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_colour_" x="96" y="-608" name="inst_443FAD01" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_colour_" x="32" y="-192" name="inst_2470ED76" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_colour_" x="32" y="128" name="inst_443FAD01" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_aibody" x="224" y="448" name="inst_0F37D3F8" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_aihead2" x="0" y="480" name="inst_63FA3F82" locked="0" code="" scaleX="1" scaleY="-1" colour="4294967295" rotation="0"/>
     <instance objName="obj_eyeline2" x="-11" y="498" name="inst_B0B32144" locked="0" code="" scaleX="1" scaleY="-1" colour="4294967295" rotation="0"/>

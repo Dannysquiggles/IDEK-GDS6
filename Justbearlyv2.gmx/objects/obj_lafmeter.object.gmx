@@ -37,7 +37,9 @@ bracket_2 = minY - 106.66;
 stop = 0;
 rate = 7;
 der = 0; //up
-image_speed = 0.5
+image_xscale = 0.5
+image_yscale = 0.5
+image_speed = 1
 
 
 

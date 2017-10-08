@@ -9,8 +9,8 @@
   <bboxmode>0</bboxmode>
   <bbox_left>0</bbox_left>
   <bbox_right>320</bbox_right>
-  <bbox_top>0</bbox_top>
-  <bbox_bottom>926</bbox_bottom>
+  <bbox_top>7</bbox_top>
+  <bbox_bottom>933</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroups>
@@ -18,7 +18,7 @@
   </TextureGroups>
   <For3D>0</For3D>
   <width>321</width>
-  <height>927</height>
+  <height>942</height>
   <frames>
     <frame index="0">images\spr_tiltplayer_neutral_0.png</frame>
     <frame index="1">images\spr_tiltplayer_neutral_1.png</frame>

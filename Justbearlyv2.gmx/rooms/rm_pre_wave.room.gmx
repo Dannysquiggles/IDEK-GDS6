@@ -52,7 +52,6 @@
   </views>
   <instances>
     <instance objName="obj_intro_wave" x="960" y="544" name="inst_5C1D01A8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_curser" x="448" y="224" name="inst_930CA226" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

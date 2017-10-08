@@ -56,7 +56,6 @@
   </instances>
   <tiles>
     <tile bgName="fg_car" x="5" y="561" w="804" h="563" xo="0" yo="0" id="10000061" name="inst_C9E6DC03" depth="-90000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="fg_tree" x="79" y="25" w="1201" h="1070" xo="0" yo="0" id="10000060" name="inst_3B3E9917" depth="-100000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>

@@ -7,18 +7,18 @@
   <coltolerance>0</coltolerance>
   <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
-  <bbox_left>14</bbox_left>
-  <bbox_right>301</bbox_right>
-  <bbox_top>32</bbox_top>
-  <bbox_bottom>880</bbox_bottom>
+  <bbox_left>0</bbox_left>
+  <bbox_right>287</bbox_right>
+  <bbox_top>0</bbox_top>
+  <bbox_bottom>844</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroups>
     <TextureGroup0>0</TextureGroup0>
   </TextureGroups>
   <For3D>0</For3D>
-  <width>317</width>
-  <height>922</height>
+  <width>288</width>
+  <height>848</height>
   <frames>
     <frame index="0">images\spr_LIhead_0.png</frame>
     <frame index="1">images\spr_LIhead_1.png</frame>
