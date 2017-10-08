@@ -66,9 +66,9 @@ image_speed = 0.15
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if !instance_exists(obj_nightcome2)
+            <string>if !instance_exists(obj_swipe)
 {
-    instance_create(room_width/2, room_height/2, obj_nightcome2)
+    instance_create(room_width, 0, obj_swipe)
 }
 </string>
           </argument>
@@ -144,7 +144,7 @@ if global.oc == 0
 {
 if walk == true
 {
-    sprite_index = spr_playerwalk
+    sprite_index = spr_playerwalk2
     image_speed = 0.16
 }
 else if walk == false

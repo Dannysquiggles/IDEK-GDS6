@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>///follow mouse slowly.
+image_speed = 0.25
 pointX = obj_handLead.x;
 pointY = obj_handLead.y;
 stop = 0;
@@ -60,9 +61,9 @@ alarm[3] = 360;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string> if !instance_exists(obj_nightcome)
+            <string> if !instance_exists(obj_swipe)
     {
-    instance_create(room_width/2,room_height/2, obj_nightcome)
+    instance_create(room_width, 0, obj_swipe)
     }
 </string>
           </argument>
