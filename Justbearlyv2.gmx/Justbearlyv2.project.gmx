@@ -399,6 +399,32 @@
     </objects>
   </objects>
   <rooms name="rooms">
+    <rooms name="ROOMS SPARE">
+      <rooms name="staystill">
+        <room>rooms\rm_pre_staystill</room>
+        <room>rooms\rm_staystill</room>
+        <room>rooms\rm_cafe_swaptext</room>
+        <rooms name="tilttrain">
+          <room>rooms\rm_pre_train_tilt</room>
+          <room>rooms\rm_tilttrain</room>
+        </rooms>
+        <room>rooms\rm_tempend</room>
+      </rooms>
+      <rooms name="train home">
+        <rooms name="train">
+          <room>rooms\rm_train_crouded1</room>
+          <room>rooms\rm_bats</room>
+          <room>rooms\rm_pre_train2</room>
+        </rooms>
+        <room>rooms\rm_pre_trian3</room>
+        <room>rooms\rm_train_2passangers</room>
+      </rooms>
+      <rooms name="chat">
+        <room>rooms\rm_prechat</room>
+        <room>rooms\rm_chat</room>
+      </rooms>
+      <room>rooms\rm_cafe_timer</room>
+    </rooms>
     <rooms name="DAY 1">
       <rooms name="morning">
         <room>rooms\rm_nightv2</room>
@@ -437,32 +463,6 @@
       <rooms name="Partay">
         <room>rooms\rm_cafe_simple</room>
       </rooms>
-    </rooms>
-    <rooms name="ROOMS SPARE">
-      <rooms name="staystill">
-        <room>rooms\rm_pre_staystill</room>
-        <room>rooms\rm_staystill</room>
-        <room>rooms\rm_cafe_swaptext</room>
-        <rooms name="tilttrain">
-          <room>rooms\rm_pre_train_tilt</room>
-          <room>rooms\rm_tilttrain</room>
-        </rooms>
-        <room>rooms\rm_tempend</room>
-      </rooms>
-      <rooms name="train home">
-        <rooms name="train">
-          <room>rooms\rm_train_crouded1</room>
-          <room>rooms\rm_bats</room>
-          <room>rooms\rm_pre_train2</room>
-        </rooms>
-        <room>rooms\rm_pre_trian3</room>
-        <room>rooms\rm_train_2passangers</room>
-      </rooms>
-      <rooms name="chat">
-        <room>rooms\rm_prechat</room>
-        <room>rooms\rm_chat</room>
-      </rooms>
-      <room>rooms\rm_cafe_timer</room>
     </rooms>
     <room>rooms\rm_trainv2_2</room>
     <rooms name="DAY 2">
