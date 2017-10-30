@@ -31,7 +31,7 @@
     <yoffset>0</yoffset>
   </makerSettings>
   <backgrounds>
-    <background visible="-1" foreground="0" name="bg_train" x="-5" y="0" htiled="0" vtiled="0" hspeed="-5" vspeed="0" stretch="0"/>
+    <background visible="-1" foreground="0" name="bg_train" x="15" y="0" htiled="-1" vtiled="-1" hspeed="-5" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -52,13 +52,14 @@
   </views>
   <instances>
     <instance objName="obj_traintilt" x="960" y="1088" name="inst_B41C723A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_player_tilt" x="736" y="1088" name="inst_FC4116C6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
-    <instance objName="obj_trainfriend" x="1248" y="1184" name="inst_CDFFC066" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="fect_shake_growing_bi" x="960" y="384" name="inst_E1B3E8CF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_player_tilt" x="800" y="1152" name="inst_FC4116C6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
     <instance objName="obj_guide_tilt" x="704" y="384" name="inst_A4E09D87" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_trainfriend_mask" x="1248" y="1184" name="inst_50728FAF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_train_colour_tilt" x="0" y="32" name="inst_018836D4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_train_colour_tilt2" x="0" y="-32" name="inst_8B335E6B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_camera_ease" x="992" y="608" name="inst_999082E8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_train_colour_tilt" x="0" y="0" name="inst_018836D4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_train_colour_tilt2" x="0" y="0" name="inst_8B335E6B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_trainfriend_mask3" x="1056" y="1184" name="inst_5D5A2C25" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_trainfriend3" x="1056" y="1184" name="inst_F595DBAA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tiltrain_negmask" x="1056" y="1187" name="inst_2A8B8003" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

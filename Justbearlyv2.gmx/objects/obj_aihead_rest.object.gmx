@@ -84,7 +84,7 @@ image_angle = point_direction(x, obj_eyeline_guider.x,y,obj_eyeline_guider.y)
             <kind>1</kind>
             <string>///rotate head
 
-if global.stopall == false &amp;&amp; global.stopai == false
+if /*global.stopall == false &amp;&amp;*/ global.stopai == false
 {
      if !instance_exists(viewer)
      {

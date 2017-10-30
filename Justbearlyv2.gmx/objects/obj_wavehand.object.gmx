@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>///follow mouse slowly.
+image_speed = 0.25
 wave = false;
 dir = 'left';
 

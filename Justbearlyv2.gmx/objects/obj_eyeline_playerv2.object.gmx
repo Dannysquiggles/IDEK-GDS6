@@ -27,10 +27,11 @@
             <kind>1</kind>
             <string>x = playerhead.x
 y = playerhead.y
-image_angle = point_direction(x,y, mouse_x, mouse_y)
+image_angle = point_direction(x,y,obj_playerguide.x,obj_playerguide.y)
 awkscount = 0;
 with obj_colour_{image_alpha = 0}
 
+ogStress = global.stress;
 
 </string>
           </argument>
@@ -55,10 +56,10 @@ with obj_colour_{image_alpha = 0}
           <argument>
             <kind>1</kind>
             <string>///rotate
-point = point_direction(x,y,mouse_x,mouse_y) // find direction
+point = point_direction(x,y,obj_playerguide.x,obj_playerguide.y) // find direction
 
 
-if (global.stopall == false &amp;&amp; point &lt; 45) or (global.stopall == false &amp;&amp; point &gt; 225) //if point is in bounds, rotate image
+if /*(global.stopall == false &amp;&amp;*/ point &lt; 45 or /*(global.stopall == false &amp;&amp;*/ point &gt; 225 //if point is in bounds, rotate image
 
 {
     x = playerhead.x
@@ -101,6 +102,10 @@ if place_meeting(x,y, obj_danger)
     awkscount += 1;
     with obj_colour_ {image_alpha += 0.033}
     
+    if global.stress &lt; (ogStress + 0.15)
+    {
+        global.stress += 0.01
+    } 
     //tile_set_alpha(bg_eyes, tile_get_alpha(bg_eyes) + 0.033)
 }
 else
@@ -111,9 +116,13 @@ else
         awkscount -= 1
         with obj_colour_ {if image_alpha &gt;= 0 {image_alpha -= 0.033}}
         //tile_set_alpha(bg_eyes, tile_get_alpha(bg_eyes) - 0.033)
+        if global.stress &gt; ogStress
+        {
+        global.stress -= 0.01
+        } 
         }
 }
-if awkscount &gt;= 30
+if awkscount &gt;= 45
 {
     with fect_shake_growing_hor {stop = 1}
     //if instance_number(obj_redface) == 0{

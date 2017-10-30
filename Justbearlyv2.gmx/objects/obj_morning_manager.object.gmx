@@ -58,9 +58,9 @@
    // }
     //else
     //{
-        room_goto(rm_morning2_2)
+        room_goto_next()
 }
-else if global.Daycount = 3
+/*else if global.Daycount = 3
 {
     room_goto(rm_morning2_3)
 }
@@ -71,7 +71,7 @@ else if global.Daycount = 4
 else if global.Daycount = 5
 {
     room_goto(rm_morning2_5)
-}
+}*/
 else
 {
     room_goto_next()

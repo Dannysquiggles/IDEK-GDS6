@@ -56,16 +56,17 @@ oy = y;
           <argument>
             <kind>1</kind>
             <string>///rotate
-point = point_direction(x,y,mouse_x,mouse_y)
+
+point = point_direction(x,y,obj_playerguide.x,obj_playerguide.y)
 
 // find direction
 
 dir = point - image_angle 
 
-if (point &lt; 45) or (point &gt; 225)if global.stopall == false //if point is in bounds, rotate image
+if (point &lt; 45) or (point &gt; 225)//if global.stopall == false //if point is in bounds, rotate image
 {
-    if global.stopall == false
-    {
+    //if global.stopall == false
+    //{
         if /*(!image_angle == point) &amp;&amp;*/ dir &lt; 0
         {
             image_angle = point// -= 1
@@ -120,7 +121,7 @@ if (point &lt; 45) or (point &gt; 225)if global.stopall == false //if point is i
     image_yscale = 1;
 }
 */
-    }
+    //}
 }
 </string>
           </argument>

@@ -52,30 +52,33 @@
   </views>
   <instances>
     <instance objName="obj_aibody" x="1288" y="448" name="inst_3EF697FB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_body" x="416" y="320" name="inst_0BB9AD94" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="playerhead" x="596" y="390" name="inst_7782C85F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="-90"/>
-    <instance objName="obj_colour_" x="32" y="-128" name="inst_2470ED76" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_colour_" x="32" y="192" name="inst_443FAD01" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_aibody" x="224" y="448" name="inst_0F37D3F8" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_aihead2" x="0" y="480" name="inst_63FA3F82" locked="0" code="" scaleX="1" scaleY="-1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_eyeline2" x="-11" y="498" name="inst_B0B32144" locked="0" code="" scaleX="1" scaleY="-1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_body" x="544" y="320" name="inst_0BB9AD94" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="playerhead" x="718" y="403" name="inst_7782C85F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="-90"/>
     <instance objName="obj_eyeline_guider2" x="224" y="32" name="inst_67A0A647" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_danger" x="928" y="96" name="inst_1419D09A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_curser" x="960" y="1024" name="inst_EF50F693" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_eyeline_playerv2" x="608" y="416" name="inst_0E092688" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_eyeline_playerv2" x="730" y="429" name="inst_0E092688" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_aihead_rest" x="1532" y="444" name="inst_DB53002C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="225"/>
     <instance objName="obj_eyeline_guider" x="928" y="864" name="inst_14DC8BFB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="fect_shake_growing_hor" x="256" y="160" name="inst_4F115386" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_train_manager_fast" x="224" y="896" name="inst_4398743F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_aibody" x="832" y="448" name="inst_14A6FCA1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_train_ai_front" x="1056" y="416" name="inst_79BEEEB2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="-90"/>
-    <instance objName="obj_eyeline_front" x="1088" y="448" name="inst_45FC0E5B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_eyeline_guide_front" x="320" y="705" name="inst_A5B1271C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_bg_croud" x="20" y="201" name="inst_93B3F839" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_fg_croud" x="40" y="358" name="inst_C0490779" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_catbody" x="224" y="672" name="inst_5692FF98" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_cat_head" x="226" y="623" name="inst_BE1B0AD0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="cat" x="672" y="928" name="inst_8DA427B9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_train_manager" x="960" y="736" name="inst_C412E79F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_lizard_body" x="15" y="480" name="inst_FC4F26E4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_lizard" x="64" y="511" name="inst_588FDB70" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_frog" x="887" y="317" name="inst_749DF7F7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_frog_head" x="1093" y="433" name="inst_2582C3A6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="frog" x="800" y="384" name="inst_8168A943" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="liz" x="768" y="288" name="inst_567CA110" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_playerguide" x="928" y="672" name="inst_CAC6340C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_eyes" x="20" y="480" w="1920" h="490" xo="0" yo="0" id="10000046" name="inst_6A44711F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_trainv2" x="20" y="20" w="1920" h="1080" xo="0" yo="0" id="10000041" name="inst_C5A81CA4" depth="900000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="fg_trainbar" x="1547" y="109" w="80" h="988" xo="0" yo="0" id="10000058" name="inst_1ABFDF09" depth="-100000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="fg_croudedtrain" x="38" y="360" w="1897" h="737" xo="0" yo="0" id="10000062" name="inst_2B44582C" depth="-100000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>

@@ -29,6 +29,7 @@
 y = playerhead.y
  awkscount = 0;
 with obj_colour_{image_alpha = 0}
+ogStress = global.stress;
 //alarm[0] = 90
 //alarm[1] = 360//endgame
 

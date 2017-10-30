@@ -26,6 +26,9 @@
           <argument>
             <kind>1</kind>
             <string>image_speed = 0.33
+with obj_bar_top {image_alpha = 0}
+with obj_bar_stress {image_alpha = 0}
+with obj_bar_inner2 {image_alpha = 0}
 </string>
           </argument>
         </arguments>

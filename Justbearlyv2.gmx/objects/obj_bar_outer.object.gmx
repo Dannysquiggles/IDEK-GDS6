@@ -28,7 +28,7 @@
             <string>//start stats
 Max = 1
 Min = 0
-
+image_alpha = 0
 Start = 0.8
 
 Label = "POWER"
@@ -37,6 +37,8 @@ FallRate1 = 0.006
 FallRate2 = 0.001
 
 RiseRate = 0.05
+
+ogStress = global.stress
 
 global.state = 'play'
 
@@ -111,11 +113,19 @@ if image_xscale &lt;= Start*0.6
 {
     FallRate1 = 0.006
     RiseRate = 0.06
+    if global.stress &gt; (ogStress)
+    {
+        global.stress -= 0.01
+    } 
 }
 else if image_xscale &gt;= Start*1.4
 {
     FallRate1 = 0.003
     RiseRate = 0.08
+    if global.stress &lt; (ogStress + 0.15)
+    {
+        global.stress += 0.01
+    } 
 }
 
 </string>
@@ -160,6 +170,7 @@ if global.state == 'play'
         with obj_player_dontmove
         {
             sprite_index = spr_tiltplayer_sad_neutral
+            
         }
     }
     else

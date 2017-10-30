@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>image_angle = obj_bar_outer.image_angle
+image_alpha = 0
 </string>
           </argument>
         </arguments>

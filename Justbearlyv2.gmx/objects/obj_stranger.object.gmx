@@ -36,8 +36,8 @@ roomlimitUp= -100;
 roomlimitDown = room_height + 100;
 
 newsize = random_range (0.8, 1) //size variable
-dir = 0; //find direction
-alarm[0] = 3;
+dir = 1; //find direction
+//alarm[0] = 3;
 rate = random_range(5,20);
 
 image_xscale = newsize
@@ -161,6 +161,7 @@ if global.oc == 1 // if the mouse has been hit
         image_speed = 0
         image_index = 1
         alarm[1] = 15
+        global.stress += 0.25
         change = 1;
         global.picked = 1
         }

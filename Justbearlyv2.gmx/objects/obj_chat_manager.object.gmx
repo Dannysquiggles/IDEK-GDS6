@@ -3,7 +3,7 @@
   <spriteName>spr_blankcube</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-2</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -35,7 +35,7 @@ talkcountF = 0; //compare to talkcountP to check if they missed a beat
 talkcountP = 0; // as above
 
 //set starting alarm before friend talks
-alarm[0] = 30;
+alarm[0] = 15;
 
 
 </string>
@@ -46,17 +46,31 @@ alarm[0] = 30;
     <event eventtype="2" enumb="4">
       <action>
         <libid>1</libid>
-        <id>222</id>
+        <id>201</id>
         <kind>0</kind>
-        <userelative>0</userelative>
+        <userelative>-1</userelative>
         <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
+        <useapplyto>-1</useapplyto>
         <exetype>1</exetype>
-        <functionname>action_next_room</functionname>
+        <functionname>action_create_object</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>10</kind>
+            <object>obj_swipe</object>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>room_width</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
       </action>
     </event>
     <event eventtype="2" enumb="3">
@@ -100,7 +114,7 @@ alarm[0] = 30;
           <argument>
             <kind>1</kind>
             <string>//create friend talk. start friend counter.
-alarm[1] = 30 //set how long player can talk for
+alarm[1] = 60 //set how long player can talk for
 Ftalking = 0; //say that friend is talking
 
 </string>
@@ -128,7 +142,8 @@ Ftalking = 0; //say that friend is talking
             <string>//check if player talked
 if (talkcountP &lt; talkcountF)
 {
-        instance_create(x,y,fect_shake)
+        instance_create(x,y,fect_shakeL)
+        global.stress += 0.15
         alarm[1] = -1;
         alarm[2] = -1;
         alarm[3] = -1;
@@ -138,14 +153,14 @@ if (talkcountP &lt; talkcountF)
 else
 {   
 //create friend talk. start friend counter.
-alarm[2] = 30 //set how long friend talks for
+alarm[2] = 60 //set how long friend talks for
 Ptalking = 0;
 Ftalking = 1; //say that friend is talking
 talkcountF += 1;
 }
 if (talkcountP &gt;= 4)
 {
-    room_goto(5)
+    room_goto_next()
 }
 
 </string>
@@ -171,10 +186,75 @@ if (talkcountP &gt;= 4)
           <argument>
             <kind>1</kind>
             <string>//create friend talk. start friend counter.
-alarm[2] = 30 //set how long friend talks for
+alarm[2] = 60 //set how long friend talks for
 Ftalking = 1; //say that friend is talking
 talkcountF += 1;
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>//draw clash
+if (Ftalking == 2)
+{
+    with (obj_chat_bubble_LI) { instance_destroy() }
+    with (obj_chat_bubble_player) { instance_destroy() }
+    
+    if !instance_exists(obj_chat_bubble_crash)
+    {
+        instance_create(x,y, obj_chat_bubble_crash)
+        instance_create(x,y, fect_shakeL)
+        global.stress += 0.15
+    }
+}
+//draw text boxes
+else if (Ftalking = 1)
+{
+//draw_sprite(spr_speechbubble_white,0,x,y)
+if !instance_exists(obj_chat_bubble_LI)
+  {
+     instance_create(x,y, obj_chat_bubble_LI)
+  }
+
+}
+else if (Ptalking = 1){
+
+    if !instance_exists(obj_chat_bubble_player)
+        {
+            instance_create(x,y, obj_chat_bubble_player)
+        }
+//if instance_exists(obj_scribble)
+  //  {
+    //    with obj_scribble {instance_destroy()}
+    //}
+}
+
+if Ftalking == 0
+{
+    with (obj_chat_bubble_LI) { instance_destroy() }
+}
+if Ptalking == 0
+{
+    with (obj_chat_bubble_player) { instance_destroy() }
+}
 </string>
           </argument>
         </arguments>
@@ -204,12 +284,15 @@ talkcountF += 1;
     Ptalking = 1;
     if (Ftalking = 1)
     {
-        instance_create(x,y,fect_shake)
+        
+        instance_create(x,y,fect_shakeL)
+        global.stress += 0.25
         alarm[1] = -1;
         alarm[2] = -1;
         alarm[3] = -1;
         alarm[0] = -1;
         alarm[4] = 30;
+        Ftalking = 2
     }
 }
 </string>
@@ -234,13 +317,26 @@ talkcountF += 1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//draw text boxes
+            <string>/*//draw text boxes
 if (Ftalking = 1){
-draw_rectangle_colour(x+25, y+25, x+125, y+75, c_purple,c_purple,c_purple,c_purple,0) //draw speachbubble
+//draw_rectangle_colour(x+25, y+25, x+125, y+75, c_purple,c_purple,c_purple,c_purple,0) //draw speachbubble
+draw_sprite(spr_speechbubble_white,0,x,y)
+//if !instance_exists(obj_scribble)
+  //  {
+    //    instance_create(x,y, obj_scribble)
+    //}
+
 }
 if (Ptalking = 1){
-draw_rectangle_colour(x-25, y+25, x-125, y+75, c_green,c_green,c_green,c_green,0) //draw speachbubble
+//draw_rectangle_colour(x-25, y+25, x-125, y+75, c_green,c_green,c_green,c_green,0) //draw speachbubble
+draw_sprite(spr_speechbubble_black,0,x,y)
+if instance_exists(obj_scribble)
+    {
+        with obj_scribble {instance_destroy()}
+    }
+
 }
+
 
 
 </string>

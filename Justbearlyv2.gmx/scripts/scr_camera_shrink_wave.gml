@@ -16,6 +16,7 @@ else
 if !instance_exists(obj_bubblesmall)
             {
                 instance_create(x- 100, y - sprite_height*0.85, obj_bubblesmall)
+                global.stress += 0.25
             }
 //create dial after view meets it's goal
 /*if instance_number(obj_dialpointer) == 0 && global.oc == 0

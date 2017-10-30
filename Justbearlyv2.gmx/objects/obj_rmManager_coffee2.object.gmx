@@ -337,11 +337,13 @@ if global.oc == 1
 {
     if keyboard_check_pressed(vk_space) or mouse_check_button_released(mb_left)
     {
-    global.message = "BARISTA: Ummmm... Ok. WHAT CAN I GET YOU!?"
+    global.message = "BARISTA: OK... that's not what I asked"
     global.col = 'white';
     with (obj_barrista_remake) //change to confused frame
     {image_index = 1}
     alarm[0] = 30; //set ending bad ending to happen
+    instance_create(x,y, fect_shake)
+    global.stress += 0.15
     global.oc = 0.1;
     }
 }
@@ -354,6 +356,7 @@ else if global.oc == 2
     with (obj_barrista_remake) 
     {image_index = 2}
     instance_create(x,y, fect_shake)
+    global.stress += 0.15
     global.oc = 2.5
     }
 }

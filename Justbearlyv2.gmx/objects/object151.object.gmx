@@ -28,6 +28,7 @@
             <string>x = obj_bar_outer.x
 image_angle = obj_bar_outer.image_angle
 y = obj_bar_outer.y - obj_bar_outer.sprite_width
+image_alpha = 0
 </string>
           </argument>
         </arguments>

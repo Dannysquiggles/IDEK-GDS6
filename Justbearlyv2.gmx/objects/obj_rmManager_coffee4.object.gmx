@@ -367,6 +367,7 @@ if global.oc == 1
     global.col = 'white';
     with (obj_barrista_remake) 
     {sprite_index = spr_barrista_dissapointed}
+    global.stress += 0.15
     alarm[1] = 30;
     global.oc = 0.1;
     }
@@ -380,6 +381,7 @@ else if global.oc == 2
     with (obj_barrista_remake) 
     {sprite_index = spr_barrista2}
     instance_create(x,y, fect_shake)
+    global.stress += 0.15
     global.oc = 2.5
     }
 }
@@ -431,6 +433,7 @@ if global.oc == 2.5
     global.col = 'black';
     global.message = "ME: I am so, so sorry... i will leave now... k by."
     instance_create(x,y, fect_shakeL)
+    global.stress += 0.15
     global.rate -= 1
     global.resist += 1
     alarm[1] = 60;
@@ -461,7 +464,9 @@ if global.oc == 5.1
     if keyboard_check_pressed(vk_space)or mouse_check_button_pressed(mb_left)
     {
     global.message = "BARISTA:... $3.50 ... "
+    
     instance_create(x,y, fect_shakeL)
+    global.stress += 0.15
     global.col = 'white';
     global.rate -= 5;
     global.resist += 0.5;
@@ -491,6 +496,7 @@ else if global.oc == 5.3
     {
     global.message = "BARISTA: .................."
     instance_create(x,y, fect_shakeL)
+    global.stress += 0.15
     global.rate -= 5;
     global.resist += 0.5;
     global.col = 'white';

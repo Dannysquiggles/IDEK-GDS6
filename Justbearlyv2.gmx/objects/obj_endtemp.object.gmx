@@ -25,12 +25,12 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>text1 = "'T' to restart"// the action to be instructed
+            <string>text1 = "'T' to restart#'Q' to quit"// the action to be instructed
 text2 = "'T' to restart#'Q' to quit"// the control to use
 message = "" 
 start = false //whether the control can allow.
 //control = mouse_check_button_released(mb_left) //what  input will move the next scene along
-draw_set_font(fnt_bebus_large);
+draw_set_font(fnt_Mmaker1);
 draw_set_valign(fa_center);
 draw_set_colour(c_white);
 draw_set_halign(fa_center);

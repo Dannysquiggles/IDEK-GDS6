@@ -34,11 +34,11 @@ roomlimitDown = room_height;
 pointX = 0;
 pointY = 0;
 
-rate = 4;
+rate = 8;
 target = 0; //follow mouse
 alarm[0] = 120;
 move = false
-alarm[1] = 90
+alarm[1] = 60
 </string>
           </argument>
         </arguments>
@@ -63,6 +63,7 @@ alarm[1] = 90
             <kind>1</kind>
             <string>//make move
 move = true;
+rate = 4
 </string>
           </argument>
         </arguments>
@@ -117,7 +118,7 @@ alarm[0] = 120;
             <string>/// switch between mouse and point
 if global.stopall == false &amp;&amp; global.stopai == false
 {
-    if target == 0 &amp;&amp; move == true//mouse 
+    if target == 0 //&amp;&amp; move == true//mouse 
     {
         move_towards_point(mouse_x,mouse_y,rate)
     }

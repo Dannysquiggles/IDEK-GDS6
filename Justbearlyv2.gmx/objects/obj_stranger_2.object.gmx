@@ -36,8 +36,8 @@ roomlimitUp= -100;
 roomlimitDown = room_height + 100;
 
 newsize = random_range (0.8, 1) //size variable
-dir = 0; //find direction
-alarm[0] = 3;
+dir = 2; //find direction
+//alarm[0] = 3;
 rate = random_range(5,20);
 
 image_xscale = newsize
@@ -161,12 +161,27 @@ if global.oc == 1 // if the mouse has been hit
         image_speed = 0
         image_index = 1
         alarm[1] = 15
+        global.stress += 0.25
         change = 1;
         global.picked = 1
         }
         else if change == 1
         {
-            //scr_camera_shrink_wave()
+            scr_camera_shrink_wave()
+            with (obj_stranger)
+            {
+                if !change == 1 
+                { 
+                image_alpha-= 0.08
+                }
+            }
+            with (obj_stranger_2)
+            {
+                if !change == 1 
+                { 
+                image_alpha-= 0.08
+                }
+            }
             with (obj_friendhead)
             {
                 image_alpha -= 0.08
@@ -176,23 +191,8 @@ if global.oc == 1 // if the mouse has been hit
                 image_alpha -= 0.08
             }
             background_alpha[0] -= 0.08;
-            //turn other charcters heads
-            with (obj_stranger_2)
-            {
-                if change == 0{
-                sprite_index = spr_stranger2
-                image_speed = 0
-                image_index = 0  }          
-            }
+            
         }
-        //else if global.picked == 1 &amp;&amp; change == 0
-        //{
-        //sprite_index = spr_stranger2
-        //image_speed = 0
-        //image_index = 1
-        //alarm[1] = 15
-        //change = 2
-        //}
  
     }
     else

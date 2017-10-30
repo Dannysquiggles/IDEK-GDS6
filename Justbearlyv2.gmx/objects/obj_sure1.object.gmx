@@ -3,7 +3,7 @@
   <spriteName>spr_sure</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-10</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>touched = false
+depth = global.dep
 image_xscale = 0.8
 image_yscale = 0.8
 image_speed = 0;
@@ -34,6 +35,10 @@ buffer = 20
 image_index = global.imageindex;
 global.imageindex += 1;
 instance_create(x,y,obj_no);
+randomize()
+nx = random_range(20,room_width - sprite_width - 20)
+ny = random_range(20, room_height - sprite_height - 20)
+   
 </string>
           </argument>
         </arguments>
@@ -90,18 +95,36 @@ else
             <kind>1</kind>
             <string>if touched == false
 {
-
-if global.imageindex &gt; (image_number - 1)
-{
+    global.dep -= 1
+    
+    if global.imageindex &gt; (image_number - 1)
+    {
     if !instance_exists(obj_nightcome)
     {
         instance_create(room_width/2,room_height/2, obj_nightcome)
+       // with obj_bar_top {image_alpha = 255}
+        //with obj_bar_stress {image_alpha = 255}
+        //with obj_bar_inner2 {image_alpha = 255}
     }
-}
+    }
 
 //messure how far you are form the boarder. start a new line if two close.
 
-if room_width &gt; (x + (size*2) + (buffer*2))
+if room_width &gt; (nx + (sprite_width + buffer)) &amp;&amp; !place_meeting(nx,ny, obj_sure1)
+{
+    instance_create(nx, ny, obj_sure1)
+}
+else
+{
+    randomize()
+    nx = random_range(20,room_width - sprite_width - 20)
+    ny = random_range(20, room_height - sprite_height - 20)
+    script_execute(spr_facebook_spawn)
+}
+
+touched = true
+}
+/*if room_width &gt; (x + (size*2) + (buffer*2))
 {
     instance_create(x + size + buffer, y, obj_sure1)
 }

@@ -52,7 +52,7 @@
   </views>
   <instances>
     <instance objName="obj_intro_paty" x="992" y="544" name="inst_E50C8624" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_curser" x="288" y="160" name="inst_B61150C2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_font_picker" x="160" y="192" name="inst_9B63867E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

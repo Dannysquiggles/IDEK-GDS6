@@ -341,6 +341,7 @@ if global.oc == 3
     { sprite_index = spr_barrista_dissapointed}
     alarm[4] = 30;
     instance_create(x,y, fect_shake)
+    global.stress += 0.15
     global.oc = 0.1;
     }
 }
@@ -353,6 +354,7 @@ else if global.oc == 2
     with (obj_barrista_remake) 
     {sprite_index = spr_barrista2}
     instance_create(x,y, fect_shake)
+    global.stress += 0.15
     global.oc = 2.5
     }
 }
@@ -403,6 +405,7 @@ if global.oc == 2.5
     global.col = 'black';
     global.message = "ME: I am so, so sorry... i will leave now... k by."
     instance_create(x,y, fect_shakeL)
+    global.stress += 0.15
     global.rate -= 1
     global.resist += 1
     alarm[1] = 60;

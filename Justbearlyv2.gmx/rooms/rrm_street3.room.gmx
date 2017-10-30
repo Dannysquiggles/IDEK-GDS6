@@ -56,8 +56,7 @@
   <tiles>
     <tile bgName="fg_car" x="3" y="578" w="736" h="504" xo="0" yo="0" id="10000049" name="inst_DE6D023B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="fg_car" x="12" y="581" w="736" h="504" xo="0" yo="0" id="10000050" name="inst_F2550BB3" depth="-100000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="fg_tree" x="1447" y="22" w="491" h="1017" xo="0" yo="0" id="10000051" name="inst_2F8F52D5" depth="-100000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="fg_large_tree" x="765" y="21" w="643" h="1080" xo="0" yo="0" id="10000054" name="inst_45FF61C3" depth="-100000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="fg_tree" x="96" y="34" w="1201" h="1070" xo="0" yo="0" id="10000066" name="inst_245F86FE" depth="-100000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>

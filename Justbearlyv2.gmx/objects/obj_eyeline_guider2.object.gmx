@@ -35,7 +35,7 @@ pointX = 0;
 pointY = 0;
 
 rate = 4;
-target = 1; //follow rando
+target = 0; //follow rando
 alarm[0] = 120;
 move = false
 alarm[1] = 30
@@ -114,14 +114,16 @@ alarm[0] = 120;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// switch between mouse and point
-if target == 0 &amp;&amp; move == true//mouse 
+            <string>if global.stopall == false &amp;&amp; global.stopai == false
 {
-    move_towards_point(mouse_x,mouse_y,rate)
-}
-else if target == 1 &amp;&amp; move == true//random point
-{
-    move_towards_point(pointX,pointY,rate)
+    if target == 0 //&amp;&amp; move == true//mouse 
+    {
+        move_towards_point(mouse_x,mouse_y,rate)
+    }
+    else if target == 1 &amp;&amp; move == true//random point
+    {
+        move_towards_point(pointX,pointY,rate)
+    }
 }
 </string>
           </argument>

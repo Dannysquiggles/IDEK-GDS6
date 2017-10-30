@@ -3,7 +3,7 @@
   <spriteName>spr_bg_night</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-10000000</depth>
+  <depth>-100000000</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -51,15 +51,16 @@ global.Daycount += 1;
             <kind>1</kind>
             <string>if image_index == image_number - 1
 {
-    if !global.Daycount &gt;= 6
-    {
-    image_speed = 0
-    room_goto(rm_night_second)
-    }
-    else
-    {
+    //if !global.Daycount &gt;= 6
+    //{
+    //image_speed = 0
+    //room_goto(rm_night_second)
+    //}
+    //else
+    //{
+    obj_curser.image_alpha = 1
     room_goto_next()
-    }
+    //}
 }
 </string>
           </argument>

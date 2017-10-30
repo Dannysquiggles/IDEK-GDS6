@@ -74,7 +74,14 @@ alarm[0] = 60
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>rate *= -1.1
+            <string>if rate &lt; 2 &amp;&amp; rate &gt; -2
+{
+    rate *= -1
+}
+else 
+{
+    rate*= -1
+}
 alarm[0] = 60
 </string>
           </argument>

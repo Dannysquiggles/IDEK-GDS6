@@ -61,10 +61,14 @@ alarm[3] = 360;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string> if !instance_exists(obj_swipe)
+            <string>if stop = 0
+{
+  if !instance_exists(obj_nightcome)
     {
-    instance_create(room_width, 0, obj_swipe)
+    instance_create(room_width/2, room_height/2, obj_nightcome)
     }
+  col = true;
+}
 </string>
           </argument>
         </arguments>
@@ -124,6 +128,7 @@ alarm[1] = 30
     global.rate -= 5;
     global.resist += 0.5;
 }
+global.stress += 0.05
 alarm[2] = 30
 </string>
           </argument>
@@ -152,6 +157,7 @@ if instance_number(fect_shake)&lt;1
 {
     instance_create(x,y,fect_shake)
 }
+global.stress += 0.05
 alarm[1] = 30
 </string>
           </argument>
@@ -221,11 +227,13 @@ alarm[0] = 30
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if col == false{
+            <string>if col == false
+{
 
 stop = 1
 move_towards_point(x,room_height,0)
 with obj_peeps {image_index = 1}
+background_index = bg_lecture
 //grow = true;
 alarm[0] = 90;
 if instance_number(obj_playerdialogue) == 0 //&amp;&amp; global.oc == 0
