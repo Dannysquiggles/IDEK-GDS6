@@ -62,6 +62,8 @@
             <string>draw_set_alpha(1)
 image_speed = 0
 image_index = image_number
+global.color = true
+audio_stop_all();
 with obj_bar_stress
 {
     switching = 3

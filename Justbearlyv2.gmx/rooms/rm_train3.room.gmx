@@ -64,7 +64,7 @@
     <instance objName="obj_lizard_body" x="0" y="448" name="inst_70845B32" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="liz" x="672" y="832" name="inst_F683BB24" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_lizard" x="55" y="474" name="inst_205C702D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_eyeline2" x="1312" y="256" name="inst_1B4760F5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_eyeline2" x="1376" y="288" name="inst_1B4760F5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_catbody" x="288" y="800" name="inst_D82F40DE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_cat_head" x="288" y="768" name="inst_3A5C6E1F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="cat" x="832" y="832" name="inst_6C00924C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

@@ -238,7 +238,7 @@ background_index = bg_lecture
 alarm[0] = 90;
 if instance_number(obj_playerdialogue) == 0 //&amp;&amp; global.oc == 0
     {
-    instance_create(832,480, obj_playerdialogue);
+    instance_create(854,520, obj_playerdialogue);
     instance_create(928,512, object67);
     }
 col = true;

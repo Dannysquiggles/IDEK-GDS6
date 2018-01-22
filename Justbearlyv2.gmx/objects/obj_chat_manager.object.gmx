@@ -30,6 +30,8 @@ Ptalking = 0;
 
 Ftalking = 0;
 
+fails = 0;
+
 talkcountF = 0; //compare to talkcountP to check if they missed a beat
 
 talkcountP = 0; // as above
@@ -46,31 +48,17 @@ alarm[0] = 15;
     <event eventtype="2" enumb="4">
       <action>
         <libid>1</libid>
-        <id>201</id>
+        <id>223</id>
         <kind>0</kind>
-        <userelative>-1</userelative>
+        <userelative>0</userelative>
         <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
+        <useapplyto>0</useapplyto>
         <exetype>1</exetype>
-        <functionname>action_create_object</functionname>
+        <functionname>action_current_room</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>10</kind>
-            <object>obj_swipe</object>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>room_width</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-        </arguments>
       </action>
     </event>
     <event eventtype="2" enumb="3">
@@ -144,6 +132,7 @@ if (talkcountP &lt; talkcountF)
 {
         instance_create(x,y,fect_shakeL)
         global.stress += 0.15
+        global.fails += 1;
         alarm[1] = -1;
         alarm[2] = -1;
         alarm[3] = -1;
@@ -158,7 +147,9 @@ Ptalking = 0;
 Ftalking = 1; //say that friend is talking
 talkcountF += 1;
 }
-if (talkcountP &gt;= 4)
+
+//win condition
+if (talkcountP &gt;= 3)
 {
     room_goto_next()
 }
@@ -221,6 +212,7 @@ if (Ftalking == 2)
     if !instance_exists(obj_chat_bubble_crash)
     {
         instance_create(x,y, obj_chat_bubble_crash)
+        global.fails += 1;
         instance_create(x,y, fect_shakeL)
         global.stress += 0.15
     }
@@ -255,6 +247,20 @@ if Ptalking == 0
 {
     with (obj_chat_bubble_player) { instance_destroy() }
 }
+if  global.fails == 3
+{
+    if !instance_exists(obj_swipe_end)
+    {
+        instance_create(room_width,0, obj_swipe_end)
+    }
+}
+if (talkcountP &gt;= 3)
+{
+    if !instance_exists(obj_swipe)
+    {
+        instance_create(room_width,0, obj_swipe)
+    }
+}
 </string>
           </argument>
         </arguments>
@@ -287,6 +293,7 @@ if Ptalking == 0
         
         instance_create(x,y,fect_shakeL)
         global.stress += 0.25
+        //global.fails += 1
         alarm[1] = -1;
         alarm[2] = -1;
         alarm[3] = -1;

@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>///minimum size
 image_speed = 0.10
+global.fails = 0;
 global.color = true;
 global.symbol = 'hand'
 minim = 0.8;
@@ -95,8 +96,7 @@ else if global.symbol == 'eye' &amp;&amp; poi == 0
 {
     sprite_index = spr_curser_eye;
 } 
-
-
+sound_stop_all()
 </string>
           </argument>
         </arguments>

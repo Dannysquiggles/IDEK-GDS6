@@ -52,7 +52,7 @@
   </views>
   <instances>
     <instance objName="obj_traintilt" x="960" y="1088" name="inst_B41C723A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_player_tilt" x="960" y="1152" name="inst_FC4116C6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
+    <instance objName="obj_player_tilt" x="960" y="1075" name="inst_FC4116C6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
     <instance objName="obj_trainfriend" x="1248" y="1184" name="inst_CDFFC066" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_guide_tilt" x="704" y="384" name="inst_A4E09D87" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_trainfriend_mask" x="1248" y="1202" name="inst_50728FAF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

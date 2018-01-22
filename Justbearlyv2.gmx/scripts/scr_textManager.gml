@@ -4,7 +4,7 @@
 global.talk = 0;
 width = 500;
 height = 200;
-padding = 8;
+padding = 15;
 press = 0;
 //alarm[0] = 30;
 
@@ -53,9 +53,9 @@ if (count < string_length( message)) {
     count ++;
 }
 // Did we go past the bottom? move up a line
-if ( string_height( str ) > height-padding ) {
-    line++;
-}
+//if ( string_height( str ) > height-padding ) {
+  //  line++;
+//}
 
 //grab string
 str = string_copy( message, ds_list_find_value( start, line), count - ds_list_find_value (start, line));

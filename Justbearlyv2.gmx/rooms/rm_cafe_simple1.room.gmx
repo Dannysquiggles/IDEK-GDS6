@@ -55,6 +55,7 @@
     <instance objName="obj_bubble" x="800" y="192" name="inst_F5EE2750" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_barrista_remake" x="1536" y="512" name="inst_B315F7D2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_rmManager_coffee2" x="1056" y="288" name="inst_1A9B49D1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_font_picker_small" x="1088" y="544" name="inst_B9A1977B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="fg_still" x="1568" y="352" w="920" h="400" xo="0" yo="0" id="10000031" name="inst_0EBC0209" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

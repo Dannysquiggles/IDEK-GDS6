@@ -60,7 +60,9 @@
           <argument>
             <kind>1</kind>
             <string>draw_set_alpha(1)
+global.color = true
 obj_curser.image_alpha = 1
+audio_stop_all();
 </string>
           </argument>
         </arguments>

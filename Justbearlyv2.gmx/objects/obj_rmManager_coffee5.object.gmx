@@ -42,13 +42,13 @@ global.grow = false;
 
 global.con = 4
 
-global.message = "Barista: Make it quick";
+global.message = "Make it quick";
 
 with obj_barrista_remake {sprite_index = spr_catrista}
 
 global.col = 'white';
 color = c_black;
-draw_set_font(fnt_bebas)
+draw_set_font(fnt_sk1)
 draw_set_halign(fa_center)
 draw_set_valign(fa_center)
 </string>
@@ -194,7 +194,7 @@ draw_set_valign(fa_center)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.message = "BARRISTA: .......... # here is your latte comedy connoisseur"
+            <string>global.message = "... # here is your latte, # comedy connoisseur"
 global.col = 'white'
 if instance_number(fect_shake) &lt;1
 {
@@ -311,7 +311,7 @@ if mouse_check_button_released(mb_left) &amp;&amp; global.oc == 0
 //move camera
 if grow == true or global.grow == true
 {
-    scr_shrink_camera()
+    scr_camera_shrink_centered()//scr_shrink_camera()
 }
 if grow == 2 or global.grow == 2
 {
@@ -335,7 +335,7 @@ if global.oc == 1
 {
     if keyboard_check_pressed(vk_space) or mouse_check_button_released(mb_left)
     {
-    global.message = "BARISTA: ... move"
+    global.message = "... move"
     global.col = 'white';
     with (obj_barrista_remake) 
     {image_index = 1;}
@@ -350,7 +350,7 @@ else if global.oc == 2
     if keyboard_check_released(vk_space) or mouse_check_button_released(mb_left)
     {
     global.col = 'white';
-    global.message = "BARISTA: ...what?..."
+    global.message = "...what?..."
     with (obj_barrista_remake) 
     {image_index = 1;}
     instance_create(x,y, fect_shake)
@@ -365,7 +365,7 @@ else if global.oc == 3 //SPAWN LAF MAYBE, DEPENDS ON OUTCOME
     //if this has not been selected yet, finish on a short answere
     //if global.laf == 0
     //{
-    global.message = "BARISTA: Still $3.20, same as always"
+    global.message = "Still $3.20, same as always"
     global.col = 'white';
     with (obj_barrista) //change to new smile animation
     {image_speed = 0.5;
@@ -392,7 +392,7 @@ else if global.oc == 4
     if keyboard_check_pressed(vk_space)or mouse_check_button_pressed(mb_left)
     {
     global.col = 'white';
-    global.message = "Barista: Ummm....Excuse me? your order?";
+    global.message = "Ummm....Excuse me?# your order?";
     with obj_barrista_remake
     {image_index = 1}
     instance_create(x,y, fect_shake_big)
@@ -407,7 +407,7 @@ if global.oc == 2.5
     if keyboard_check_pressed(vk_space)or mouse_check_button_pressed(mb_left)
     {
     global.col = 'black';
-    global.message = "ME: I am so, so sorry... i will leave now... k by."
+    global.message = "I am so, so sorry...# I will leave now...% k by."
     instance_create(x,y, fect_shakeL)
     global.stress += 0.15
     global.rate -= 1

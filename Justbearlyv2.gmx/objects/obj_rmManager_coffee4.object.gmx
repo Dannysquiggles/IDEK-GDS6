@@ -41,14 +41,14 @@ og_yview = view_yview[0];
 global.grow = false
 grow = false;
 
-global.message = "Barista: How can I help ya?";
+global.message = "How can I help ya?";
 global.con = 1;
 
 with obj_barrista_remake {sprite_index = spr_barrista}
 
 global.col = 'white';
 color = c_black;
-draw_set_font(fnt_bebas)
+draw_set_font(fnt_sk1)
 draw_set_halign(fa_center)
 draw_set_valign(fa_center)
 </string>
@@ -194,7 +194,7 @@ draw_set_valign(fa_center)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.message = "BARRISTA: .......... # here is your latte comedy connoisseur"
+            <string>global.message = "... # Here is your latte,# comedy connoisseur"
 global.col = 'white'
 if instance_number(fect_shake) &lt;1
 {
@@ -339,7 +339,7 @@ if mouse_check_button_released(mb_left) &amp;&amp; global.oc == 0
 //move camera
 if grow == true or global.grow == true
 {
-    scr_shrink_camera()
+    scr_camera_shrink_centered()//scr_shrink_camera()
 }
 if grow == 2 or global.grow == 2
 {
@@ -363,7 +363,7 @@ if global.oc == 1
 {
     if keyboard_check_pressed(vk_space) or mouse_check_button_released(mb_left)
     {
-    global.message = "BARISTA: Really?"
+    global.message = "Really?"
     global.col = 'white';
     with (obj_barrista_remake) 
     {sprite_index = spr_barrista_dissapointed}
@@ -377,7 +377,7 @@ else if global.oc == 2
     if keyboard_check_released(vk_space) or mouse_check_button_released(mb_left)
     {
     global.col = 'white';
-    global.message = "BARISTA: ...what?..."
+    global.message = "...what?..."
     with (obj_barrista_remake) 
     {sprite_index = spr_barrista2}
     instance_create(x,y, fect_shake)
@@ -393,7 +393,7 @@ else if global.oc == 3 //SPAWN LAF MAYBE, DEPENDS ON OUTCOME
     if global.laf == 0
     {
     //  "that'll be 3.20 thanks"
-    global.message = "BARISTA: that'll be $3.20, thanks"
+    global.message = "That'll be $3.20, thanks"
     global.col = 'white';
     with (obj_barrista_remake) //change to new smile animation
     {sprite_index = spr_barrista_joke
@@ -405,7 +405,7 @@ else if global.oc == 3 //SPAWN LAF MAYBE, DEPENDS ON OUTCOME
     else
     {
     //IF IT HAS BEEN CHOSEN BEFORE, create laf meter
-    global.message = "BARISTA: Oh, Latte me check for you (heh heh jokes)"
+    global.message = "Oh, Latte me check for you# (heh heh jokes)"
      global.col = 'white';
     with (obj_barrista_remake) 
     { sprite_index = spr_barrista_joke
@@ -420,7 +420,7 @@ else if global.oc == 4
     if keyboard_check_pressed(vk_space)or mouse_check_button_pressed(mb_left)
     {
     global.col = 'white';
-    global.message = "Barista: Ummm....Hey there what can I get you?";
+    global.message = "Ummm....Hey there what #can I get you?";
     alarm[0] = 15;
     global.oc = 0.1;
     }
@@ -431,7 +431,7 @@ if global.oc == 2.5
     if keyboard_check_pressed(vk_space)or mouse_check_button_pressed(mb_left)
     {
     global.col = 'black';
-    global.message = "ME: I am so, so sorry... i will leave now... k by."
+    global.message = "I am so, so sorry...# I will leave now...# k by."
     instance_create(x,y, fect_shakeL)
     global.stress += 0.15
     global.rate -= 1
@@ -463,7 +463,7 @@ if global.oc == 5.1
 {
     if keyboard_check_pressed(vk_space)or mouse_check_button_pressed(mb_left)
     {
-    global.message = "BARISTA:... $3.50 ... "
+    global.message = "... $3.50 ... "
     
     instance_create(x,y, fect_shakeL)
     global.stress += 0.15
@@ -482,7 +482,7 @@ else if global.oc == 5.2
     if keyboard_check_pressed(vk_space)or mouse_check_button_pressed(mb_left)
     {
     global.col = 'white';
-    global.message = "BARISTA: heheh, it'll be ready in a couple secs."
+    global.message = "heheh, it'll be ready in# a couple secs."
     with (obj_barrista_remake) 
     {sprite_index = spr_barrista_joke
     image_index = 0}
@@ -494,7 +494,7 @@ else if global.oc == 5.3
 {
     if keyboard_check_pressed(vk_space)or mouse_check_button_pressed(mb_left)
     {
-    global.message = "BARISTA: .................."
+    global.message = "..."
     instance_create(x,y, fect_shakeL)
     global.stress += 0.15
     global.rate -= 5;

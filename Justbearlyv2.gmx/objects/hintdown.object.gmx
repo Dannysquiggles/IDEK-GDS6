@@ -25,10 +25,12 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//image_alpha = 0;
+            <string>image_alpha = 0
+alarm[0] = 5*room_speed
+al = 1
 ox = x
 oy = y
-al = 0;
+
 </string>
           </argument>
         </arguments>
@@ -52,6 +54,7 @@ al = 0;
           <argument>
             <kind>1</kind>
             <string>image_alpha = 255
+al = 0
 </string>
           </argument>
         </arguments>
@@ -108,7 +111,10 @@ y += 1
           <argument>
             <kind>1</kind>
             <string>image_alpha = 0
+if al == 0
+{
 alarm[0] = 360
+}
 </string>
           </argument>
         </arguments>

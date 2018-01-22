@@ -65,7 +65,7 @@ image_speed = 1
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>        global.message = "ME: HEHEEHEHEHEHEHEHEHEHAHAHAHAHAHAHAHA #HO HO HO HO HA HA HA HA HEH HAH HARGH HA HA HA # HEHEHEHEHEHEHEHheheheh."
+            <string>        global.message = "HEHEEHEHEHEHEHEHEHE#HAHAHAHAHAHAHAHA#HO HO HO HO HA HA HA HA #HEH HAH HARGH HA HA HA # heheheh."
         global.oc = 5.3
         global.col = 'black'
 //zoomout
@@ -136,7 +136,7 @@ global.grow = 2
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>        global.message = "ME: heh heh"
+            <string>        global.message = "heh heh"
         global.oc = 5.2
         global.col = 'black'
 //zoomout
@@ -206,7 +206,7 @@ global.grow = 2
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.message = "ME: ... "
+            <string>global.message = " ... "
 global.oc = 5.1
 global.col = 'black'
 //zoomout

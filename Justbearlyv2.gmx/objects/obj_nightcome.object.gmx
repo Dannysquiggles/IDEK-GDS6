@@ -59,6 +59,8 @@ global.Daycount += 1;
     //else
     //{
     obj_curser.image_alpha = 1
+    global.color = true
+    audio_stop_all();
     room_goto_next()
     //}
 }

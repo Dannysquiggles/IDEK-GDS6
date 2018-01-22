@@ -44,7 +44,7 @@ line = 0;
 
 //set message
 
-message = "TEACHER: Yes? Did you have a questioin?";
+message = "Yes? Did you have #a questioin?";
 str = "";
 
 global.still = 1;
@@ -117,7 +117,7 @@ ds_list_destroy(start);
         <arguments>
           <argument>
             <kind>12</kind>
-            <font>fnt_bebas</font>
+            <font>fnt_sk1</font>
           </argument>
           <argument>
             <kind>4</kind>
@@ -141,7 +141,7 @@ ds_list_destroy(start);
         <arguments>
           <argument>
             <kind>2</kind>
-            <string>Teacher: yes? did you have a question?</string>
+            <string>Yes? did you #have a question?</string>
           </argument>
           <argument>
             <kind>0</kind>

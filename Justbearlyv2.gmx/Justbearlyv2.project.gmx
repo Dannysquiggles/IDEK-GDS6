@@ -11,6 +11,7 @@
     <sprites name="backgrounds">
       <sprite>sprites\spr_bg_night</sprite>
       <sprite>sprites\sprl_idup</sprite>
+      <sprite>sprites\obj_colourbg</sprite>
       <sprite>sprites\spr_lidup2</sprite>
       <sprite>sprites\spr_liduphint</sprite>
       <sprite>sprites\spr_lidhintdown</sprite>
@@ -25,6 +26,11 @@
       <sprite>sprites\spr_friend_trainL</sprite>
       <sprite>sprites\spr_train_friend3</sprite>
       <sprite>sprites\spr_train_friend_mask</sprite>
+      <sprites name="smashes">
+        <sprite>sprites\spr_crashing</sprite>
+      </sprites>
+      <sprite>sprites\spr_falling</sprite>
+      <sprite>sprites\spr_fallback</sprite>
       <sprite>sprites\spr_train_friend_mask2</sprite>
       <sprite>sprites\spr_tilttrain_character</sprite>
       <sprite>sprites\spr_tilttrain_negmask</sprite>
@@ -47,6 +53,7 @@
       <sprite>sprites\spr_outeroc2</sprite>
       <sprite>sprites\spr_outeroc3</sprite>
       <sprite>sprites\spr_outeroc1</sprite>
+      <sprite>sprites\spr_timer</sprite>
       <sprite>sprites\spr_dialoguedial</sprite>
       <sprite>sprites\spr_pointerblink</sprite>
       <sprite>sprites\spr_meter</sprite>
@@ -83,6 +90,8 @@
         <sprite>sprites\spr_LIhead</sprite>
         <sprite>sprites\spr_LIbody_still</sprite>
         <sprite>sprites\spr_LI_sitting</sprite>
+        <sprite>sprites\spr_hand_end</sprite>
+        <sprite>sprites\spr_LI_hand</sprite>
       </sprites>
       <sprite>sprites\spr_friendhead</sprite>
       <sprite>sprites\spr_speechbubble_black</sprite>
@@ -115,6 +124,9 @@
       <sprite>sprites\spr_lookinghead</sprite>
       <sprite>sprites\spr_wall</sprite>
       <sprite>sprites\spr_player_fb</sprite>
+      <sprite>sprites\spr_flash</sprite>
+      <sprite>sprites\spr_fullscreenflash</sprite>
+      <sprite>sprites\spr_flash_slow</sprite>
     </sprites>
     <sprite>sprites\spr_batwall</sprite>
     <sprite>sprites\spr_space</sprite>
@@ -149,6 +161,8 @@
       <sprite>sprites\spr_bubblescrash</sprite>
       <sprite>sprites\spr_scribble</sprite>
       <sprite>sprites\spr_title</sprite>
+      <sprite>sprites\spr_titlefade</sprite>
+      <sprite>sprites\spr_title2</sprite>
       <sprite>sprites\spr_bubble_2</sprite>
       <sprite>sprites\spr_bubblesmall</sprite>
       <sprite>sprites\spr_bubble</sprite>
@@ -195,6 +209,8 @@
     <background>background\bg_train2</background>
     <background>background\bg_streetwalk</background>
     <background>background\bg_streetwalk2</background>
+    <background>background\bg_startscreen</background>
+    <background>background\spr_startscreen2</background>
     <background>background\fg_chat</background>
     <background>background\bg_eyes</background>
     <background>background\bg_lecture</background>
@@ -231,6 +247,7 @@
     <script>scripts\scr_bar_outer.gml</script>
     <script>scripts\random__room_picker.gml</script>
     <script>scripts\scr_shrink_camera.gml</script>
+    <script>scripts\scr_camera_shrink_centered.gml</script>
     <script>scripts\scr_camera_shrink_wave.gml</script>
     <script>scripts\scr_shrink_camera_lecture.gml</script>
     <script>scripts\scr_camerafollow_tween.gml</script>
@@ -251,6 +268,11 @@
   </fonts>
   <objects name="objects">
     <object>objects\obj_font_picker</object>
+    <objects name="start">
+      <object>objects\obj_playerwalking</object>
+      <object>objects\obj_titlev2</object>
+    </objects>
+    <object>objects\obj_font_picker_small</object>
     <objects name="breath">
       <object>objects\obj_clicktobreath</object>
       <object>objects\obj_ready</object>
@@ -296,6 +318,7 @@
       <object>objects\obj_rmManager_coffee3</object>
       <object>objects\obj_rmManager_coffee5</object>
       <object>objects\obj_rmManager_coffee4</object>
+      <object>objects\obj_gen_guider</object>
       <object>objects\obj_barrista</object>
       <object>objects\obj_barrista_remake</object>
       <objects name="grp_dials">
@@ -325,6 +348,7 @@
     </objects>
     <objects name="don't move">
       <object>objects\obj_friend_dontmove</object>
+      <object>objects\obj_flash</object>
       <object>objects\obj_player_dontmove</object>
       <object>objects\obj_bar_outer</object>
       <object>objects\object151</object>
@@ -354,19 +378,12 @@
       <object>objects\obj_endscript</object>
       <object>objects\obj_no</object>
     </objects>
-    <objects name="lecturefly">
-      <object>objects\obj_handmask</object>
-      <object>objects\obj_hand</object>
-      <object>objects\obj_handLead</object>
-      <object>objects\obj_headlooking</object>
-      <object>objects\obj_guidespot1</object>
-      <object>objects\obj_guidespot2</object>
-      <object>objects\obj_guidespot3</object>
-      <object>objects\obj_fly</object>
-      <object>objects\obj_playerdialogue</object>
-      <object>objects\obj_boundingbox</object>
-      <object>objects\object67</object>
-      <object>objects\obj_peeps</object>
+    <objects name="hands">
+      <object>objects\obj_hand_end</object>
+      <object>objects\obj_flash_slow</object>
+      <object>objects\spr_fullflash</object>
+      <object>objects\obj_backcolour</object>
+      <object>objects\obj_lihand</object>
     </objects>
     <objects name="meetppl">
       <object>objects\player_mash_</object>
@@ -381,6 +398,20 @@
       <object>objects\obj_text_meetpple</object>
       <object>objects\obj_person2meet</object>
       <object>objects\obj_party_bubble</object>
+    </objects>
+    <objects name="lecturefly">
+      <object>objects\obj_handmask</object>
+      <object>objects\obj_hand</object>
+      <object>objects\obj_handLead</object>
+      <object>objects\obj_headlooking</object>
+      <object>objects\obj_guidespot1</object>
+      <object>objects\obj_guidespot2</object>
+      <object>objects\obj_guidespot3</object>
+      <object>objects\obj_fly</object>
+      <object>objects\obj_playerdialogue</object>
+      <object>objects\obj_boundingbox</object>
+      <object>objects\object67</object>
+      <object>objects\obj_peeps</object>
     </objects>
     <objects name="morningassets">
       <object>objects\obj_title</object>
@@ -398,6 +429,7 @@
       <object>objects\obj_notes</object>
       <object>objects\obj_swipespawner</object>
       <object>objects\obj_swipe</object>
+      <object>objects\obj_swipe_end</object>
       <object>objects\obj_swipe_breath</object>
       <object>objects\obj_nightcome</object>
       <object>objects\obj_wake</object>
@@ -484,6 +516,8 @@
       <object>objects\obj_traintilt</object>
       <object>objects\obj_guide_tilt</object>
       <object>objects\obj_blockout</object>
+      <object>objects\obj_fall</object>
+      <object>objects\obj_fallback</object>
       <object>objects\obj_player_tilt</object>
       <object>objects\obj_train_colour_tilt</object>
       <object>objects\obj_train_colour_tilt2</object>
@@ -501,6 +535,7 @@
   </objects>
   <rooms name="rooms">
     <rooms name="clump">
+      <room>rooms\rm_startscreen</room>
       <rooms name="morning">
         <room>rooms\rm_night1</room>
         <room>rooms\rm_morning1</room>
@@ -581,6 +616,7 @@
         <room>rooms\rm_pre_chat</room>
         <room>rooms\rm_chat</room>
       </rooms>
+      <room>rooms\rm_hands</room>
       <room>rooms\rm_tempend</room>
       <rooms name="morning5">
         <room>rooms\rm_morning5</room>

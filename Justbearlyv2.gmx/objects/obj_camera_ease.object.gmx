@@ -26,16 +26,18 @@
           <argument>
             <kind>1</kind>
             <string>///record original spot
-x = room_width/2
-y = room_height/2
-ox = x
-oy = y
+start = 1
+ox = room_width/2
+oy = room_height/2
+x = ox
+y = oy
 range = 5
+rate = 10
 //generate random position
 randomize()
-nx = random_range(ox+range,ox-range)
-ny = random_range(oy+range,oy-range)
-alarm[0] = 2*room_speed
+nx = ox
+ny = oy
+alarm[0] = 1/2 * room_speed
 </string>
           </argument>
         </arguments>
@@ -59,6 +61,8 @@ alarm[0] = 2*room_speed
           <argument>
             <kind>1</kind>
             <string>randomize()
+rate = 0.1
+start = 1
 nx = random_range(ox+range,ox-range)
 ny = random_range(oy+range,oy-range)
 alarm[0] = 2*room_speed
@@ -85,49 +89,12 @@ alarm[0] = 2*room_speed
           <argument>
             <kind>1</kind>
             <string>///move
-
-move_towards_point(nx,ny, 0.1);
+if start = 1
+{
+    scr_camerafollow_tween()
+}
+move_towards_point(nx,ny, rate);
 </string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>601</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_execute_script</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>9</kind>
-            <script>scr_camerafollow_tween</script>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
           </argument>
         </arguments>
       </action>

@@ -137,6 +137,18 @@ alarm[1] = 15
           <argument>
             <kind>1</kind>
             <string>///move on?
+///move on?
+if mouse_check_button_released(mb_left)
+{
+    if start == true
+    {
+        
+        alarm[2] = 15
+        message = "";
+        start = false;
+    }
+
+}
 if start == true
     {
     if (mouse_x &lt; (ox - buffer)) or (mouse_x &gt; (ox + buffer))

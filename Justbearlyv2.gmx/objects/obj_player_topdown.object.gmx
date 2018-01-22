@@ -31,7 +31,7 @@ rate = 5;//speed of character movement
 xplace = x
 yplace= y
 
-image_speed = 0.5
+image_speed = 0.25
 
 place_new = 0
 

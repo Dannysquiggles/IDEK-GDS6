@@ -152,7 +152,7 @@ else
 
 if bad == true
 {
-    badCount += 0.033; 
+    badCount += 0.099; 
      global.movevar += 0.05
      with fect_shake_growing_bi {stop = 0}
     if global.stress &lt; (ogStress + 0.15)
@@ -193,27 +193,45 @@ with fect_shake_growing_bi {stop = 0}
 
 //end states
 if goodCount &gt;= 3 
-{message = "perfect"
-if !instance_exists(obj_blockout)
-{
-    instance_create(room_width,0,obj_blockout)
+{//message = "perfect"
+    if !instance_exists(obj_flash)
+    {
+        instance_create(room_width/2,room_height/2,obj_flash)
+    }
+    with obj_trainfriend {image_index = 1}
+    with obj_trainfriend3 {image_index = 1}
+    with obj_trainfriend2 {image_index = 1}
+    with obj_trainfriend_mask {sprite_index = spr_crashing; image_speed = 0; image_alpha = 0}
+    with obj_trainfriend_mask3 {sprite_index = spr_crashing; image_speed = 0; image_alpha = 0}
+    with obj_trainfriend_mask2 {sprite_index = spr_crashing; image_speed = 0; image_alpha = 0}
+    with obj_tiltrain_negmask {instance_destroy()}
+    //sprite_index = spr_tiltplayer_away
+    alarm[0] = 30
+    global.stop = true;
 }
-alarm[0] = 30
-global.stop = true;}
 else if badCount &gt;= 3
-{message = "too close!"
-if !instance_exists(obj_blockout)
+{//message = "too close!"
+image_alpha = 0
+if !instance_exists(obj_fall)
 {
-    instance_create(room_width,0,obj_blockout)
+    instance_create(x,y,obj_fall)
 }
+with obj_trainfriend {image_alpha = 0}
+with obj_trainfriend3 {image_alpha = 0}
+with obj_trainfriend2 {image_alpha = 0}
+with obj_trainfriend_mask {sprite_index = spr_crashing; image_speed = 0; image_index = 0}
+with obj_trainfriend_mask3 {sprite_index = spr_crashing; image_speed = 0; image_index = 2}
+with obj_trainfriend_mask2 {sprite_index = spr_crashing; image_speed = 0; image_index = 1}
+with obj_tiltrain_negmask {instance_destroy()}
 alarm[0] = 30
 global.stop = true;}
 else if badCount2 &gt;= 3
-{message = "too far!"
-if !instance_exists(obj_blockout)
+{//message = "too far!"
+if !instance_exists(obj_fallback)
 {
-    instance_create(room_width,0,obj_blockout)
+    instance_create(x,y,obj_fallback)
 }
+image_alpha = 0
 alarm[0] = 30
 global.stop = true;}
 }

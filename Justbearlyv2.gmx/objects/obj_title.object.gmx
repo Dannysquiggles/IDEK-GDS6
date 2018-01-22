@@ -26,7 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>///set animation
-image_speed = 0;
+change = 0
+image_speed = 1;
 </string>
           </argument>
         </arguments>
@@ -51,6 +52,9 @@ image_speed = 0;
             <kind>1</kind>
             <string>///set image
 image_speed = 1;
+sprite_index = spr_titlefade
+image_index = 0;
+change = 1
 </string>
           </argument>
         </arguments>
@@ -74,9 +78,12 @@ image_speed = 1;
           <argument>
             <kind>1</kind>
             <string>// set machanics to start, destroy
+if change == 1
+{
 global.open = 0;
 instance_create(room_width / 2,room_height / 2 ,obj_intro_morning )
 instance_destroy();
+}
 </string>
           </argument>
         </arguments>
