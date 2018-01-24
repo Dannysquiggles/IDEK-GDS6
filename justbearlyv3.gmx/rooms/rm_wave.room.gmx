@@ -58,6 +58,7 @@
     <instance objName="obj_friendhead" x="1217" y="319" name="inst_A40C3E19" locked="0" code="" scaleX="0.699999988079071" scaleY="0.699999988079071" colour="4294967295" rotation="0"/>
     <instance objName="obj_crowdwave_manager" x="128" y="160" name="inst_01472A58" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_stranger_2" x="1696" y="1152" name="inst_C6081AF3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_curser" x="992" y="736" name="inst_058DCF36" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

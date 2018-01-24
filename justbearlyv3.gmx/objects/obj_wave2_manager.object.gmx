@@ -25,57 +25,13 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_font(fnt_Mmaker1)
-rate = 30
-alarm[0] = rate
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="2" enumb="2">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>draw_set_font(fnt_Mmaker1)
-alarm[0] = rate
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="2" enumb="1">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>draw_set_font(fnt_Mmaker3)
-alarm[2] = rate
+            <string>///set states
+global.wavestate = 'start'
+zoom = 0
+x = view_xview + view_wview/2
+y = view_yview + view_hview/2
+maxlimit = room_width;
+global.picked = 0;
 </string>
           </argument>
         </arguments>
@@ -98,8 +54,8 @@ alarm[2] = rate
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_font(fnt_Mmaker2)
-alarm[1] = rate
+            <string>//game_restart()
+global.wavestate = 'zoomin'
 </string>
           </argument>
         </arguments>
@@ -122,7 +78,149 @@ alarm[1] = rate
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>depth = y*-1
+            <string>/// move the view
+var view = 0;
+
+var amount = view_wview[view]/80
+
+// control the zoom
+if (zoom == 'in')
+{
+//negative zooms in
+    scr_view_zoom(-.01,view);
+}
+if (zoom == 'out')
+{
+//negative zooms in
+    scr_view_zoom(.015,view);
+}
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>601</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_execute_script</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>9</kind>
+            <script>scr_camerafollow_tween</script>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///event tree
+
+if global.wavestate == 'zoomout' //zoom out to maximum
+{
+    
+    if (x &gt; room_width/2)
+    {
+        move_towards_point(room_width/2,room_height/2, 50)
+        with obj_stranger_wave2 { image_alpha += 0.1 }
+    } else
+    {
+    move_towards_point(room_width/2,room_height/2, 0)
+    maxlimit = room_width;
+    minlimit = 64;
+    y = room_height/2
+    zoom = 'out'
+    x = room_width/2
+    }
+    if view_wview &gt;= maxlimit //return to correct size in case of errors
+    {
+        //game_end()
+        zoom = 0;
+        view_wview = room_width
+        view_hview = room_height
+        alarm[0] = .25*room_speed //set timer for next event
+        global.wavestate = 'neutral'//stop current event
+
+    }
+}
+
+if global.wavestate == 'zoomin' //zoom in to minimum
+{
+    maxlimit = room_width+100;
+    minlimit = 2880;
+    with obj_waveback { image_alpha -= 0.1 }
+    zoom = 'in'
+    if (y &lt; 1010)//+(2880/2))
+    {
+        move_towards_point(1840, 1010, 1)
+    } 
+    else
+    {
+    //game_restart()
+    move_towards_point(1840, 1010, 0)
+    x = 1840 //+ (view_wview/2)
+    y = 1010 //+ (view_hview/2)
+    }
+    if view_wview &lt;= minlimit //return to correct size in case of errors
+    {
+        
+        zoom = 0
+        view_wview = 2880
+        view_hview = 1620
+        //alarm[0] = 0.25*room_speed //set timer for next event
+        global.wavestate = 'fadein'//stop current event
+
+    }
+}
+with obj_wave_hand2 {if image_alpha &gt;= 1 {global.wavestate = 'startwave'}}
+
+if global.wavestate == 'fadein'
+{
+    with obj_wave_hand2 { image_alpha += 0.1 }
+}
+
+
 </string>
           </argument>
         </arguments>

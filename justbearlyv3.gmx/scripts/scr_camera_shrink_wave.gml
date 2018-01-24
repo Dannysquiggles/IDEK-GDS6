@@ -1,5 +1,5 @@
 // shrink view to new size, and change its angle
-if view_wview[0] > view_wview[1] //check if view has zoomed to it's goal.view[1] should be set as your second view in the room editor
+if view_wview[0] > view_wview[1] //check if view has zoomed to it's goal. view[1] should be set as your second view in the room editor
 {
     //shrink view each frame
     view_wview[0] *= 0.9

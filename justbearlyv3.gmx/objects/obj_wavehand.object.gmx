@@ -87,6 +87,7 @@ if wave == false
 }
 else if wave == true
 {
+    global.clicked = true;
     if dir == 'left'
     {
         if image_angle &lt;15

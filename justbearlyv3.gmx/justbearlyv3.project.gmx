@@ -127,6 +127,11 @@
       <sprite>sprites\spr_flash</sprite>
       <sprite>sprites\spr_fullscreenflash</sprite>
       <sprite>sprites\spr_flash_slow</sprite>
+      <sprites name="wave 2.0">
+        <sprite>sprites\spr_waveback</sprite>
+        <sprite>sprites\spr_wavehand2_0</sprite>
+        <sprite>sprites\spr_friend_wave_2</sprite>
+      </sprites>
     </sprites>
     <sprite>sprites\spr_batwall</sprite>
     <sprite>sprites\spr_space</sprite>
@@ -248,6 +253,7 @@
     <script>scripts\random__room_picker.gml</script>
     <script>scripts\scr_shrink_camera.gml</script>
     <script>scripts\scr_camera_shrink_centered.gml</script>
+    <script>scripts\scr_view_zoom.gml</script>
     <script>scripts\scr_camera_shrink_wave.gml</script>
     <script>scripts\scr_shrink_camera_lecture.gml</script>
     <script>scripts\scr_camerafollow_tween.gml</script>
@@ -299,6 +305,13 @@
       <object>objects\obj_chat_bubble_player</object>
       <object>objects\obj_chat_bubble_crash</object>
       <object>objects\obj_chat_manager</object>
+    </objects>
+    <objects name="crowdwave2.0">
+      <object>objects\obj_wave2_manager</object>
+      <object>objects\obj_waveback</object>
+      <object>objects\obj_stranger_wave2</object>
+      <object>objects\obj_wave_hand2</object>
+      <object>objects\obj_wavefriend2</object>
     </objects>
     <objects name="CrowdWave">
       <object>objects\obj_friendhead</object>
@@ -534,6 +547,11 @@
     <object>objects\obj_timer</object>
   </objects>
   <rooms name="rooms">
+    <rooms name="wave1">
+      <room>rooms\rm_pre_wave1</room>
+      <room>rooms\rm_wave_v2</room>
+      <room>rooms\rm_wave</room>
+    </rooms>
     <rooms name="clump">
       <room>rooms\rm_startscreen</room>
       <rooms name="morning">
@@ -551,10 +569,6 @@
       <rooms name="lecturev3">
         <room>rooms\rm_pre_lecture</room>
         <room>rooms\rm_lecturev2</room>
-      </rooms>
-      <rooms name="wave1">
-        <room>rooms\rm_pre_wave1</room>
-        <room>rooms\rm_wave</room>
       </rooms>
       <rooms name="party1">
         <room>rooms\rm_pre_partay1</room>
