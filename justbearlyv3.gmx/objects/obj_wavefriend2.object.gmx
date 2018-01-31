@@ -86,12 +86,13 @@ if state == 'looking/waveright'
 
 if state == 'start'
 {
-    image_index = 1
-    state = 'looking/waveright'
-    alarm[1] = 0.5*room_speed
+    image_speed = 0.7
+    //image_index = 1
+    //state = 'looking/waveright'
+    //alarm[1] = 0.5*room_speed
 }
 
-if state == 'waveleft'
+/*if state == 'waveleft'
 {
     image_index = 3
     count += 1;
@@ -122,11 +123,88 @@ if state == 'waveleft'
           <argument>
             <kind>1</kind>
             <string>///trigger zoom
-if count == 3
+if count == 3 
 {
+    if global.wavestate != 'win' || global.wavestate != 'lose'
+    {
     global.wavestate = 'zoomout'
+    }
 }
 else if count &gt; 4
+{
+    state = 'walk'
+}
+
+if global.wavestate = 'startwave'
+{
+    //image_index = 1;
+    y += 0.5
+    image_xscale += 0.00075
+    image_yscale += 0.00075
+}
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>//end
+if global.wavestate == 'win'
+{
+    if image_index &gt;= 22
+    {
+        image_index = 11
+    }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="7">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///trigger zoom
+if state = 'start'
+{
+    if global.wavestate != 'win' || global.wavestate != 'lose'
+    {
+    global.wavestate = 'zoomout'
+    sprite_index = spr_friend_walk_2;
+    image_speed = 0.25
+    state = 'walk'
+    }
+}
+/*else if count &gt; 4
 {
     state = 'walk'
 }
@@ -138,7 +216,6 @@ if global.wavestate = 'startwave'
     image_xscale += 0.0001
     image_yscale += 0.0001
 }
-
 </string>
           </argument>
         </arguments>

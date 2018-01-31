@@ -25,7 +25,15 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.open = 5;
+            <string>if room == rm_menu
+{
+global.open = 0;
+}
+else
+{
+global.open = 5;
+global.rate = 45;
+}
 move = 0
 </string>
           </argument>

@@ -8,6 +8,17 @@
     <sound>sound\sound0</sound>
   </sounds>
   <sprites name="sprites">
+    <sprites name="menu">
+      <sprite>sprites\spr_exit</sprite>
+      <sprite>sprites\spr_option</sprite>
+      <sprite>sprites\spr_bg</sprite>
+      <sprite>sprites\spr_strike</sprite>
+      <sprite>sprites\spr_endchapter</sprite>
+      <sprite>sprites\spr_play</sprite>
+      <sprite>sprites\spr_window</sprite>
+      <sprite>sprites\spr_controlbackground</sprite>
+      <sprite>sprites\spr_logo</sprite>
+    </sprites>
     <sprites name="backgrounds">
       <sprite>sprites\spr_bg_night</sprite>
       <sprite>sprites\sprl_idup</sprite>
@@ -130,7 +141,12 @@
       <sprites name="wave 2.0">
         <sprite>sprites\spr_waveback</sprite>
         <sprite>sprites\spr_wavehand2_0</sprite>
+        <sprite>sprites\spr_strangerblack</sprite>
+        <sprite>sprites\spr_wave_bubble</sprite>
+        <sprite>sprites\spr_stranger_turned</sprite>
+        <sprite>sprites\spr_strangerred</sprite>
         <sprite>sprites\spr_friend_wave_2</sprite>
+        <sprite>sprites\spr_friend_walk_2</sprite>
       </sprites>
     </sprites>
     <sprite>sprites\spr_batwall</sprite>
@@ -282,7 +298,6 @@
     <objects name="breath">
       <object>objects\obj_clicktobreath</object>
       <object>objects\obj_ready</object>
-      <object>objects\obj_ready_draw</object>
       <object>objects\obj_breather</object>
     </objects>
     <objects name="bats">
@@ -309,6 +324,7 @@
     <objects name="crowdwave2.0">
       <object>objects\obj_wave2_manager</object>
       <object>objects\obj_waveback</object>
+      <object>objects\obj_angry_ped</object>
       <object>objects\obj_stranger_wave2</object>
       <object>objects\obj_wave_hand2</object>
       <object>objects\obj_wavefriend2</object>
@@ -357,6 +373,8 @@
     <objects name="drawing">
       <object>objects\obj_drawing</object>
       <object>objects\obj_drawing_hand</object>
+      <object>objects\obj_tableport</object>
+      <object>objects\obj_ready_draw</object>
       <object>objects\obj_drawmask</object>
     </objects>
     <objects name="don't move">
@@ -425,6 +443,17 @@
       <object>objects\obj_boundingbox</object>
       <object>objects\object67</object>
       <object>objects\obj_peeps</object>
+    </objects>
+    <objects name="menu">
+      <object>objects\obj_play</object>
+      <object>objects\obj_controls</object>
+      <object>objects\obj_housubacku</object>
+      <object>objects\obj_exit</object>
+      <object>objects\obj_endbg</object>
+      <object>objects\obj_strike</object>
+      <object>objects\obj_controlspage</object>
+      <object>objects\blinds</object>
+      <object>objects\obj_logo</object>
     </objects>
     <objects name="morningassets">
       <object>objects\obj_title</object>
@@ -547,24 +576,29 @@
     <object>objects\obj_timer</object>
   </objects>
   <rooms name="rooms">
-    <rooms name="wave1">
-      <room>rooms\rm_pre_wave1</room>
-      <room>rooms\rm_wave_v2</room>
-      <room>rooms\rm_wave</room>
-    </rooms>
+    <room>rooms\rm_menu</room>
+    <room>rooms\rm_controls</room>
     <rooms name="clump">
       <room>rooms\rm_startscreen</room>
       <rooms name="morning">
         <room>rooms\rm_night1</room>
         <room>rooms\rm_morning1</room>
       </rooms>
+      <rooms name="cafe1">
+        <room>rooms\rm_pre_cafe1</room>
+        <room>rooms\rm_cafe_simple1</room>
+      </rooms>
       <rooms name="train1">
         <room>rooms\rm_pre_train</room>
         <room>rooms\rm_trainv2</room>
       </rooms>
-      <rooms name="cafe1">
-        <room>rooms\rm_pre_cafe1</room>
-        <room>rooms\rm_cafe_simple1</room>
+      <rooms name="wave1">
+        <room>rooms\rm_pre_wave1</room>
+        <room>rooms\rm_wave_v2</room>
+      </rooms>
+      <rooms name="train3">
+        <room>rooms\rm_pre_train3</room>
+        <room>rooms\rm_train3</room>
       </rooms>
       <rooms name="lecturev3">
         <room>rooms\rm_pre_lecture</room>
@@ -574,18 +608,15 @@
         <room>rooms\rm_pre_partay1</room>
         <room>rooms\rm_party1</room>
       </rooms>
+      <rooms name="cafe4">
+        <room>rooms\rm_pre_cafe4</room>
+        <room>rooms\rm_cafe_laf</room>
+      </rooms>
+      <room>rooms\rm_yes_no</room>
       <room>rooms\rm_morning2</room>
-      <rooms name="train3">
-        <room>rooms\rm_pre_train3</room>
-        <room>rooms\rm_train3</room>
-      </rooms>
-      <rooms name="cafe3">
-        <room>rooms\rm_pre_cafe3</room>
-        <room>rooms\rm_cafe_timer</room>
-      </rooms>
-      <rooms name="wave2">
-        <room>rooms\rm_pre_wave</room>
-        <room>rooms\rm_wave2</room>
+      <rooms name="train4">
+        <room>rooms\rm_pre_train4</room>
+        <room>rooms\rm_train_crouded1</room>
       </rooms>
       <rooms name="partay2">
         <room>rooms\rm_pre_partay2</room>
@@ -595,6 +626,15 @@
         <room>rooms\rm_pre_facebook1</room>
         <room>rooms\rm_facebook1</room>
       </rooms>
+      <room>rooms\rm_tempend</room>
+      <rooms name="cafe3">
+        <room>rooms\rm_pre_cafe3</room>
+        <room>rooms\rm_cafe_timer</room>
+      </rooms>
+      <rooms name="wave2">
+        <room>rooms\rm_pre_wave</room>
+        <room>rooms\rm_wave2</room>
+      </rooms>
       <rooms name="staystill">
         <room>rooms\rm_pre_staystill</room>
         <room>rooms\rm_staystill</room>
@@ -602,10 +642,6 @@
       <room>rooms\rm_pre_street1</room>
       <room>rooms\rm_bats</room>
       <room>rooms\rm_bat2</room>
-      <rooms name="cafe4">
-        <room>rooms\rm_pre_cafe4</room>
-        <room>rooms\rm_cafe_laf</room>
-      </rooms>
       <rooms name="tilt train">
         <room>rooms\rm_pre_train_tilt1</room>
         <room>rooms\rm_tilttrain</room>
@@ -618,10 +654,6 @@
         <room>rooms\rm_pre_tilt_train2</room>
         <room>rooms\rm_titltrain2</room>
       </rooms>
-      <rooms name="train4">
-        <room>rooms\rm_pre_train4</room>
-        <room>rooms\rm_train_crouded1</room>
-      </rooms>
       <rooms name="tilttrain3">
         <room>rooms\rm_pre_tilttrain3</room>
         <room>rooms\rm_tilttrain3</room>
@@ -631,7 +663,6 @@
         <room>rooms\rm_chat</room>
       </rooms>
       <room>rooms\rm_hands</room>
-      <room>rooms\rm_tempend</room>
       <rooms name="morning5">
         <room>rooms\rm_morning5</room>
       </rooms>
@@ -748,12 +779,12 @@
       <rooms name="wavev2">
         <room>rooms\rm_wavev3</room>
       </rooms>
-      <room>rooms\rm_yes_no</room>
       <rooms name="street3">
         <room>rooms\rm_pe_street3</room>
         <room>rooms\rm_street3</room>
       </rooms>
     </rooms>
+    <room>rooms\rm_wave</room>
     <room>rooms\rm_preroomgeneric</room>
   </rooms>
   <help>

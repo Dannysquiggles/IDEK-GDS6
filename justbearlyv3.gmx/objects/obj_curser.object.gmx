@@ -30,6 +30,7 @@ image_speed = 0.10
 global.fails = 0;
 global.color = true;
 global.symbol = 'hand'
+global.lastroom = 0
 minim = 0.8;
 maxtime = 3600;
 timer = 0;

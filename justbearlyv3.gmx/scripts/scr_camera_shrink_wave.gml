@@ -14,10 +14,12 @@ if view_wview[0] > view_wview[1] //check if view has zoomed to it's goal. view[1
 else
 {
 if !instance_exists(obj_bubblesmall)
-            {
-                instance_create(x- 100, y - sprite_height*0.85, obj_bubblesmall)
-                global.stress += 0.25
-            }
+           {
+                instance_create(x- 250, y - sprite_height*0.85, obj_bubblesmall)
+                instance_create(x- 250, y - sprite_height*0.85, fect_shake)
+                alarm[1] = 3*room_speed
+                //global.stress += 0.25
+           }
 //create dial after view meets it's goal
 /*if instance_number(obj_dialpointer) == 0 && global.oc == 0
     {

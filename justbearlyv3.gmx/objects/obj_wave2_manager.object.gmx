@@ -27,11 +27,37 @@
             <kind>1</kind>
             <string>///set states
 global.wavestate = 'start'
+state = 0
 zoom = 0
 x = view_xview + view_wview/2
 y = view_yview + view_hview/2
 maxlimit = room_width;
 global.picked = 0;
+finished = 0
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>//set condition to lose
+state = 'lose'
 </string>
           </argument>
         </arguments>
@@ -55,7 +81,16 @@ global.picked = 0;
           <argument>
             <kind>1</kind>
             <string>//game_restart()
-global.wavestate = 'zoomin'
+if finished = 0{
+global.wavestate = 'zoomin'}
+else 
+{ 
+    if finished == 1 {
+        instance_create(room_width,0, obj_swipe); 
+        with obj_swipe{ image_xscale = 2; image_yscale = 2; }
+        finished = 2
+        } 
+}
 </string>
           </argument>
         </arguments>
@@ -95,47 +130,14 @@ if (zoom == 'out')
     scr_view_zoom(.015,view);
 }
 
+//follow camera
+if finished == 0
+{
+    scr_camerafollow_tween()
+}
+
+
 </string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>601</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_execute_script</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>9</kind>
-            <script>scr_camerafollow_tween</script>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
           </argument>
         </arguments>
       </action>
@@ -221,6 +223,88 @@ if global.wavestate == 'fadein'
 }
 
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///end conditions
+if global.clicked = true //player has made their action
+{
+    if finished == 0 {
+    //check if friend is covered by a stranger
+    with obj_wavefriend2
+    {
+        
+        if place_meeting(x,y, obj_stranger_wave2)
+        {
+            
+            //stop the picked stranger, and disolve all others.
+            with obj_stranger_wave2{if change = 1 {image_speed = 0; image_index = 0;} else {disolve = 1}}
+            with obj_wave2_manager {alarm[1] = 1*room_speed; finished = 1}
+        }
+        else
+        {
+            
+            global.wavestate = 'win'
+            with obj_wavefriend2 { sprite_index = spr_friend_wave_2; image_speed = 1; image_index = 11 }
+            with obj_wave2_manager {alarm[0] = 3*room_speed; finished = 1; state = 'win'}
+            draw_text_transformed(x,y,'WIN',5,5,0)
+            
+            //room_goto_next() 
+            
+            
+        }
+        }
+        
+    }
+}
+
+//PLAYER IS WINNIGN
+if state == 'win'
+{
+    finished = 1;
+    //play win animation
+    with obj_stranger_wave2 {image_alpha -= 0.08}
+    with obj_wavefriend2 {    if image_index &gt;= 22
+    {
+        image_index = 11
+    }}
+    background_alpha[0] -= 0.08
+}
+
+//PLAYER IS LOSING
+if state == 'lose'
+{
+//
+    with obj_stranger_wave2 //select front stranger
+    {
+        if change == 1
+        { //game_end()//create changed sprite
+            global.xs = image_xscale
+            global.ys = image_yscale
+            if !instance_exists(obj_angry_ped) {instance_create(x,y,obj_angry_ped)}
+            background_alpha[0] -= 0.08
+            disolve = 1
+        }
+    }
+    finished = 1;
+}
 </string>
           </argument>
         </arguments>
