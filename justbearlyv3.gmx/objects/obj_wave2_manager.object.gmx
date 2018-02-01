@@ -29,11 +29,40 @@
 global.wavestate = 'start'
 state = 0
 zoom = 0
+alarm[2] = 20*room_speed;
 x = view_xview + view_wview/2
 y = view_yview + view_hview/2
 maxlimit = room_width;
 global.picked = 0;
 finished = 0
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///spawn room ender
+if !instance_exists(obj_crowd)
+{
+    instance_create(3776,2132, obj_crowd)
+    global.wavestate = 'toolate'
+}
 </string>
           </argument>
         </arguments>

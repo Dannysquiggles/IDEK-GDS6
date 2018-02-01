@@ -11,6 +11,7 @@
     <sprites name="menu">
       <sprite>sprites\spr_exit</sprite>
       <sprite>sprites\spr_option</sprite>
+      <sprite>sprites\spr_restartprompt</sprite>
       <sprite>sprites\spr_bg</sprite>
       <sprite>sprites\spr_strike</sprite>
       <sprite>sprites\spr_endchapter</sprite>
@@ -18,6 +19,7 @@
       <sprite>sprites\spr_window</sprite>
       <sprite>sprites\spr_controlbackground</sprite>
       <sprite>sprites\spr_logo</sprite>
+      <sprite>sprites\spr_restart</sprite>
     </sprites>
     <sprites name="backgrounds">
       <sprite>sprites\spr_bg_night</sprite>
@@ -31,6 +33,10 @@
       <sprite>sprites\spr_liddown2</sprite>
       <sprite>sprites\spr_lidshadowdown</sprite>
       <sprite>sprites\spr_lidshadowup</sprite>
+    </sprites>
+    <sprites name="yesno">
+      <sprite>sprites\spr_clickies</sprite>
+      <sprite>sprites\spr_prompts</sprite>
     </sprites>
     <sprites name="tittrain">
       <sprite>sprites\spr_train_friend</sprite>
@@ -141,6 +147,7 @@
       <sprites name="wave 2.0">
         <sprite>sprites\spr_waveback</sprite>
         <sprite>sprites\spr_wavehand2_0</sprite>
+        <sprite>sprites\spr_crowd</sprite>
         <sprite>sprites\spr_strangerblack</sprite>
         <sprite>sprites\spr_wave_bubble</sprite>
         <sprite>sprites\spr_stranger_turned</sprite>
@@ -326,6 +333,7 @@
       <object>objects\obj_waveback</object>
       <object>objects\obj_angry_ped</object>
       <object>objects\obj_stranger_wave2</object>
+      <object>objects\obj_crowd</object>
       <object>objects\obj_wave_hand2</object>
       <object>objects\obj_wavefriend2</object>
     </objects>
@@ -448,6 +456,7 @@
       <object>objects\obj_play</object>
       <object>objects\obj_controls</object>
       <object>objects\obj_housubacku</object>
+      <object>objects\obj_restart_prompt</object>
       <object>objects\obj_exit</object>
       <object>objects\obj_endbg</object>
       <object>objects\obj_strike</object>
@@ -482,7 +491,11 @@
       <object>objects\obj_end</object>
     </objects>
     <object>objects\obj_yes_no_prompts</object>
+    <object>objects\obj_yes_no_prompts2</object>
+    <object>objects\obj_yesnoprompts3</object>
+    <object>objects\obj_testanswer</object>
     <object>objects\obj_yes_no_spawner</object>
+    <object>objects\obj_spawner2</object>
     <objects name="preroom">
       <object>objects\obj_txt_manage_generic</object>
       <object>objects\obj_txt_wave</object>
@@ -597,7 +610,6 @@
         <room>rooms\rm_wave_v2</room>
       </rooms>
       <rooms name="train3">
-        <room>rooms\rm_pre_train3</room>
         <room>rooms\rm_train3</room>
       </rooms>
       <rooms name="lecturev3">
@@ -609,17 +621,14 @@
         <room>rooms\rm_party1</room>
       </rooms>
       <rooms name="cafe4">
-        <room>rooms\rm_pre_cafe4</room>
         <room>rooms\rm_cafe_laf</room>
       </rooms>
       <room>rooms\rm_yes_no</room>
       <room>rooms\rm_morning2</room>
       <rooms name="train4">
-        <room>rooms\rm_pre_train4</room>
         <room>rooms\rm_train_crouded1</room>
       </rooms>
       <rooms name="partay2">
-        <room>rooms\rm_pre_partay2</room>
         <room>rooms\rm_party2</room>
       </rooms>
       <rooms name="facebook1">
@@ -645,6 +654,8 @@
       <rooms name="tilt train">
         <room>rooms\rm_pre_train_tilt1</room>
         <room>rooms\rm_tilttrain</room>
+        <room>rooms\rm_pre_train4</room>
+        <room>rooms\rm_pre_partay2</room>
       </rooms>
       <rooms name="draw">
         <room>rooms\rm_pre_daw</room>
@@ -683,6 +694,7 @@
       <rooms name="street1">
         <room>rooms\rm_street1</room>
       </rooms>
+      <room>rooms\rm_pre_train3</room>
     </rooms>
     <rooms name="DAY 2">
       <rooms name="morning2">
@@ -748,6 +760,7 @@
         <room>rooms\rm_night</room>
         <room>rooms\rm_morning</room>
       </rooms>
+      <room>rooms\rm_pre_cafe4</room>
       <rooms name="party">
         <room>rooms\rm_pre_partay</room>
         <room>rooms\rm_party</room>

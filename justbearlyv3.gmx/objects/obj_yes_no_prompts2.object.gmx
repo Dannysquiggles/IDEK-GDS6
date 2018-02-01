@@ -3,7 +3,7 @@
   <spriteName>spr_prompts</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-1</depth>
+  <depth>-2</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -26,15 +26,15 @@
           <argument>
             <kind>1</kind>
             <string>touched = false
-image_alpha = 0
 image_xscale = 0.8
+image_alpha = 0
 image_yscale = 0.8
 image_speed = 0;
 size = sprite_width*1.2
 buffer = 100
 nx = random_range(buffer,room_width-sprite_width-buffer)
 ny = random_range(buffer,room_height-sprite_height-buffer)
-image_index = 0;
+image_index = 1;
 global.imageindex += 1;
 //instance_create(x,y,obj_no);
 </string>
