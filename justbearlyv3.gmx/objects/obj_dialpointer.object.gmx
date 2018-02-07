@@ -146,8 +146,9 @@ global.oc = 0.1
             <kind>1</kind>
             <string>///apply outcome 3
         global.oc = 3;
-        global.message = otc3_text
-        global.col = 'black'
+        global.message2 = otc3_text
+        with obj_blackbubble {image_alpha = 255}
+        //global.col = 'black'
 //growcamera
     global.grow = 2
     with obj_rmManager_coffee{grow = 2}
@@ -181,8 +182,10 @@ instance_destroy();
             <kind>1</kind>
             <string>///apply outcome 2
                 global.oc = 2;
-        global.message = otc2_text
-        global.col = 'black'
+        global.message2 = otc2_text
+        with obj_blackbubble {image_alpha = 255}
+        
+        //global.col = 'black'
 //growcamera
     global.grow = 2
     with obj_rmManager_coffee{grow = 2}
@@ -215,8 +218,9 @@ instance_destroy();
             <kind>1</kind>
             <string>///apply outcome 1
         global.oc = 1;
-        global.message = otc1_text
-        global.col = 'black'
+        global.message2 = otc1_text
+        with obj_blackbubble {image_alpha = 255}
+        //global.col = 'black'
 //growcamera
     global.grow = 2
     with obj_rmManager_coffee{grow = 2}

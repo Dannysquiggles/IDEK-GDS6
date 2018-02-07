@@ -47,6 +47,7 @@ grow = false;
 global.grow = false;
 
 global.message = "What can I get you?";
+global.message2 = "";
 
 global.col = 'white';
 color = c_black;
