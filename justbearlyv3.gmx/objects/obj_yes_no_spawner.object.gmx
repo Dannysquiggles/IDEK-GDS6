@@ -161,14 +161,16 @@ if touched == 0
     {
     with obj_yes_no_prompts {image_alpha = 255}
     image_index +=1
-    global.prompts += 1
+    global.prompts = 1
+    instance_create(x,y,fect_shake)
     touched =1
     }    
     else if global.prompts == 1
     {
     with obj_yes_no_prompts2 {image_alpha = 255}
     image_index +=1
-    global.prompts += 1
+    instance_create(x,y,fect_shake)
+    global.prompts = 2
     touched =1
     }
     //}

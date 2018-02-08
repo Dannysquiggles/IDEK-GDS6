@@ -65,9 +65,10 @@ image_speed = 1
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>        global.message = "HEHEEHEHEHEHEHEHEHE#HAHAHAHAHAHAHAHA#HO HO HO HO HA HA HA HA #HEH HAH HARGH HA HA HA # heheheh."
+            <string>        global.message2 = "HEHEEHEHEHEHEHEHEHE#HAHAHAHAHAHAHAHA#HO HO HO HO HA HA HA HA #HEH HAH HARGH HA HA HA."
+        with obj_blackbubble {image_alpha = 255}
         global.oc = 5.3
-        global.col = 'black'
+        //global.col = 'black'
 //zoomout
 with obj_rmManager_coffee {grow = 2}
 global.grow = 2
@@ -136,9 +137,10 @@ global.grow = 2
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>        global.message = "heh heh"
+            <string>        global.message2 = "heh heh"
+        with obj_blackbubble {image_alpha = 255}
         global.oc = 5.2
-        global.col = 'black'
+        //global.col = 'black'
 //zoomout
 with obj_rmManager_coffee {grow = 2}
 global.grow = 2
@@ -206,9 +208,10 @@ global.grow = 2
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.message = " ... "
+            <string>global.message2 = " ... "
+with obj_blackbubble {image_alpha = 255}
 global.oc = 5.1
-global.col = 'black'
+//global.col = 'black'
 //zoomout
 with obj_rmManager_coffee {grow = 2}
 global.grow = 2;
