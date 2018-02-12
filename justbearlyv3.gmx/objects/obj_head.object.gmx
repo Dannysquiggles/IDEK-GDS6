@@ -73,6 +73,15 @@ else if obj_headguider.x &lt; x - 300
     }
     //if x is within second buffer, and y is within buffer { image_index = whatever middle head is}
 }
+else if obj_headguider.y &lt; 200
+    {
+    sprite_index = spr_sittingheadup
+    image_angle = point_direction(x,y, obj_headguider.x, obj_headguider.y);
+    image_xscale = 1;
+    image_yscale = 1;
+    }
+    //if x is within second buffer, and y is within buffer { image_index = whatever middle head is}
+
 else
 {
     sprite_index = spr_sittingheadforward2;
