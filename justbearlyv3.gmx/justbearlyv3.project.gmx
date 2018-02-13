@@ -185,6 +185,7 @@
     <sprite>sprites\spr_block</sprite>
     <sprite>sprites\spr_partybg</sprite>
     <sprite>sprites\spr_shitdoor</sprite>
+    <sprite>sprites\spr_shitdoornight</sprite>
     <sprite>sprites\spr_clearblock</sprite>
     <sprite>sprites\spr_debugblock</sprite>
     <sprites name="text assets">
@@ -259,6 +260,7 @@
     <background>background\bg_streetg</background>
     <background>background\bg_streetR</background>
     <background>background\fg_vignette</background>
+    <background>background\fg_darken</background>
     <background>background\bg_morning1</background>
     <background>background\bg_facebook</background>
     <background>background\fg_still</background>
@@ -483,6 +485,7 @@
       <object>objects\obj_playersit</object>
       <object>objects\obj_notes</object>
       <object>objects\obj_swipespawner</object>
+      <object>objects\obj_swipspawner2</object>
       <object>objects\obj_swipe</object>
       <object>objects\obj_swipe_end</object>
       <object>objects\obj_swipe_breath</object>
