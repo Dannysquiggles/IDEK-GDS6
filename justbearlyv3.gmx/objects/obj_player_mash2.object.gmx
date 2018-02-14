@@ -195,7 +195,7 @@ if !global.oc = 1
 {
 //stop playre movement
 global.oc = 3
-sprite_index = spr_partay_still
+sprite_index = spr_partay_look
 image_speed = 0
 //crowd turns to acknowladge
 

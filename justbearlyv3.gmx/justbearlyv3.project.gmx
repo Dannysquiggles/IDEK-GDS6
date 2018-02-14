@@ -106,7 +106,9 @@
       <sprites name="LI">
         <sprite>sprites\spr_LIbody_walk</sprite>
         <sprite>sprites\spr_LIhead</sprite>
+        <sprite>sprites\spr_fallingli</sprite>
         <sprite>sprites\spr_LIbody_still</sprite>
+        <sprite>sprites\spr_li_sitting_sk</sprite>
         <sprite>sprites\spr_LI_sitting</sprite>
         <sprite>sprites\spr_hand_end</sprite>
         <sprite>sprites\spr_LI_hand</sprite>
@@ -120,7 +122,11 @@
       <sprite>sprites\spr_playerwalk</sprite>
       <sprite>sprites\spr_playerwalk2</sprite>
       <sprite>sprites\spr_partay_still</sprite>
-      <sprite>sprites\spr_croud</sprite>
+      <sprites name="crowd">
+        <sprite>sprites\spr_croudhand</sprite>
+        <sprite>sprites\spr_croudhead</sprite>
+        <sprite>sprites\spr_croud</sprite>
+      </sprites>
       <sprite>sprites\spr_partaybg</sprite>
       <sprite>sprites\spr_curser</sprite>
       <sprite>sprites\spr_curser_closed</sprite>
@@ -173,6 +179,7 @@
       <sprite>sprites\spr_lucture_peeps</sprite>
       <sprite>sprites\spr_handmask</sprite>
       <sprite>sprites\spr_wave</sprite>
+      <sprite>sprites\apr_flytrale</sprite>
     </sprites>
     <sprite>sprites\spr_sure</sprite>
     <sprite>sprites\spr_test_sure</sprite>
@@ -430,20 +437,6 @@
       <object>objects\obj_backcolour</object>
       <object>objects\obj_lihand</object>
     </objects>
-    <objects name="meetppl">
-      <object>objects\player_mash_</object>
-      <object>objects\obj_player_mash2</object>
-      <object>objects\ob_party_player3</object>
-      <object>objects\obj_bg_partay</object>
-      <object>objects\obj_shake</object>
-      <object>objects\obj_timer_party</object>
-      <object>objects\obj_bgchar</object>
-      <object>objects\obj_LI_party1</object>
-      <object>objects\object193</object>
-      <object>objects\obj_text_meetpple</object>
-      <object>objects\obj_person2meet</object>
-      <object>objects\obj_party_bubble</object>
-    </objects>
     <objects name="lecturefly">
       <object>objects\obj_handmask</object>
       <object>objects\obj_hand</object>
@@ -452,6 +445,7 @@
       <object>objects\obj_guidespot1</object>
       <object>objects\obj_guidespot2</object>
       <object>objects\obj_guidespot3</object>
+      <object>objects\obj_flytrale</object>
       <object>objects\obj_fly</object>
       <object>objects\obj_playerdialogue</object>
       <object>objects\obj_boundingbox</object>
@@ -503,6 +497,23 @@
     <object>objects\obj_testanswer</object>
     <object>objects\obj_yes_no_spawner</object>
     <object>objects\obj_spawner2</object>
+    <objects name="partay">
+      <object>objects\player_mash_</object>
+      <object>objects\obj_player_mash2</object>
+      <object>objects\ob_party_player3</object>
+      <object>objects\obj_bg_partay</object>
+      <object>objects\obj_shake</object>
+      <object>objects\obj_timer_party</object>
+      <object>objects\obj_bgchar</object>
+      <object>objects\obj_lisitting</object>
+      <object>objects\obj_LI_party1</object>
+      <object>objects\object193</object>
+      <object>objects\obj_text_meetpple</object>
+      <object>objects\obj_lizhead</object>
+      <object>objects\obj_lizhand</object>
+      <object>objects\obj_person2meet</object>
+      <object>objects\obj_party_bubble</object>
+    </objects>
     <objects name="preroom">
       <object>objects\obj_txt_manage_generic</object>
       <object>objects\obj_txt_wave</object>
@@ -637,6 +648,7 @@
         </rooms>
         <rooms name="partay2">
           <room>rooms\rm_party2</room>
+          <room>rooms\rm_partybump</room>
         </rooms>
         <rooms name="facebook1">
           <room>rooms\rm_pre_facebook1</room>
@@ -661,10 +673,12 @@
       <rooms name="staystill">
         <room>rooms\rm_pre_staystill</room>
         <room>rooms\rm_staystill</room>
+        <rooms name="bats">
+          <room>rooms\rm_bats</room>
+          <room>rooms\rm_bat2</room>
+        </rooms>
       </rooms>
       <room>rooms\rm_pre_street1</room>
-      <room>rooms\rm_bats</room>
-      <room>rooms\rm_bat2</room>
       <rooms name="tilt train">
         <room>rooms\rm_pre_train_tilt1</room>
         <room>rooms\rm_tilttrain</room>
