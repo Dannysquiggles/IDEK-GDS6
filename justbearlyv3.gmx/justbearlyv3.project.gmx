@@ -22,6 +22,22 @@
       <sprite>sprites\spr_logo</sprite>
       <sprite>sprites\spr_restart</sprite>
     </sprites>
+    <sprites name="postbump">
+      <sprite>sprites\spr_dalebackfloor</sprite>
+      <sprite>sprites\spr_blackbubblefloor</sprite>
+      <sprite>sprites\spr_dial</sprite>
+      <sprite>sprites\spr_dial_colliders</sprite>
+      <sprite>sprites\spr_dial_collidersbotom</sprite>
+      <sprite>sprites\spr_dial_collidersleft</sprite>
+      <sprite>sprites\spr_dial_colliderstop</sprite>
+      <sprite>sprites\spr_dial_collidersr</sprite>
+      <sprite>sprites\spr_dialleft</sprite>
+      <sprite>sprites\spr_dialupper</sprite>
+      <sprite>sprites\spr_dial_bottom</sprite>
+      <sprite>sprites\spr_dialright</sprite>
+      <sprite>sprites\spr_whitebubblefloor</sprite>
+      <sprite>sprites\spr_LI_ground</sprite>
+    </sprites>
     <sprites name="backgrounds">
       <sprite>sprites\spr_bg_night</sprite>
       <sprite>sprites\sprl_idup</sprite>
@@ -73,6 +89,8 @@
       <sprite>sprites\spr_outeroc1</sprite>
       <sprite>sprites\spr_timer</sprite>
       <sprite>sprites\spr_dialoguedial</sprite>
+      <sprite>sprites\spr_dial_floor</sprite>
+      <sprite>sprites\spr_dial_collider</sprite>
       <sprite>sprites\spr_pointerblink</sprite>
       <sprite>sprites\spr_meter</sprite>
       <sprite>sprites\spr_bar_inner</sprite>
@@ -239,6 +257,7 @@
     <background>background\bg_endsad</background>
     <background>background\bg_black</background>
     <background>background\bg_cafe</background>
+    <background>background\bg_partyfloor</background>
     <background>background\bg_chat</background>
     <background>background\bg_yes_no</background>
     <background>background\bg_morning2</background>
@@ -280,6 +299,7 @@
   <scripts name="scripts">
     <script>scripts\scr_dialrotator.gml</script>
     <script>scripts\scr_textManager.gml</script>
+    <script>scripts\scr_resize.gml</script>
     <script>scripts\scr_textManager_pre.gml</script>
     <script>scripts\scr_spawn_yes_no.gml</script>
     <script>scripts\spr_facebook_spawn.gml</script>
@@ -497,6 +517,24 @@
     <object>objects\obj_testanswer</object>
     <object>objects\obj_yes_no_spawner</object>
     <object>objects\obj_spawner2</object>
+    <objects name="partyfloor">
+      <object>objects\obj_rmmanagerfloor</object>
+      <object>objects\obj_whitebubblefloor</object>
+      <objects name="dials">
+        <object>objects\obj_rounddial</object>
+        <object>objects\obj_dial_floor</object>
+        <object>objects\obj_dialleft</object>
+        <object>objects\obj_dialtop</object>
+        <object>objects\object258</object>
+        <object>objects\obj_dialright</object>
+        <object>objects\obj_dialbottom</object>
+      </objects>
+      <object>objects\obj_whitetext</object>
+      <object>objects\obj_blacktext</object>
+      <object>objects\obj_blackbubblefloor</object>
+      <object>objects\obj_Lifloor</object>
+      <object>objects\obj_dale_floor</object>
+    </objects>
     <objects name="partay">
       <object>objects\player_mash_</object>
       <object>objects\obj_player_mash2</object>
@@ -611,6 +649,10 @@
     <room>rooms\rm_controls</room>
     <rooms name="clump">
       <rooms name="chapter 1">
+        <rooms name="endparty">
+          <room>rooms\rm_partybump</room>
+          <room>rooms\rm_partypostbump</room>
+        </rooms>
         <rooms name="morning">
           <room>rooms\rm_night1</room>
           <room>rooms\rm_morning1</room>
@@ -627,6 +669,10 @@
           <room>rooms\rm_pre_wave1</room>
           <room>rooms\rm_wave_v2</room>
         </rooms>
+        <rooms name="party1">
+          <room>rooms\rm_pre_partay1</room>
+          <room>rooms\rm_party1</room>
+        </rooms>
         <rooms name="train3">
           <room>rooms\rm_train3</room>
         </rooms>
@@ -634,25 +680,16 @@
           <room>rooms\rm_pre_lecture</room>
           <room>rooms\rm_lecturev2</room>
         </rooms>
-        <rooms name="party1">
-          <room>rooms\rm_pre_partay1</room>
-          <room>rooms\rm_party1</room>
-        </rooms>
         <rooms name="cafe4">
           <room>rooms\rm_cafe_laf</room>
         </rooms>
         <room>rooms\rm_yes_no</room>
+        <rooms name="partay2">
+          <room>rooms\rm_party2</room>
+        </rooms>
         <room>rooms\rm_morning2</room>
         <rooms name="train4">
           <room>rooms\rm_train_crouded1</room>
-        </rooms>
-        <rooms name="partay2">
-          <room>rooms\rm_party2</room>
-          <room>rooms\rm_partybump</room>
-        </rooms>
-        <rooms name="facebook1">
-          <room>rooms\rm_pre_facebook1</room>
-          <room>rooms\rm_facebook1</room>
         </rooms>
         <room>rooms\rm_tempend</room>
       </rooms>
@@ -660,6 +697,10 @@
         <rooms name="morning chapter 2">
           <room>rooms\rm_nightchap2</room>
           <room>rooms\rm_morningchap2</room>
+        </rooms>
+        <rooms name="facebook1">
+          <room>rooms\rm_pre_facebook1</room>
+          <room>rooms\rm_facebook1</room>
         </rooms>
         <rooms name="cafe3">
           <room>rooms\rm_pre_cafe3</room>

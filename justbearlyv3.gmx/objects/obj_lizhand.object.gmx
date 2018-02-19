@@ -26,8 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>///set values
-maxangle = 25
-minangle = -10
+maxangle = 5
+minangle = -5
 
 dir = 0
 </string>
