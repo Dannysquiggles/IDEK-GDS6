@@ -122,31 +122,31 @@ if !instance_exists(obj_rounddial)
             <string>///spinny boy
 if global.oc = 1
 {
-if global.stop = 0
-{
-image_angle += 15
-}
+    if global.stop = 0
+    {
+    image_angle += 15
+    }
 
-else if place_meeting(x,y, obj_dialleft) &amp;&amp; !place_meeting(x,y, obj_dialtop) &amp;&amp; !place_meeting(x,y, obj_dialright) &amp;&amp; !place_meeting(x,y, obj_dialbottom)
-{
-    //game_restart()
-    global.oc = 2
-}
-else if place_meeting(x,y, obj_dialtop) &amp;&amp; !place_meeting(x,y, obj_dialleft) &amp;&amp; !place_meeting(x,y, obj_dialright) &amp;&amp; !place_meeting(x,y, obj_dialbottom)
-{ 
-    //game_restart()
-    global.oc = 3
-}
-else if place_meeting(x,y, obj_dialright) &amp;&amp; !place_meeting(x,y, obj_dialtop) &amp;&amp; !place_meeting(x,y, obj_dialleft) &amp;&amp; !place_meeting(x,y, obj_dialbottom)
-{
-    //game_restart()
-    global.oc = 4
-}
-else if place_meeting(x,y, obj_dialbottom) &amp;&amp; !place_meeting(x,y, obj_dialtop) &amp;&amp; !place_meeting(x,y, obj_dialright) &amp;&amp; !place_meeting(x,y, obj_dialleft)
-{
-    //game_restart()
-    global.oc = 5
-}
+    else if place_meeting(x,y, obj_dialleft) &amp;&amp; !place_meeting(x,y, obj_dialtop) &amp;&amp; !place_meeting(x,y, obj_dialright) &amp;&amp; !place_meeting(x,y, obj_dialbottom)
+    {
+        //game_restart()
+        global.oc = 2
+    }
+    else if place_meeting(x,y, obj_dialtop) &amp;&amp; !place_meeting(x,y, obj_dialleft) &amp;&amp; !place_meeting(x,y, obj_dialright) &amp;&amp; !place_meeting(x,y, obj_dialbottom)
+    { 
+        //game_restart()
+        global.oc = 3
+    }
+    else if place_meeting(x,y, obj_dialright) &amp;&amp; !place_meeting(x,y, obj_dialtop) &amp;&amp; !place_meeting(x,y, obj_dialleft) &amp;&amp; !place_meeting(x,y, obj_dialbottom)
+    {   
+        //game_restart()
+        global.oc = 4
+    }
+    else if place_meeting(x,y, obj_dialbottom) &amp;&amp; !place_meeting(x,y, obj_dialtop) &amp;&amp; !place_meeting(x,y, obj_dialright) &amp;&amp; !place_meeting(x,y, obj_dialleft)
+    {
+        //game_restart()
+        global.oc = 5
+    }
 else
 {
     image_angle += 10

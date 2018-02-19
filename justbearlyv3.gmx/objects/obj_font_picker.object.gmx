@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_font(fnt_Mmaker1)
+            <string>starty = 1
+draw_set_font(fnt_Mmaker1)
 rate = 30
 alarm[0] = rate
 </string>
