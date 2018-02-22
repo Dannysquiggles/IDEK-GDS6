@@ -4,22 +4,22 @@ if global.state == 'play'
     //apply shrink and grow depending on mouse button
     if mouse_check_button_released(mb_left)
     {
-        image_xscale += RiseRate
+        image_yscale += RiseRate
     }
     else
     {
-        image_xscale -= FallRate1
+        image_yscale -= FallRate1
     }
     
     //test size
-    if image_xscale <= Min
+    if image_yscale <= Min
     {
-        image_xscale = Min
+        image_yscale = Min
         global.state = 'lose';
     }
-    if image_xscale >= Max
+    if image_yscale >= Max
     {
-        image_xscale = Max
+        image_yscale = Max
         global.state = 'win';
     }
 }

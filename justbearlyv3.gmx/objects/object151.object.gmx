@@ -3,7 +3,7 @@
   <spriteName>spr_bar_top</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-2</depth>
+  <depth>3</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -27,8 +27,8 @@
             <kind>1</kind>
             <string>x = obj_bar_outer.x
 image_angle = obj_bar_outer.image_angle
-y = obj_bar_outer.y - obj_bar_outer.sprite_width
-image_alpha = 0
+y = obj_bar_outer.y - obj_bar_outer.sprite_height
+//image_alpha = 0
 </string>
           </argument>
         </arguments>

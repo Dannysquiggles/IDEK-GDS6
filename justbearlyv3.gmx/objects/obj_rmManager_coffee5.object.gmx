@@ -43,10 +43,18 @@ global.grow = false;
 global.con = 4
 
 global.message = "Make it quick";
+global.message2 = "";
 
 with obj_barrista_remake {sprite_index = spr_catrista}
 
+og_view = view_wview[0];
+og_hview = view_hview[0];
+global.og_xview = view_xview[0];
+global.og_yview = view_yview[0];
+grow = false;
+
 global.col = 'white';
+
 color = c_black;
 draw_set_font(fnt_sk1)
 draw_set_halign(fa_center)
@@ -305,7 +313,7 @@ alarm[1] = 60;
 if mouse_check_button_released(mb_left) &amp;&amp; global.oc == 0
 {
     global.grow = true
-    grow = true
+    //grow = true
     global.oc = 0.1
 }
 //move camera
@@ -341,7 +349,7 @@ if global.oc == 1
     {image_index = 1;}
     alarm[4] = 30;
     instance_create(x,y, fect_shake)
-    global.stress += 0.15
+    //global.stress += 0.15
     global.oc = 0.1;
     }
 }
@@ -354,7 +362,7 @@ else if global.oc == 2
     with (obj_barrista_remake) 
     {image_index = 1;}
     instance_create(x,y, fect_shake)
-    global.stress += 0.15
+    //global.stress += 0.15
     global.oc = 2.5
     }
 }
@@ -365,7 +373,7 @@ else if global.oc == 3 //SPAWN LAF MAYBE, DEPENDS ON OUTCOME
     //if this has not been selected yet, finish on a short answere
     //if global.laf == 0
     //{
-    global.message = "Still $3.20, same as always"
+    global.message = "Still $3.20, same #as always"
     global.col = 'white';
     with (obj_barrista) //change to new smile animation
     {image_speed = 0.5;
@@ -397,7 +405,7 @@ else if global.oc == 4
     {image_index = 1}
     instance_create(x,y, fect_shake_big)
     alarm[4] = 40;
-    global.stress += 0.15
+    //global.stress += 0.15
     global.oc = 0.1;
     }
 }
@@ -409,7 +417,7 @@ if global.oc == 2.5
     global.col = 'black';
     global.message = "I am so, so sorry...# I will leave now...% k by."
     instance_create(x,y, fect_shakeL)
-    global.stress += 0.15
+    //global.stress += 0.15
     global.rate -= 1
     global.resist += 1
     alarm[1] = 60;

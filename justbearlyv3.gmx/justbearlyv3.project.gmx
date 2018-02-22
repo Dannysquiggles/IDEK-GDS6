@@ -9,6 +9,16 @@
     <sound>sound\sound0</sound>
   </sounds>
   <sprites name="sprites">
+    <sprites name="Pulsh">
+      <sprite>sprites\spr_doorright</sprite>
+      <sprite>sprites\spr_crowd1</sprite>
+      <sprite>sprites\spr_crowd2</sprite>
+      <sprite>sprites\spr_crowds3</sprite>
+      <sprite>sprites\spr_dale_pulsh</sprite>
+      <sprite>sprites\spr_doorleft</sprite>
+      <sprite>sprites\spr_doorouter</sprite>
+      <sprite>sprites\spr_buttons</sprite>
+    </sprites>
     <sprites name="menu">
       <sprite>sprites\spr_exit</sprite>
       <sprite>sprites\spr_option</sprite>
@@ -240,6 +250,14 @@
       <sprite>sprites\spr_playerhead</sprite>
       <sprite>sprites\spr_aihead2</sprite>
       <sprite>sprites\spr_viewweye</sprite>
+      <sprites name="staystill">
+        <sprite>sprites\spr_trainleft</sprite>
+        <sprite>sprites\spr_button_dm</sprite>
+        <sprite>sprites\spr_guageinner</sprite>
+        <sprite>sprites\spr_papreback</sprite>
+        <sprite>sprites\spr_barouter</sprite>
+        <sprite>sprites\spr_trainright</sprite>
+      </sprites>
       <sprite>sprites\spr_aibody</sprite>
       <sprites name="eyeline">
         <sprite>sprites\spr_eyelineCone</sprite>
@@ -262,6 +280,7 @@
     <background>background\bg_chat</background>
     <background>background\bg_yes_no</background>
     <background>background\bg_morning2</background>
+    <background>background\bg_pulsh1</background>
     <background>background\bg_train</background>
     <background>background\bg_bats</background>
     <background>background\bg_train2</background>
@@ -427,6 +446,10 @@
       <object>objects\obj_player_dontmove</object>
       <object>objects\obj_bar_outer</object>
       <object>objects\object151</object>
+      <object>objects\obj_button_dm</object>
+      <object>objects\obj_trainright</object>
+      <object>objects\obj_trainleft</object>
+      <object>objects\obj_paperback</object>
       <object>objects\obj_bar_inner</object>
     </objects>
     <objects name="effects">
@@ -504,6 +527,8 @@
       <object>objects\obj_swipespawner</object>
       <object>objects\obj_swipspawner2</object>
       <object>objects\obj_swipe</object>
+      <object>objects\obj_swipepulsh</object>
+      <object>objects\obj_swipefb</object>
       <object>objects\obj_swipe_end</object>
       <object>objects\obj_swipe_breath</object>
       <object>objects\obj_nightcome</object>
@@ -520,6 +545,23 @@
     <object>objects\obj_testanswer</object>
     <object>objects\obj_yes_no_spawner</object>
     <object>objects\obj_spawner2</object>
+    <objects name="Pulsh">
+      <object>objects\obj_leftpull</object>
+      <object>objects\obj_leftpush</object>
+      <object>objects\obj_rightpull</object>
+      <object>objects\obj_rightpush</object>
+      <objects name="pulsh2">
+        <object>objects\obj_doorouter</object>
+        <object>objects\obj_crowd1</object>
+        <object>objects\obj_crowd2</object>
+        <object>objects\obj_crowd3</object>
+        <object>objects\obj_daleleft</object>
+        <object>objects\obj_daleright</object>
+        <object>objects\obj_leftdoor</object>
+        <object>objects\obj_rightdoor</object>
+      </objects>
+      <object>objects\obj_manager_Pulsh</object>
+    </objects>
     <objects name="partyfloor">
       <object>objects\obj_rmmanagerfloor</object>
       <object>objects\obj_whitebubblefloor</object>
@@ -651,6 +693,33 @@
     <room>rooms\rm_menu</room>
     <room>rooms\rm_controls</room>
     <rooms name="clump">
+      <rooms name="chapter 2a">
+        <rooms name="morning chapter 2">
+          <room>rooms\rm_nightchap2</room>
+          <room>rooms\rm_morningchap2</room>
+          <room>rooms\rm_Pulsh1</room>
+          <room>rooms\rm_pulsh2</room>
+        </rooms>
+        <rooms name="cafe3">
+          <room>rooms\rm_pre_cafe3</room>
+          <room>rooms\rm_cafe_timer</room>
+        </rooms>
+        <rooms name="staystill">
+          <room>rooms\rm_pre_staystill</room>
+          <room>rooms\rm_staystill</room>
+        </rooms>
+        <room>rooms\rm_pulsh2_1</room>
+        <room>rooms\rm_pulsh_2_2</room>
+        <rooms name="facebook1">
+          <room>rooms\rm_pre_facebook1</room>
+          <room>rooms\rm_facebook1</room>
+        </rooms>
+        <room>rooms\rm_smile</room>
+        <rooms name="bats">
+          <room>rooms\rm_bats</room>
+          <room>rooms\rm_bat2</room>
+        </rooms>
+      </rooms>
       <rooms name="chapter 1">
         <rooms name="morning">
           <room>rooms\rm_night1</room>
@@ -694,33 +763,11 @@
           <room>rooms\rm_partybump</room>
           <room>rooms\rm_partypostbump</room>
         </rooms>
-        <rooms name="facebook1">
-          <room>rooms\rm_pre_facebook1</room>
-          <room>rooms\rm_facebook1</room>
-        </rooms>
         <room>rooms\rm_tempend</room>
-      </rooms>
-      <rooms name="chapter 2a">
-        <rooms name="morning chapter 2">
-          <room>rooms\rm_nightchap2</room>
-          <room>rooms\rm_morningchap2</room>
-        </rooms>
-        <rooms name="cafe3">
-          <room>rooms\rm_pre_cafe3</room>
-          <room>rooms\rm_cafe_timer</room>
-        </rooms>
       </rooms>
       <rooms name="wave2">
         <room>rooms\rm_pre_wave</room>
         <room>rooms\rm_wave2</room>
-      </rooms>
-      <rooms name="staystill">
-        <room>rooms\rm_pre_staystill</room>
-        <room>rooms\rm_staystill</room>
-        <rooms name="bats">
-          <room>rooms\rm_bats</room>
-          <room>rooms\rm_bat2</room>
-        </rooms>
       </rooms>
       <room>rooms\rm_pre_street1</room>
       <rooms name="tilt train">

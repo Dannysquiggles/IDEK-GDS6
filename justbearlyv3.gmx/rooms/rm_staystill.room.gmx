@@ -41,7 +41,7 @@
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
   </backgrounds>
   <views>
-    <view visible="-1" objName="&lt;undefined&gt;" xview="192" yview="108" wview="1536" hview="864" xport="0" yport="0" wport="1920" hport="1080" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="-1" objName="&lt;undefined&gt;" xview="90" yview="108" wview="1728" hview="972" xport="0" yport="0" wport="1920" hport="1080" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
@@ -51,14 +51,18 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="obj_bar_outer" x="256" y="1024" name="inst_FD3F871E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
+    <instance objName="obj_bar_outer" x="128" y="784" name="inst_FD3F871E" locked="0" code="" scaleX="0.899999976158142" scaleY="0.899999976158142" colour="4294967295" rotation="0"/>
     <instance objName="obj_player_dontmove" x="719" y="1120" name="inst_AE5314EB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_friend_dontmove" x="1179" y="1117" name="inst_DAE458B0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="object151" x="254" y="154" name="inst_891A9AA8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
-    <instance objName="obj_camera_ease" x="928" y="544" name="inst_3B1DC02B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="object151" x="224" y="224" name="inst_891A9AA8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
+    <instance objName="obj_trainright" x="41" y="20" name="inst_64215025" locked="0" code="" scaleX="0.899999976158142" scaleY="0.899999976158142" colour="4294967295" rotation="0"/>
+    <instance objName="obj_trainleft" x="576" y="1088" name="inst_A8B089CA" locked="0" code="" scaleX="0.899999976158142" scaleY="0.899999976158142" colour="4294967295" rotation="0"/>
+    <instance objName="obj_paperback" x="27" y="32" name="inst_50B9463D" locked="0" code="" scaleX="0.899999976158142" scaleY="0.899999976158142" colour="4294967295" rotation="0"/>
+    <instance objName="obj_bar_inner" x="27" y="32" name="inst_50AAB173" locked="0" code="" scaleX="0.899999976158142" scaleY="0.899999976158142" colour="4294967295" rotation="0"/>
+    <instance objName="obj_button_dm" x="101" y="98" name="inst_2423661E" locked="0" code="" scaleX="0.899999976158142" scaleY="0.899999976158142" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
-    <tile bgName="bg_trainv2" x="20" y="20" w="1920" h="1080" xo="0" yo="0" id="10000055" name="inst_46F72BB8" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_trainv2" x="2528" y="384" w="1920" h="1080" xo="0" yo="0" id="10000055" name="inst_46F72BB8" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>
