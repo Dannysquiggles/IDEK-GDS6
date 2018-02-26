@@ -48,6 +48,15 @@
       <sprite>sprites\spr_whitebubblefloor</sprite>
       <sprite>sprites\spr_LI_ground</sprite>
     </sprites>
+    <sprites name="smile">
+      <sprite>sprites\spr_mouthbottom</sprite>
+      <sprite>sprites\spr_mouthup</sprite>
+      <sprite>sprites\spr_browright</sprite>
+      <sprite>sprites\spr_leftbrow</sprite>
+      <sprite>sprites\spr_smile_leftup</sprite>
+      <sprite>sprites\spr_liprightup</sprite>
+      <sprite>sprites\spr_smileedge</sprite>
+    </sprites>
     <sprites name="backgrounds">
       <sprite>sprites\spr_bg_night</sprite>
       <sprite>sprites\sprl_idup</sprite>
@@ -284,6 +293,7 @@
     <background>background\bg_train</background>
     <background>background\bg_bats</background>
     <background>background\bg_train2</background>
+    <background>background\background39</background>
     <background>background\bg_streetwalk</background>
     <background>background\bg_streetwalk2</background>
     <background>background\bg_startscreen</background>
@@ -348,6 +358,16 @@
   </fonts>
   <objects name="objects">
     <object>objects\obj_font_picker</object>
+    <objects name="smiling">
+      <object>objects\obj_smilehead</object>
+      <object>objects\obj_smile_manager</object>
+      <object>objects\obj_lipupper</object>
+      <object>objects\obj_leftbrow</object>
+      <object>objects\object292</object>
+      <object>objects\obj_lipleft</object>
+      <object>objects\obj_rightlip</object>
+      <object>objects\obj_lipdown</object>
+    </objects>
     <objects name="start">
       <object>objects\obj_playerwalking</object>
       <object>objects\obj_titlev2</object>
@@ -694,6 +714,7 @@
     <room>rooms\rm_controls</room>
     <rooms name="clump">
       <rooms name="chapter 2a">
+        <room>rooms\rm_smile</room>
         <rooms name="morning chapter 2">
           <room>rooms\rm_nightchap2</room>
           <room>rooms\rm_morningchap2</room>
@@ -714,7 +735,6 @@
           <room>rooms\rm_pre_facebook1</room>
           <room>rooms\rm_facebook1</room>
         </rooms>
-        <room>rooms\rm_smile</room>
         <rooms name="bats">
           <room>rooms\rm_bats</room>
           <room>rooms\rm_bat2</room>
