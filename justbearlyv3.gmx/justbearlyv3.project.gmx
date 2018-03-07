@@ -11,13 +11,33 @@
   <sprites name="sprites">
     <sprites name="Pulsh">
       <sprite>sprites\spr_doorright</sprite>
+      <sprite>sprites\spr_doorright_in</sprite>
       <sprite>sprites\spr_crowd1</sprite>
       <sprite>sprites\spr_crowd2</sprite>
       <sprite>sprites\spr_crowds3</sprite>
       <sprite>sprites\spr_dale_pulsh</sprite>
       <sprite>sprites\spr_doorleft</sprite>
+      <sprite>sprites\spr_doorleft_in</sprite>
       <sprite>sprites\spr_doorouter</sprite>
       <sprite>sprites\spr_buttons</sprite>
+    </sprites>
+    <sprites name="breath">
+      <sprite>sprites\spr_phonelogo</sprite>
+      <sprite>sprites\spr_dollar</sprite>
+      <sprite>sprites\spr_phonehand</sprite>
+      <sprite>sprites\spr_paper</sprite>
+      <sprite>sprites\spr_textureoverlay</sprite>
+    </sprites>
+    <sprites name="messages">
+      <sprite>sprites\spr_speechbubbleshapes</sprite>
+      <sprite>sprites\spr_dale</sprite>
+      <sprite>sprites\spr_dalebg</sprite>
+      <sprite>sprites\spr_circle</sprite>
+      <sprite>sprites\spr_hex</sprite>
+      <sprite>sprites\spr_square</sprite>
+      <sprite>sprites\spr_picker</sprite>
+      <sprite>sprites\spr_background</sprite>
+      <sprite>sprites\spr_messagefriends</sprite>
     </sprites>
     <sprites name="menu">
       <sprite>sprites\spr_exit</sprite>
@@ -26,11 +46,19 @@
       <sprite>sprites\spr_bg</sprite>
       <sprite>sprites\spr_strike</sprite>
       <sprite>sprites\spr_endchapter</sprite>
+      <sprite>sprites\spr_click_to_continue</sprite>
       <sprite>sprites\spr_play</sprite>
       <sprite>sprites\spr_window</sprite>
       <sprite>sprites\spr_controlbackground</sprite>
       <sprite>sprites\spr_logo</sprite>
       <sprite>sprites\spr_restart</sprite>
+    </sprites>
+    <sprites name="partywhelp">
+      <sprite>sprites\spr_li_pushing</sprite>
+      <sprite>sprites\spr_playerwave</sprite>
+      <sprite>sprites\spr_Liwave</sprite>
+      <sprite>sprites\spr_LIin</sprite>
+      <sprite>sprites\spr_turnedcrowd</sprite>
     </sprites>
     <sprites name="postbump">
       <sprite>sprites\spr_dalebackfloor</sprite>
@@ -54,6 +82,11 @@
       <sprite>sprites\spr_browright</sprite>
       <sprite>sprites\spr_leftbrow</sprite>
       <sprite>sprites\spr_smile_leftup</sprite>
+      <sprites name="smile2">
+        <sprite>sprites\spr_overlayhead2</sprite>
+        <sprite>sprites\spr_grablight</sprite>
+        <sprite>sprites\spr_smilebg2</sprite>
+      </sprites>
       <sprite>sprites\spr_liprightup</sprite>
       <sprite>sprites\spr_smileedge</sprite>
     </sprites>
@@ -163,6 +196,7 @@
         <sprite>sprites\spr_croudhand</sprite>
         <sprite>sprites\spr_croudhead</sprite>
         <sprite>sprites\spr_croud</sprite>
+        <sprite>sprites\sprite230</sprite>
       </sprites>
       <sprite>sprites\spr_partaybg</sprite>
       <sprite>sprites\spr_curser</sprite>
@@ -294,6 +328,7 @@
     <background>background\bg_bats</background>
     <background>background\bg_train2</background>
     <background>background\background39</background>
+    <background>background\paperplayer2</background>
     <background>background\bg_streetwalk</background>
     <background>background\bg_streetwalk2</background>
     <background>background\bg_startscreen</background>
@@ -360,10 +395,19 @@
     <object>objects\obj_font_picker</object>
     <objects name="smiling">
       <object>objects\obj_smilehead</object>
+      <object>objects\obj_smilehead2</object>
       <object>objects\obj_smile_manager</object>
+      <object>objects\obj_smilemanager2</object>
       <object>objects\obj_lipupper</object>
+      <object>objects\obj_crumple_overlay2</object>
       <object>objects\obj_leftbrow</object>
-      <object>objects\object292</object>
+      <object>objects\obj_rightliplight</object>
+      <object>objects\obj_leftrightbrow</object>
+      <object>objects\obj_rightbrowlight</object>
+      <object>objects\obj_leftliplight</object>
+      <object>objects\obj_lightbottom</object>
+      <object>objects\obj_lightlipup</object>
+      <object>objects\obj_rightbrow</object>
       <object>objects\obj_lipleft</object>
       <object>objects\obj_rightlip</object>
       <object>objects\obj_lipdown</object>
@@ -375,6 +419,12 @@
     <object>objects\obj_font_picker_small</object>
     <objects name="breath">
       <object>objects\obj_clicktobreath</object>
+      <object>objects\obj_textureoverlay</object>
+      <object>objects\obj_money</object>
+      <object>objects\obj_dollar</object>
+      <object>objects\obj_logoboi</object>
+      <object>objects\obj_paperbackground</object>
+      <object>objects\obj_phoneoverlay</object>
       <object>objects\obj_ready</object>
       <object>objects\obj_breather</object>
     </objects>
@@ -525,10 +575,23 @@
       <object>objects\obj_restart_prompt</object>
       <object>objects\obj_exit</object>
       <object>objects\obj_endbg</object>
+      <object>objects\obj_continue</object>
       <object>objects\obj_strike</object>
       <object>objects\obj_controlspage</object>
       <object>objects\blinds</object>
       <object>objects\obj_logo</object>
+    </objects>
+    <objects name="match message">
+      <object>objects\obj_message_circle</object>
+      <object>objects\obj_message_hex</object>
+      <object>objects\obj_message_square</object>
+      <object>objects\obj_friend_message</object>
+      <object>objects\obj_message_speechbubble</object>
+      <object>objects\obj_backgrounds</object>
+      <object>objects\object304</object>
+      <object>objects\obj_message_dale</object>
+      <object>objects\obj_message_friend</object>
+      <object>objects\obj_machmessage_manager</object>
     </objects>
     <objects name="morningassets">
       <object>objects\obj_title</object>
@@ -542,6 +605,7 @@
       <object>objects\obj_headguider</object>
       <object>objects\obj_lowerlid</object>
       <object>objects\obj_morning_manager</object>
+      <object>objects\obj_morning_manager_2</object>
       <object>objects\obj_playersit</object>
       <object>objects\obj_notes</object>
       <object>objects\obj_swipespawner</object>
@@ -601,8 +665,12 @@
       <object>objects\obj_dale_floor</object>
     </objects>
     <objects name="partay">
+      <object>objects\obj_Lienter</object>
+      <object>objects\obj_rmmanagerhelper</object>
       <object>objects\player_mash_</object>
+      <object>objects\obj_LiPush</object>
       <object>objects\obj_player_mash2</object>
+      <object>objects\obj_player_mash4</object>
       <object>objects\ob_party_player3</object>
       <object>objects\obj_bg_partay</object>
       <object>objects\obj_shake</object>
@@ -713,33 +781,6 @@
     <room>rooms\rm_menu</room>
     <room>rooms\rm_controls</room>
     <rooms name="clump">
-      <rooms name="chapter 2a">
-        <room>rooms\rm_smile</room>
-        <rooms name="morning chapter 2">
-          <room>rooms\rm_nightchap2</room>
-          <room>rooms\rm_morningchap2</room>
-          <room>rooms\rm_Pulsh1</room>
-          <room>rooms\rm_pulsh2</room>
-        </rooms>
-        <rooms name="cafe3">
-          <room>rooms\rm_pre_cafe3</room>
-          <room>rooms\rm_cafe_timer</room>
-        </rooms>
-        <rooms name="staystill">
-          <room>rooms\rm_pre_staystill</room>
-          <room>rooms\rm_staystill</room>
-        </rooms>
-        <room>rooms\rm_pulsh2_1</room>
-        <room>rooms\rm_pulsh_2_2</room>
-        <rooms name="facebook1">
-          <room>rooms\rm_pre_facebook1</room>
-          <room>rooms\rm_facebook1</room>
-        </rooms>
-        <rooms name="bats">
-          <room>rooms\rm_bats</room>
-          <room>rooms\rm_bat2</room>
-        </rooms>
-      </rooms>
       <rooms name="chapter 1">
         <rooms name="morning">
           <room>rooms\rm_night1</room>
@@ -785,17 +826,50 @@
         </rooms>
         <room>rooms\rm_tempend</room>
       </rooms>
+      <rooms name="chapter 2a">
+        <rooms name="morning chapter 2">
+          <room>rooms\rm_nightchap2</room>
+          <room>rooms\rm_morningchap2</room>
+        </rooms>
+        <rooms name="Pulsh">
+          <room>rooms\rm_Pulsh1</room>
+          <room>rooms\rm_pulsh2</room>
+        </rooms>
+        <rooms name="cafe3">
+          <room>rooms\rm_pre_cafe3</room>
+          <room>rooms\rm_cafe_timer</room>
+        </rooms>
+        <rooms name="staystill">
+          <room>rooms\rm_pre_staystill</room>
+          <room>rooms\rm_staystill</room>
+        </rooms>
+        <room>rooms\rm_pulsh2_1</room>
+        <room>rooms\rm_pulsh_2_2</room>
+        <rooms name="facebook1">
+          <room>rooms\rm_pre_facebook1</room>
+          <room>rooms\rm_facebook1</room>
+        </rooms>
+        <room>rooms\rm_smile</room>
+        <room>rooms\rm_partywhelp</room>
+        <room>rooms\rm_matchmessage</room>
+        <room>rooms\rm_breath</room>
+        <room>rooms\rm_smile2</room>
+        <rooms name="tilt train">
+          <room>rooms\rm_pre_train_tilt1</room>
+          <room>rooms\rm_tilttrain</room>
+        </rooms>
+        <rooms name="bats">
+          <room>rooms\rm_bats</room>
+          <room>rooms\rm_bat2</room>
+        </rooms>
+      </rooms>
       <rooms name="wave2">
         <room>rooms\rm_pre_wave</room>
         <room>rooms\rm_wave2</room>
       </rooms>
       <room>rooms\rm_pre_street1</room>
-      <rooms name="tilt train">
-        <room>rooms\rm_pre_train_tilt1</room>
-        <room>rooms\rm_tilttrain</room>
-        <room>rooms\rm_pre_train4</room>
-        <room>rooms\rm_pre_partay2</room>
-      </rooms>
+      <room>rooms\rm_pre_train4</room>
+      <room>rooms\rm_pre_partay2</room>
       <rooms name="draw">
         <room>rooms\rm_pre_daw</room>
         <room>rooms\rm_drawing1</room>
@@ -885,7 +959,6 @@
       </rooms>
     </rooms>
     <rooms name="ROOMS SPARE">
-      <room>rooms\rm_breath</room>
       <room>rooms\rm_drawing</room>
       <rooms name="cafe">
         <room>rooms\rm_cafe_simple</room>

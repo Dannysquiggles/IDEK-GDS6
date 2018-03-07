@@ -50,7 +50,7 @@ image_speed = 0.25
           <argument>
             <kind>1</kind>
             <string>///am i visible?
-if global.dir = 'right'
+if global.dir == 'left' or global.dir == 'leftin'
 {
     image_alpha = 255
 }

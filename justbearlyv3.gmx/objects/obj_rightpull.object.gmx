@@ -103,7 +103,7 @@ image_xscale = 1.2
             <string>if global.clicked = false
 {
     global.crowdnum += 1
-    global.dir = 'right'
+    global.dir = 'rightin'
     with obj_manager_Pulsh {alarm[0] = 3 * room_speed}
     room_goto_next()
     instance_destroy()

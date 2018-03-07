@@ -27,15 +27,18 @@
             <kind>1</kind>
             <string>///initialise
 image_speed = 0;
-if global.dir = 'right'
+if global.dir = 'left'
+{
+
+    alarm[0] = 0.5 * room_speed
+}
+else if global.dir = 'leftin'
 {
 
     alarm[0] = 0.5 * room_speed
 }
 else
-{
- 
-}
+{}
 </string>
           </argument>
         </arguments>
@@ -58,10 +61,17 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if global.dir == 'right'
+            <string>if global.dir == 'left'
 {
+    sprite_index = spr_doorright
     image_speed = 0.25
 }
+if global.dir == 'leftin'
+{
+    sprite_index = spr_doorright_in
+    image_speed = 0.25
+}
+
 
 </string>
           </argument>
@@ -86,7 +96,7 @@ else
           <argument>
             <kind>1</kind>
             <string>///reset alarm real good son
-if global.dir == 'right'
+if global.dir == 'left'
 {
 image_index = 0
 image_speed = 0

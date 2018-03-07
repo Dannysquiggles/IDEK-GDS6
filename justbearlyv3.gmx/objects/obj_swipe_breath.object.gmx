@@ -68,6 +68,7 @@ with obj_bar_stress
 {
     switching = 3
 }
+room_goto_next()
 </string>
           </argument>
         </arguments>

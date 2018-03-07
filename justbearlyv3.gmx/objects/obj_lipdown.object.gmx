@@ -103,8 +103,10 @@ if grabbed = 1
     {
         if lock = false
         {
-            alarm[0] = 15*room_speed
+            alarm[0] = global.timer*room_speed
             global.right += 1
+            global.right2 += 1
+            global.timer += 0.8
             lock = true
         }
         rate = ograte
@@ -114,7 +116,7 @@ else if lock = false
 {
     if y &gt; ogy
     {
-        y += rate*0.5
+        y += rate*0.8
     }
 }
 }
