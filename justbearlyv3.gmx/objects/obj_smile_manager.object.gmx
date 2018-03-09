@@ -29,6 +29,8 @@
 global.right2 = 0
 global.state = 0
 global.timer = 2
+
+global.click = false
 </string>
           </argument>
         </arguments>

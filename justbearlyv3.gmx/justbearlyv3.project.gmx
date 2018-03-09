@@ -27,6 +27,7 @@
       <sprite>sprites\spr_phonehand</sprite>
       <sprite>sprites\spr_paper</sprite>
       <sprite>sprites\spr_textureoverlay</sprite>
+      <sprite>sprites\spr_lightvignette</sprite>
     </sprites>
     <sprites name="messages">
       <sprite>sprites\spr_speechbubbleshapes</sprite>
@@ -46,6 +47,7 @@
       <sprite>sprites\spr_bg</sprite>
       <sprite>sprites\spr_strike</sprite>
       <sprite>sprites\spr_endchapter</sprite>
+      <sprite>sprites\spr_endchapter2</sprite>
       <sprite>sprites\spr_click_to_continue</sprite>
       <sprite>sprites\spr_play</sprite>
       <sprite>sprites\spr_window</sprite>
@@ -78,16 +80,20 @@
     </sprites>
     <sprites name="smile">
       <sprite>sprites\spr_mouthbottom</sprite>
+      <sprite>sprites\spr_bottumlight</sprite>
       <sprite>sprites\spr_mouthup</sprite>
+      <sprite>sprites\spr_upperliplight</sprite>
       <sprite>sprites\spr_browright</sprite>
       <sprite>sprites\spr_leftbrow</sprite>
       <sprite>sprites\spr_smile_leftup</sprite>
+      <sprite>sprites\spr_leftliplight</sprite>
       <sprites name="smile2">
         <sprite>sprites\spr_overlayhead2</sprite>
         <sprite>sprites\spr_grablight</sprite>
         <sprite>sprites\spr_smilebg2</sprite>
       </sprites>
       <sprite>sprites\spr_liprightup</sprite>
+      <sprite>sprites\spr_rightliplight</sprite>
       <sprite>sprites\spr_smileedge</sprite>
     </sprites>
     <sprites name="backgrounds">
@@ -120,7 +126,9 @@
       <sprite>sprites\spr_train_friend_mask2</sprite>
       <sprite>sprites\spr_tilttrain_character</sprite>
       <sprite>sprites\spr_tilttrain_negmask</sprite>
+      <sprite>sprites\spr_negmaskmask</sprite>
       <sprite>sprites\spr_tilttrain_friend_mask3</sprite>
+      <sprite>sprites\sprite257</sprite>
       <sprite>sprites\spr_bg_character</sprite>
       <sprite>sprites\spr_cathead</sprite>
       <sprite>sprites\spr_lizard_head</sprite>
@@ -209,6 +217,8 @@
       <sprite>sprites\spr_sittingheadup</sprite>
       <sprite>sprites\spr_sittingheadforward</sprite>
       <sprite>sprites\spr_sittingheadforward2</sprite>
+      <sprite>sprites\spr_playertopdown</sprite>
+      <sprite>sprites\spr_topdownstill</sprite>
       <sprite>sprites\spr_topdown_face</sprite>
       <sprite>sprites\sprite89</sprite>
       <sprite>sprites\spr_player_pullback</sprite>
@@ -245,6 +255,7 @@
       <sprite>sprites\spr_batplayer</sprite>
       <sprite>sprites\spr_heart</sprite>
       <sprite>sprites\spr_bat</sprite>
+      <sprite>sprites\spr_bathead</sprite>
     </sprites>
     <sprites name="lecturehall">
       <sprite>sprites\spr_hand</sprite>
@@ -402,7 +413,7 @@
       <object>objects\obj_crumple_overlay2</object>
       <object>objects\obj_leftbrow</object>
       <object>objects\obj_rightliplight</object>
-      <object>objects\obj_leftrightbrow</object>
+      <object>objects\obj_leflightbrow</object>
       <object>objects\obj_rightbrowlight</object>
       <object>objects\obj_leftliplight</object>
       <object>objects\obj_lightbottom</object>
@@ -436,8 +447,13 @@
       <object>objects\obj_player_topdown</object>
       <object>objects\obj_bat</object>
       <object>objects\ojb_bat2</object>
+      <object>objects\obj_batbod</object>
       <object>objects\obj_bathand</object>
       <object>objects\obj_bathandlead</object>
+      <objects name="bookends">
+        <object>objects\obj_prebatshutter</object>
+        <object>objects\obj_postbat</object>
+      </objects>
       <object>objects\obj_light</object>
     </objects>
     <objects name="chat">
@@ -575,6 +591,7 @@
       <object>objects\obj_restart_prompt</object>
       <object>objects\obj_exit</object>
       <object>objects\obj_endbg</object>
+      <object>objects\obj_tempend2</object>
       <object>objects\obj_continue</object>
       <object>objects\obj_strike</object>
       <object>objects\obj_controlspage</object>
@@ -761,6 +778,7 @@
       <object>objects\obj_guide_tilt</object>
       <object>objects\obj_blockout</object>
       <object>objects\obj_fall</object>
+      <object>objects\obj_lightvignette</object>
       <object>objects\obj_fallback</object>
       <object>objects\obj_player_tilt</object>
       <object>objects\obj_train_colour_tilt</object>
@@ -780,89 +798,92 @@
   <rooms name="rooms">
     <room>rooms\rm_menu</room>
     <room>rooms\rm_controls</room>
+    <rooms name="chapter 1">
+      <rooms name="morning">
+        <room>rooms\rm_night1</room>
+        <room>rooms\rm_morning1</room>
+      </rooms>
+      <rooms name="cafe1">
+        <room>rooms\rm_pre_cafe1</room>
+        <room>rooms\rm_cafe_simple1</room>
+      </rooms>
+      <rooms name="train1">
+        <room>rooms\rm_pre_train</room>
+        <room>rooms\rm_trainv2</room>
+      </rooms>
+      <rooms name="wave1">
+        <room>rooms\rm_pre_wave1</room>
+        <room>rooms\rm_wave_v2</room>
+      </rooms>
+      <rooms name="party1">
+        <room>rooms\rm_pre_partay1</room>
+        <room>rooms\rm_party1</room>
+      </rooms>
+      <rooms name="train3">
+        <room>rooms\rm_train3</room>
+      </rooms>
+      <rooms name="lecturev3">
+        <room>rooms\rm_pre_lecture</room>
+        <room>rooms\rm_lecturev2</room>
+      </rooms>
+      <rooms name="cafe4">
+        <room>rooms\rm_cafe_laf</room>
+      </rooms>
+      <room>rooms\rm_yes_no</room>
+      <rooms name="partay2">
+        <room>rooms\rm_party2</room>
+      </rooms>
+      <room>rooms\rm_morning2</room>
+      <rooms name="train4">
+        <room>rooms\rm_train_crouded1</room>
+      </rooms>
+      <rooms name="endparty">
+        <room>rooms\rm_partybump</room>
+        <room>rooms\rm_partypostbump</room>
+      </rooms>
+      <room>rooms\rm_tempend</room>
+    </rooms>
+    <rooms name="chapter 2a">
+      <rooms name="morning chapter 2">
+        <room>rooms\rm_nightchap2</room>
+        <room>rooms\rm_morningchap2</room>
+      </rooms>
+      <rooms name="Pulsh">
+        <room>rooms\rm_Pulsh1</room>
+        <room>rooms\rm_pulsh2</room>
+      </rooms>
+      <rooms name="cafe3">
+        <room>rooms\rm_pre_cafe3</room>
+        <room>rooms\rm_cafe_timer</room>
+      </rooms>
+      <rooms name="staystill">
+        <room>rooms\rm_pre_staystill</room>
+        <room>rooms\rm_staystill</room>
+      </rooms>
+      <room>rooms\rm_pulsh2_1</room>
+      <room>rooms\rm_pulsh_2_2</room>
+      <rooms name="facebook1">
+        <room>rooms\rm_pre_facebook1</room>
+        <room>rooms\rm_facebook1</room>
+      </rooms>
+      <room>rooms\rm_smile</room>
+      <room>rooms\rm_partywhelp</room>
+      <room>rooms\rm_matchmessage</room>
+      <room>rooms\rm_breath</room>
+      <room>rooms\rm_smile2</room>
+      <rooms name="tilt train">
+        <room>rooms\rm_pre_train_tilt1</room>
+        <room>rooms\rm_tilttrain</room>
+      </rooms>
+      <rooms name="bats">
+        <room>rooms\rm_batprebookend</room>
+        <room>rooms\rm_bats</room>
+        <room>rooms\rm_bat2</room>
+        <room>rooms\rm_postbat</room>
+      </rooms>
+      <room>rooms\rm_chap2end</room>
+    </rooms>
     <rooms name="clump">
-      <rooms name="chapter 1">
-        <rooms name="morning">
-          <room>rooms\rm_night1</room>
-          <room>rooms\rm_morning1</room>
-        </rooms>
-        <rooms name="cafe1">
-          <room>rooms\rm_pre_cafe1</room>
-          <room>rooms\rm_cafe_simple1</room>
-        </rooms>
-        <rooms name="train1">
-          <room>rooms\rm_pre_train</room>
-          <room>rooms\rm_trainv2</room>
-        </rooms>
-        <rooms name="wave1">
-          <room>rooms\rm_pre_wave1</room>
-          <room>rooms\rm_wave_v2</room>
-        </rooms>
-        <rooms name="party1">
-          <room>rooms\rm_pre_partay1</room>
-          <room>rooms\rm_party1</room>
-        </rooms>
-        <rooms name="train3">
-          <room>rooms\rm_train3</room>
-        </rooms>
-        <rooms name="lecturev3">
-          <room>rooms\rm_pre_lecture</room>
-          <room>rooms\rm_lecturev2</room>
-        </rooms>
-        <rooms name="cafe4">
-          <room>rooms\rm_cafe_laf</room>
-        </rooms>
-        <room>rooms\rm_yes_no</room>
-        <rooms name="partay2">
-          <room>rooms\rm_party2</room>
-        </rooms>
-        <room>rooms\rm_morning2</room>
-        <rooms name="train4">
-          <room>rooms\rm_train_crouded1</room>
-        </rooms>
-        <rooms name="endparty">
-          <room>rooms\rm_partybump</room>
-          <room>rooms\rm_partypostbump</room>
-        </rooms>
-        <room>rooms\rm_tempend</room>
-      </rooms>
-      <rooms name="chapter 2a">
-        <rooms name="morning chapter 2">
-          <room>rooms\rm_nightchap2</room>
-          <room>rooms\rm_morningchap2</room>
-        </rooms>
-        <rooms name="Pulsh">
-          <room>rooms\rm_Pulsh1</room>
-          <room>rooms\rm_pulsh2</room>
-        </rooms>
-        <rooms name="cafe3">
-          <room>rooms\rm_pre_cafe3</room>
-          <room>rooms\rm_cafe_timer</room>
-        </rooms>
-        <rooms name="staystill">
-          <room>rooms\rm_pre_staystill</room>
-          <room>rooms\rm_staystill</room>
-        </rooms>
-        <room>rooms\rm_pulsh2_1</room>
-        <room>rooms\rm_pulsh_2_2</room>
-        <rooms name="facebook1">
-          <room>rooms\rm_pre_facebook1</room>
-          <room>rooms\rm_facebook1</room>
-        </rooms>
-        <room>rooms\rm_smile</room>
-        <room>rooms\rm_partywhelp</room>
-        <room>rooms\rm_matchmessage</room>
-        <room>rooms\rm_breath</room>
-        <room>rooms\rm_smile2</room>
-        <rooms name="tilt train">
-          <room>rooms\rm_pre_train_tilt1</room>
-          <room>rooms\rm_tilttrain</room>
-        </rooms>
-        <rooms name="bats">
-          <room>rooms\rm_bats</room>
-          <room>rooms\rm_bat2</room>
-        </rooms>
-      </rooms>
       <rooms name="wave2">
         <room>rooms\rm_pre_wave</room>
         <room>rooms\rm_wave2</room>

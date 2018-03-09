@@ -213,18 +213,24 @@ alarm[0] = rate1
             <kind>1</kind>
             <string>if endtime == 1
 {
-    
+        image_xscale += 0.001
+        image_yscale += 0.001
     with obj_wall { image_alpha -= 0.1}
     with obj_bathand{ instance_destroy()}
     beat = 0;
-    if !instance_exists(fect_shake)
+    if !instance_exists(fect_shakeL)
     {
-        instance_create(x,y,fect_shake)
+        instance_create(x,y,fect_shakeL)
     }
     alarm[4] = 3 * room_speed;
     global.stress += 0.15
     endtime = 2;
     //background_colour = c_white;
+}
+if endtime = 2
+{
+        image_xscale += 0.001
+        image_yscale += 0.001
 }
 </string>
           </argument>
@@ -249,7 +255,11 @@ alarm[0] = rate1
           <argument>
             <kind>1</kind>
             <string>///end sequence
-sprite_index = spr_bat
+sprite_index = spr_bathead
+if !instance_exists(obj_batbod)
+{
+    instance_create(x,y,obj_batbod)
+}
 endtime = 1;
 </string>
           </argument>

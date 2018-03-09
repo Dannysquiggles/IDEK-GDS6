@@ -60,12 +60,12 @@
     <instance objName="obj_rightlip" x="1193" y="672" name="inst_FB2F9DF3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_leftbrow" x="1085" y="497" name="inst_97B9783F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_rightbrow" x="1249" y="464" name="inst_7A541AB9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_rightliplight" x="1280" y="672" name="inst_CBE2CAAD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_leftliplight" x="1056" y="672" name="inst_FEFF46E8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_lightbottom" x="1184" y="768" name="inst_54186BE2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_lightlipup" x="1184" y="608" name="inst_38B42D9D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_leftrightbrow" x="1088" y="480" name="inst_84F65689" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_rightbrowlight" x="1312" y="512" name="inst_8BFD30F7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_font_picker" x="896" y="-1248" name="inst_6BEECAF2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_rightliplight" x="1216" y="672" name="inst_B7CE1063" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_leftliplight" x="1024" y="672" name="inst_E6555F52" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_lightlipup" x="1216" y="608" name="inst_EE26123A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_lightbottom" x="1216" y="704" name="inst_CA051E95" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="background39" x="744" y="260" w="978" h="757" xo="0" yo="0" id="10000073" name="inst_90E4D442" depth="-1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

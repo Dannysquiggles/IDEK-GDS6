@@ -29,6 +29,7 @@
 y = obj_traintilt.y
 
 image_speed = 0
+image_index = 1
 /*tilt = 0
 rate = 0.05
 alarm[0] = 60;

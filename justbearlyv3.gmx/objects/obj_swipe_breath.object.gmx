@@ -64,10 +64,10 @@ image_speed = 0
 image_index = image_number
 global.color = true
 audio_stop_all();
-with obj_bar_stress
-{
-    switching = 3
-}
+//with obj_bar_stress
+//{
+  //  switching = 3
+//}
 room_goto_next()
 </string>
           </argument>

@@ -27,12 +27,12 @@
             <kind>1</kind>
             <string>global.right2 = 0
 global.right = 0
-global.state = 0
+global.state = -1
 global.timer = 2
 
 global.click = false
 
-alarm[2] = 15 * room_speed //negative ending
+alarm[2] = 25 * room_speed //negative ending
 </string>
           </argument>
         </arguments>
@@ -111,16 +111,17 @@ alarm[2] = 15 * room_speed //negative ending
             <kind>1</kind>
             <string>if global.right2 &gt;= 4
 {
-    if global.state = 0
+    if global.state = 1
     {
-        global.state = 1
+        global.state = 2
         //with obj_smilehead {alarm[0] = 0.25*room_speed}
         if !instance_exists(obj_flash)
         {
             instance_create(room_width/2, room_height/2, obj_flash)
             
         }
-        alarm[0] = 4*room_speed
+        alarm[2] = -10
+        alarm[0] = 5*room_speed
     }
 }
 </string>

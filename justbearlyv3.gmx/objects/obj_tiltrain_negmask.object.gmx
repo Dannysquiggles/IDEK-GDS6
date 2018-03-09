@@ -3,10 +3,10 @@
   <spriteName>spr_tilttrain_negmask</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-8</depth>
+  <depth>-9</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
-  <maskName>&lt;undefined&gt;</maskName>
+  <maskName>spr_negmaskmask</maskName>
   <events>
     <event eventtype="0" enumb="0">
       <action>
@@ -28,8 +28,8 @@
             <string>x = obj_traintilt.x
 y = obj_traintilt.y
 
-image_speed = 0.5
-
+image_speed = 0.25
+//image_alpha = 0
 /*tilt = 0
 rate = 0.05
 alarm[0] = 60;

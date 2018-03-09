@@ -65,6 +65,8 @@ view_hview[0] = ogh
 view_yview[0] = 0
 view_xview[0] = 0
 
+global.state = 0
+
 with obj_leftbrow{image_alpha = 1}
 with obj_rightbrow{image_alpha = 1}
 with obj_crumple_overlay2{image_alpha = 1}

@@ -52,7 +52,6 @@
   </views>
   <instances>
     <instance objName="obj_lipupper" x="1184" y="672" name="inst_29C20754" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_font_picker" x="1632" y="-960" name="inst_CA5D121D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_lipdown" x="1205" y="675" name="inst_D7EB9937" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_lipleft" x="1193" y="672" name="inst_D8416042" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_rightlip" x="1193" y="672" name="inst_FB2F9DF3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -65,7 +64,7 @@
     <instance objName="obj_lightbottom" x="1200" y="677" name="inst_45799531" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_smilemanager2" x="96" y="160" name="inst_AF9C6F87" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_crumple_overlay2" x="761" y="260" name="inst_35CAB6B0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_leftrightbrow" x="1088" y="448" name="inst_8AD234E3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_leflightbrow" x="1088" y="448" name="inst_8AD234E3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_rightbrowlight" x="1312" y="480" name="inst_923DF2D9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>

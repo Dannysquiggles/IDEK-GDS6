@@ -29,7 +29,7 @@
 xv = view_xview[0]
 yv = view_yview[0]
 
-stop = 1;
+global.stopped = 1;
 
 dir = 1;
 
@@ -57,7 +57,7 @@ ogMovevar = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if stop == 0
+            <string>if global.stopped == 0
 {
     //alternate directions
     dir *= -1;
@@ -65,7 +65,7 @@ ogMovevar = 0;
     view_yview = yv + (global.movevar * dir);
     view_xview = xv + (global.movevar * dir);
 }
-if stop == 1
+if global.stopped == 1
 {
     view_yview = yv;
     view_xview = xv;
