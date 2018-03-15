@@ -9,6 +9,30 @@
     <sound>sound\sound0</sound>
   </sounds>
   <sprites name="sprites">
+    <sprites name="chair">
+      <sprite>sprites\spr_playerchairbackward</sprite>
+      <sprite>sprites\spr_chairfg</sprite>
+      <sprite>sprites\spr_chairbackground1</sprite>
+      <sprite>sprites\spr_playerchairforward</sprite>
+    </sprites>
+    <sprites name="whichway">
+      <sprite>sprites\spr_playercentre</sprite>
+      <sprite>sprites\spr_rmcolliders</sprite>
+      <sprite>sprites\spr_aicentre</sprite>
+      <sprite>sprites\spr_aimoveleft</sprite>
+      <sprite>sprites\spr_aileft</sprite>
+      <sprite>sprites\spr_aimoveright</sprite>
+      <sprite>sprites\spr_airight</sprite>
+      <sprite>sprites\spr_playermoveleft</sprite>
+      <sprite>sprites\spr_playerleft</sprite>
+      <sprite>sprites\spr_playermoveright</sprite>
+      <sprite>sprites\spr_playerright</sprite>
+    </sprites>
+    <sprites name="catchphone">
+      <sprite>sprites\spr_phone</sprite>
+      <sprite>sprites\spr_phonehandleft</sprite>
+      <sprite>sprites\spr_phonehandleftclosed</sprite>
+    </sprites>
     <sprites name="Pulsh">
       <sprite>sprites\spr_doorright</sprite>
       <sprite>sprites\spr_doorright_in</sprite>
@@ -404,6 +428,24 @@
   </fonts>
   <objects name="objects">
     <object>objects\obj_font_picker</object>
+    <objects name="chair">
+      <object>objects\obj_chairforground</object>
+      <object>objects\obj_chairmanager</object>
+      <object>objects\obj_chairplayer</object>
+      <object>objects\obj_chairbackground</object>
+    </objects>
+    <objects name="whichway">
+      <object>objects\obl_leftcol</object>
+      <object>objects\obj_centrecol</object>
+      <object>objects\obj_rightcol</object>
+      <object>objects\rm_manager_whichway</object>
+      <object>objects\obj_whichwayplayer</object>
+      <object>objects\obj_whichwayenemy</object>
+    </objects>
+    <objects name="phone_catch">
+      <object>objects\obj_phone</object>
+      <object>objects\obj_phonehandleft</object>
+    </objects>
     <objects name="smiling">
       <object>objects\obj_smilehead</object>
       <object>objects\obj_smilehead2</object>
@@ -516,6 +558,7 @@
         <object>objects\obj_player_cafe</object>
       </objects>
       <object>objects\obj_till</object>
+      <object>objects\obj_chairbg</object>
     </objects>
     <objects name="drawing">
       <object>objects\obj_drawing</object>
@@ -798,6 +841,24 @@
   <rooms name="rooms">
     <room>rooms\rm_menu</room>
     <room>rooms\rm_controls</room>
+    <rooms name="chapter 3">
+      <rooms name="chair">
+        <room>rooms\rm_chair</room>
+      </rooms>
+      <rooms name="Phone">
+        <room>rooms\rm_grab_phone</room>
+        <room>rooms\rm_phoneend</room>
+        <room>rooms\rm_phonewin</room>
+      </rooms>
+      <rooms name="whichway">
+        <room>rooms\rm_whichway</room>
+      </rooms>
+      <rooms name="chat">
+        <room>rooms\rm_pre_chat</room>
+        <room>rooms\rm_chat</room>
+      </rooms>
+      <room>rooms\rm_hands</room>
+    </rooms>
     <rooms name="chapter 1">
       <rooms name="morning">
         <room>rooms\rm_night1</room>
@@ -904,11 +965,6 @@
         <room>rooms\rm_pre_tilttrain3</room>
         <room>rooms\rm_tilttrain3</room>
       </rooms>
-      <rooms name="chat">
-        <room>rooms\rm_pre_chat</room>
-        <room>rooms\rm_chat</room>
-      </rooms>
-      <room>rooms\rm_hands</room>
       <rooms name="morning5">
         <room>rooms\rm_morning5</room>
       </rooms>

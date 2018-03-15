@@ -65,11 +65,17 @@ else
 {
     sprite_index = spr_doorright
     image_speed = 0.25
+    depth = -1
 }
 if global.dir == 'leftin'
 {
     sprite_index = spr_doorright_in
     image_speed = 0.25
+    depth = -1
+}
+else
+{
+    depth = -2
 }
 
 

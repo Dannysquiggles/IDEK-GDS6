@@ -59,8 +59,11 @@
     <instance objName="obj_crowd1" x="1248" y="224" name="inst_AC46FF1E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_crowd2" x="192" y="160" name="inst_8BE42F0F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_crowd3" x="128" y="128" name="inst_AA16A340" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_camera_ease" x="992" y="544" name="inst_D70D8FAD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
-  <tiles/>
+  <tiles>
+    <tile bgName="fg_vignette" x="-192" y="-64" w="2304" h="1296" xo="0" yo="0" id="10000078" name="inst_4E9A6A77" depth="-1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+  </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>
   <PhysicsWorldLeft>0</PhysicsWorldLeft>
