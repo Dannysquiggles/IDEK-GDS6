@@ -50,12 +50,13 @@ nx = random_range(1, 7)
 ny = irandom_range(125, 480)
 
 rate = random_range(0.51, 2)
-
+image_speed = 0.25
 oy = y
 ogy = y
 ox = x
 difx = nx - x
 dify = y - ny
+growrate = y/0.2
 
 
 
@@ -188,7 +189,7 @@ if change = true
         nx = irandom_range(1, 7)
     }
         ny = irandom_range(125, 480)
-        rate = random_range(0.5, 2)
+        rate = random_range(1, 6)
         dir = 'up'
         change = false
     }
@@ -263,6 +264,29 @@ if y &gt; room_height
 {
     room_goto_next()
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///scale phone 
+image_xscale = 1.2 - y/growrate
+image_yscale = 1.2 - y/growrate
 </string>
           </argument>
         </arguments>

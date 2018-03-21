@@ -55,9 +55,10 @@ ogy = y
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>x = mouse_x
-move_towards_point(mouse_x, ogy, rate)
-y = ogy
+            <string>//x = mouse_x
+//move_towards_point(mouse_x, ogy, rate)
+//y = ogy
+x += (mouse_x - x) * 0.05
 //y = mouse_y
 
 </string>

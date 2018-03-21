@@ -6,11 +6,15 @@
   <NewExtensions/>
   <sounds name="sound">
     <sound>sound\sf_trainofthoughts</sound>
+    <sound>sound\sf_squeak</sound>
     <sound>sound\sound0</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="chair">
+      <sprite>sprites\spr_froghead</sprite>
+      <sprite>sprites\spr_leftcrowd</sprite>
       <sprite>sprites\spr_playerchairbackward</sprite>
+      <sprite>sprites\spr_rightcrowd</sprite>
       <sprite>sprites\spr_chairfg</sprite>
       <sprite>sprites\spr_chairbackground1</sprite>
       <sprite>sprites\spr_playerchairforward</sprite>
@@ -30,7 +34,12 @@
     </sprites>
     <sprites name="catchphone">
       <sprite>sprites\spr_phone</sprite>
+      <sprite>sprites\spr_underphone</sprite>
       <sprite>sprites\spr_phonehandleft</sprite>
+      <sprite>sprites\spr_phonehandleftswing</sprite>
+      <sprite>sprites\spr_phonehandleftenter</sprite>
+      <sprite>sprites\spr_catch</sprite>
+      <sprite>sprites\spr_catchmiss</sprite>
       <sprite>sprites\spr_phonehandleftclosed</sprite>
     </sprites>
     <sprites name="Pulsh">
@@ -356,7 +365,10 @@
     <background>background\bg_cafe</background>
     <background>background\bg_partyfloor</background>
     <background>background\bg_chat</background>
+    <background>background\bg_hallway</background>
     <background>background\bg_yes_no</background>
+    <background>background\bg_phone1</background>
+    <background>background\bg_phone2</background>
     <background>background\bg_morning2</background>
     <background>background\bg_pulsh1</background>
     <background>background\bg_train</background>
@@ -430,9 +442,17 @@
     <object>objects\obj_font_picker</object>
     <objects name="chair">
       <object>objects\obj_chairforground</object>
+      <object>objects\obj_crowdright</object>
+      <object>objects\obj_froghead</object>
+      <object>objects\obj_crowdleft</object>
       <object>objects\obj_chairmanager</object>
+      <object>objects\obj_chaircol1</object>
       <object>objects\obj_chairplayer</object>
       <object>objects\obj_chairbackground</object>
+    </objects>
+    <objects name="stayin dialogue">
+      <object>objects\obj_textplayer</object>
+      <object>objects\obj_negative_space</object>
     </objects>
     <objects name="whichway">
       <object>objects\obl_leftcol</object>
@@ -444,6 +464,10 @@
     </objects>
     <objects name="phone_catch">
       <object>objects\obj_phone</object>
+      <object>objects\obj_phonelose</object>
+      <object>objects\obj_underphone</object>
+      <object>objects\obj_catch</object>
+      <object>objects\obj_catchmiss</object>
       <object>objects\obj_phonehandleft</object>
     </objects>
     <objects name="smiling">
@@ -671,6 +695,7 @@
       <object>objects\obj_swipespawner</object>
       <object>objects\obj_swipspawner2</object>
       <object>objects\obj_swipe</object>
+      <object>objects\obj_swipe_skip</object>
       <object>objects\obj_swipepulsh</object>
       <object>objects\obj_swipefb</object>
       <object>objects\obj_swipe_end</object>
@@ -842,8 +867,17 @@
     <room>rooms\rm_menu</room>
     <room>rooms\rm_controls</room>
     <rooms name="chapter 3">
+      <rooms name="morning3">
+        <room>rooms\rm_night3</room>
+        <room>rooms\rm_morning3</room>
+        <room>rooms\rm_stayindiallogue</room>
+      </rooms>
       <rooms name="chair">
         <room>rooms\rm_chair</room>
+      </rooms>
+      <rooms name="tiltrain2">
+        <room>rooms\rm_pre_tilt_train2</room>
+        <room>rooms\rm_titltrain2</room>
       </rooms>
       <rooms name="Phone">
         <room>rooms\rm_grab_phone</room>
@@ -852,6 +886,10 @@
       </rooms>
       <rooms name="whichway">
         <room>rooms\rm_whichway</room>
+      </rooms>
+      <rooms name="tilttrain3">
+        <room>rooms\rm_pre_tilttrain3</room>
+        <room>rooms\rm_tilttrain3</room>
       </rooms>
       <rooms name="chat">
         <room>rooms\rm_pre_chat</room>
@@ -956,15 +994,7 @@
         <room>rooms\rm_pre_daw</room>
         <room>rooms\rm_drawing1</room>
       </rooms>
-      <rooms name="tiltrain2">
-        <room>rooms\rm_pre_tilt_train2</room>
-        <room>rooms\rm_titltrain2</room>
-      </rooms>
       <room>rooms\rm_startscreen</room>
-      <rooms name="tilttrain3">
-        <room>rooms\rm_pre_tilttrain3</room>
-        <room>rooms\rm_tilttrain3</room>
-      </rooms>
       <rooms name="morning5">
         <room>rooms\rm_morning5</room>
       </rooms>
@@ -1001,12 +1031,6 @@
       </rooms>
     </rooms>
     <room>rooms\rm_end</room>
-    <rooms name="DAY 3">
-      <rooms name="morning3">
-        <room>rooms\rm_night3</room>
-        <room>rooms\rm_morning3</room>
-      </rooms>
-    </rooms>
     <rooms name="DAY 4">
       <rooms name="morning4">
         <room>rooms\rm_night4</room>

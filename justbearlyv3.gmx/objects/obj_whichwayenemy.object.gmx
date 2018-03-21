@@ -29,7 +29,7 @@
 global.aipos = 'centre'
 state = 'still'
 target = 0
-
+image_speed = 0
 movecount = 0
 </string>
           </argument>
@@ -186,14 +186,14 @@ if movecount &lt;= 2
         if global.target = 'right' &amp;&amp; global.aipos = 'centre'
         {
             sprite_index = spr_aimoveright
-            alarm[0] = 0.5 * room_speed
+            alarm[0] = 0.25 * room_speed
             global.aitarget = 'right'
             global.aistate = 'moving'
         }
         else if global.target = 'right' &amp;&amp; global.aipos = 'left'
         {
             sprite_index = spr_aimoveleft
-            alarm[0] = 0.5 * room_speed
+            alarm[0] = 0.25 * room_speed
             global.aitarget = 'right'
             global.aistate = 'moving'
         }
@@ -201,14 +201,14 @@ if movecount &lt;= 2
         else if global.target = 'left' &amp;&amp; global.aipos = 'centre'
         {
             sprite_index = spr_aimoveleft
-            alarm[0] = 0.5 * room_speed
+            alarm[0] = 0.25 * room_speed
             global.aitarget = 'left'
             global.aistate = 'moving'
         }
         else if global.target = 'left' &amp;&amp; global.aipos = 'right'
         {
             sprite_index = spr_aimoveright
-            alarm[0] = 0.5 * room_speed
+            alarm[0] = 0.25 * room_speed
             global.aitarget = 'centre'
             global.aistate = 'moving'
         }
@@ -216,14 +216,14 @@ if movecount &lt;= 2
         else if global.target = 'centre' &amp;&amp; global.aipos = 'left'
         {
             sprite_index = spr_aimoveleft
-            alarm[0] = 0.5 * room_speed
+            alarm[0] = 0.25 * room_speed
             global.aitarget = 'centre'
             global.aistate = 'moving'
         }
         else if global.target = 'centre' &amp;&amp; global.aipos = 'right'
         {
             sprite_index = spr_aimoveright
-            alarm[0] = 0.5 * room_speed
+            alarm[0] = 0.25 * room_speed
             global.aitarget = 'centre'
             global.aistate = 'moving'
         }
@@ -237,6 +237,30 @@ else
             global.aitarget = choose('centre', 'right','left')
             alarm[1] = 1
         }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if movecount &gt; 1
+{
+    image_index = 1
 }
 </string>
           </argument>

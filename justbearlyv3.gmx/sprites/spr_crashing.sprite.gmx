@@ -7,10 +7,10 @@
   <coltolerance>0</coltolerance>
   <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
-  <bbox_left>116</bbox_left>
-  <bbox_right>783</bbox_right>
-  <bbox_top>33</bbox_top>
-  <bbox_bottom>1093</bbox_bottom>
+  <bbox_left>168</bbox_left>
+  <bbox_right>657</bbox_right>
+  <bbox_top>297</bbox_top>
+  <bbox_bottom>1064</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroups>
@@ -21,7 +21,5 @@
   <height>1194</height>
   <frames>
     <frame index="0">images\spr_crashing_0.png</frame>
-    <frame index="1">images\spr_crashing_1.png</frame>
-    <frame index="2">images\spr_crashing_2.png</frame>
   </frames>
 </sprite>

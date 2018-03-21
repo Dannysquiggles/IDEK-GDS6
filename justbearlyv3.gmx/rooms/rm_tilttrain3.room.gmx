@@ -56,10 +56,9 @@
     <instance objName="obj_trainfriend" x="1248" y="1184" name="inst_CDFFC066" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_guide_tilt" x="704" y="384" name="inst_A4E09D87" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_trainfriend_mask" x="1248" y="1202" name="inst_50728FAF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_train_colour_tilt" x="0" y="0" name="inst_018836D4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_train_colour_tilt2" x="-32" y="0" name="inst_8B335E6B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tiltrain_negmask" x="1248" y="1184" name="inst_8F108500" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="fect_shake_growing_bi" x="1184" y="480" name="inst_B9A6DDD4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_font_picker" x="-128" y="576" name="inst_DC1E6C32" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
