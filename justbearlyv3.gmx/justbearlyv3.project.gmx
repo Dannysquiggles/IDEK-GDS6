@@ -10,6 +10,24 @@
     <sound>sound\sound0</sound>
   </sounds>
   <sprites name="sprites">
+    <sprites name="pitch">
+      <sprite>sprites\spr_face</sprite>
+      <sprite>sprites\spr_playerpitch</sprite>
+      <sprite>sprites\spr_mouth</sprite>
+      <sprites name="trak">
+        <sprite>sprites\spr_topbit</sprite>
+        <sprite>sprites\spr_spinyboy</sprite>
+        <sprite>sprites\spr_spike</sprite>
+        <sprite>sprites\spr_brainfuzz</sprite>
+        <sprite>sprites\spr_brain</sprite>
+        <sprite>sprites\spr_bottombit</sprite>
+      </sprites>
+      <sprites name="speech">
+        <sprite>sprites\spr_wordsgood</sprite>
+        <sprite>sprites\spr_wordsbad</sprite>
+        <sprite>sprites\spr_pitchspeechbubble</sprite>
+      </sprites>
+    </sprites>
     <sprites name="chair">
       <sprite>sprites\spr_froghead</sprite>
       <sprite>sprites\spr_leftcrowd</sprite>
@@ -367,6 +385,7 @@
     <background>background\bg_chat</background>
     <background>background\bg_hallway</background>
     <background>background\bg_yes_no</background>
+    <background>background\bg_pitch</background>
     <background>background\bg_phone1</background>
     <background>background\bg_phone2</background>
     <background>background\bg_morning2</background>
@@ -452,7 +471,21 @@
     </objects>
     <objects name="stayin dialogue">
       <object>objects\obj_textplayer</object>
+      <object>objects\obj_dalepitch</object>
+      <object>objects\obj_words</object>
+      <object>objects\obj_pitchbubble</object>
+      <object>objects\obj_room_manager</object>
+      <object>objects\obj_mouth</object>
+      <object>objects\obj_top1</object>
+      <object>objects\obj_daleface</object>
+      <object>objects\obj_top2</object>
+      <object>objects\obj_top3</object>
+      <object>objects\obj_bot3</object>
+      <object>objects\obj_bot2</object>
+      <object>objects\obj_bot1</object>
       <object>objects\obj_negative_space</object>
+      <object>objects\obj_spinny</object>
+      <object>objects\obj_ending</object>
     </objects>
     <objects name="whichway">
       <object>objects\obl_leftcol</object>
@@ -867,10 +900,10 @@
     <room>rooms\rm_menu</room>
     <room>rooms\rm_controls</room>
     <rooms name="chapter 3">
+      <room>rooms\rm_stayindiallogue</room>
       <rooms name="morning3">
         <room>rooms\rm_night3</room>
         <room>rooms\rm_morning3</room>
-        <room>rooms\rm_stayindiallogue</room>
       </rooms>
       <rooms name="chair">
         <room>rooms\rm_chair</room>
