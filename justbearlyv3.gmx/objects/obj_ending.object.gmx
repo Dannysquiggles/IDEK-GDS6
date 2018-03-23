@@ -80,7 +80,7 @@ if x &lt; 3232
           <argument>
             <kind>1</kind>
             <string>///make visible
-image_alpha = 1
+image_alpha = 0
 </string>
           </argument>
         </arguments>

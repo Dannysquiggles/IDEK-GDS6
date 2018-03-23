@@ -219,6 +219,10 @@ if count &gt; 2
     {
         instance_create(view_xview[0] + view_wview[0], view_yview[0], obj_swipe)        
     }
+        if !instance_exists(fect_shakeL2)
+    {
+        instance_create(x,y,fect_shakeL2)
+    }
 }
 </string>
           </argument>
@@ -278,9 +282,9 @@ alarm[1] = 1 * room_speed
     shield = true
     alarm[0] = 2 * room_speed
     count += 1
-        if !instance_exists(fect_shake)
+    if !instance_exists(fect_shake2)
     {
-        instance_create(x,y,fect_shake)
+        instance_create(x,y,fect_shake2)
     }
 }
 </string>
@@ -311,9 +315,9 @@ alarm[1] = 1 * room_speed
     shield = true
     alarm[0] = 2 * room_speed
     count += 1
-    if !instance_exists(fect_shake)
+    if !instance_exists(fect_shake2)
     {
-        instance_create(x,y,fect_shake)
+        instance_create(x,y,fect_shake2)
     }
 }
 </string>

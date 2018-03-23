@@ -386,6 +386,7 @@
     <background>background\bg_hallway</background>
     <background>background\bg_yes_no</background>
     <background>background\bg_pitch</background>
+    <background>background\fg_pitch</background>
     <background>background\bg_phone1</background>
     <background>background\bg_phone2</background>
     <background>background\bg_morning2</background>
@@ -643,11 +644,13 @@
       <object>objects\obj_bar_inner2</object>
       <object>objects\obj_bar_stress</object>
       <object>objects\fect_shake</object>
+      <object>objects\fect_shake2</object>
       <object>objects\fect_shake_growing_hor</object>
       <object>objects\fect_shake_growing_ver</object>
       <object>objects\fect_shake_growing_bi</object>
       <object>objects\fect_shake_shrinking</object>
       <object>objects\fect_shakeL</object>
+      <object>objects\fect_shakeL2</object>
       <object>objects\obj_camera_ease</object>
       <object>objects\fect_shake_big</object>
       <object>objects\obj_endmanager</object>
