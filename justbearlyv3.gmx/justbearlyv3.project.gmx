@@ -10,6 +10,13 @@
     <sound>sound\sound0</sound>
   </sounds>
   <sprites name="sprites">
+    <sprites name="date">
+      <sprites name="shapes">
+        <sprite>sprites\spr_dateshapebubbledale</sprite>
+        <sprite>sprites\spr_datebubbleback</sprite>
+        <sprite>sprites\spr_dateshapebubble</sprite>
+      </sprites>
+    </sprites>
     <sprites name="pitch">
       <sprite>sprites\spr_face</sprite>
       <sprite>sprites\spr_playerpitch</sprite>
@@ -36,6 +43,16 @@
       <sprite>sprites\spr_chairfg</sprite>
       <sprite>sprites\spr_chairbackground1</sprite>
       <sprite>sprites\spr_playerchairforward</sprite>
+    </sprites>
+    <sprites name="resume">
+      <sprite>sprites\spr_piece1</sprite>
+      <sprite>sprites\spr_piece2</sprite>
+      <sprite>sprites\spr_piece3</sprite>
+      <sprite>sprites\spr_piece4</sprite>
+      <sprite>sprites\spr_piece5</sprite>
+      <sprite>sprites\sprite309</sprite>
+      <sprite>sprites\spr_piece6</sprite>
+      <sprite>sprites\spr_resumeend</sprite>
     </sprites>
     <sprites name="whichway">
       <sprite>sprites\spr_playercentre</sprite>
@@ -85,8 +102,11 @@
       <sprite>sprites\spr_dale</sprite>
       <sprite>sprites\spr_dalebg</sprite>
       <sprite>sprites\spr_circle</sprite>
+      <sprite>sprites\spr_circley</sprite>
       <sprite>sprites\spr_hex</sprite>
+      <sprite>sprites\spr_hexy</sprite>
       <sprite>sprites\spr_square</sprite>
+      <sprite>sprites\spr_squary</sprite>
       <sprite>sprites\spr_picker</sprite>
       <sprite>sprites\spr_background</sprite>
       <sprite>sprites\spr_messagefriends</sprite>
@@ -387,6 +407,7 @@
     <background>background\bg_yes_no</background>
     <background>background\bg_pitch</background>
     <background>background\fg_pitch</background>
+    <background>background\bg_resume</background>
     <background>background\bg_phone1</background>
     <background>background\bg_phone2</background>
     <background>background\bg_morning2</background>
@@ -431,6 +452,13 @@
   <scripts name="scripts">
     <script>scripts\scr_dialrotator.gml</script>
     <script>scripts\scr_textManager.gml</script>
+    <scripts name="resume">
+      <script>scripts\scr_selectpiece.gml</script>
+      <script>scripts\scr_deselect.gml</script>
+      <script>scripts\scr_goal.gml</script>
+      <script>scripts\scr_followmouse.gml</script>
+      <script>scripts\scr_depth.gml</script>
+    </scripts>
     <script>scripts\scr_resize.gml</script>
     <script>scripts\scr_textManager_pre.gml</script>
     <script>scripts\scr_spawn_yes_no.gml</script>
@@ -460,6 +488,21 @@
   </fonts>
   <objects name="objects">
     <object>objects\obj_font_picker</object>
+    <objects name="resume">
+      <object>objects\obj_resume_manager</object>
+      <object>objects\obj_mask1</object>
+      <object>objects\obj_mask2</object>
+      <object>objects\obj_mask3</object>
+      <object>objects\obj_mask4</object>
+      <object>objects\obj_mask5</object>
+      <object>objects\obj_mask6</object>
+      <object>objects\obj_piece1</object>
+      <object>objects\obj_piece2</object>
+      <object>objects\obj_piece3</object>
+      <object>objects\obj_piece4</object>
+      <object>objects\obj_piece5</object>
+      <object>objects\obj_piece6</object>
+    </objects>
     <objects name="chair">
       <object>objects\obj_chairforground</object>
       <object>objects\obj_crowdright</object>
@@ -557,6 +600,15 @@
       <object>objects\obj_light</object>
     </objects>
     <objects name="chat">
+      <objects name="shape">
+        <object>objects\obj_dalebubbleback</object>
+        <object>objects\obj_daleshapebubble</object>
+        <object>objects\obj_dateshapebubble</object>
+        <object>objects\obj_machmessagedatemanager</object>
+        <object>objects\obj_message_circley</object>
+        <object>objects\obj_message_hexy</object>
+        <object>objects\obj_message_squarey</object>
+      </objects>
       <object>objects\obj_chat_partner</object>
       <object>objects\obj_chat_player</object>
       <object>objects\obj_scribble</object>
@@ -904,6 +956,12 @@
     <room>rooms\rm_menu</room>
     <room>rooms\rm_controls</room>
     <rooms name="chapter 3">
+      <rooms name="chat">
+        <room>rooms\rm_pre_chat</room>
+        <room>rooms\rm_chat</room>
+        <room>rooms\rm_chat2</room>
+      </rooms>
+      <room>rooms\rm_resume</room>
       <room>rooms\rm_matchmessage2</room>
       <room>rooms\rm_stayindiallogue</room>
       <rooms name="morning3">
@@ -928,10 +986,6 @@
       <rooms name="tilttrain3">
         <room>rooms\rm_pre_tilttrain3</room>
         <room>rooms\rm_tilttrain3</room>
-      </rooms>
-      <rooms name="chat">
-        <room>rooms\rm_pre_chat</room>
-        <room>rooms\rm_chat</room>
       </rooms>
       <room>rooms\rm_hands</room>
     </rooms>

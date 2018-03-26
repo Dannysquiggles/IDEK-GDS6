@@ -11,7 +11,7 @@
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
   <code></code>
-  <enableViews>-1</enableViews>
+  <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
@@ -31,7 +31,7 @@
     <yoffset>0</yoffset>
   </makerSettings>
   <backgrounds>
-    <background visible="-1" foreground="0" name="bg_chat" x="20" y="20" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
+    <background visible="-1" foreground="0" name="bg_resume" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -41,7 +41,7 @@
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
   </backgrounds>
   <views>
-    <view visible="-1" objName="&lt;undefined&gt;" xview="20" yview="20" wview="1920" hview="1080" xport="0" yport="0" wport="1920" hport="1080" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
@@ -51,24 +51,21 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="obj_chat_partner" x="1679" y="874" name="inst_7365571B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_chat_player" x="344" y="896" name="inst_B3C389AA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_daleshapebubble" x="704" y="64" name="inst_78938CAD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dateshapebubble" x="800" y="192" name="inst_87B42142" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_message_circley" x="928" y="288" name="inst_75CB22A9" locked="0" code="" scaleX="0.600000023841858" scaleY="0.600000023841858" colour="4294967295" rotation="0"/>
-    <instance objName="obj_message_hexy" x="928" y="64" name="inst_0D98E77B" locked="0" code="" scaleX="0.600000023841858" scaleY="0.600000023841858" colour="4294967295" rotation="0"/>
-    <instance objName="obj_message_squarey" x="928" y="-160" name="inst_726DD868" locked="0" code="" scaleX="0.600000023841858" scaleY="0.600000023841858" colour="4294967295" rotation="0"/>
-    <instance objName="obj_friend_message" x="896" y="288" name="inst_6E9EDB62" locked="0" code="" scaleX="0.699999988079071" scaleY="0.699999988079071" colour="4294967295" rotation="0"/>
-    <instance objName="obj_machmessagedatemanager" x="896" y="416" name="inst_FC607875" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
+    <instance objName="obj_piece1" x="1408" y="672" name="inst_529F5F3F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="9"/>
+    <instance objName="obj_mask1" x="807" y="621" name="inst_8146229E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_resume_manager" x="376" y="313" name="inst_FCBEE0BD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_mask2" x="775" y="798" name="inst_68BA49C4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_mask3" x="645" y="704" name="inst_BA279385" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_mask4" x="483" y="700" name="inst_9E2A1DF2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_mask5" x="545" y="459" name="inst_148B57A8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_mask6" x="783" y="442" name="inst_E66F8A59" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_piece2" x="1376" y="736" name="inst_AC597336" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="-50"/>
+    <instance objName="obj_piece3" x="1376" y="576" name="inst_D819E988" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="-100"/>
+    <instance objName="obj_piece4" x="1376" y="768" name="inst_0B160E6E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
+    <instance objName="obj_piece5" x="1280" y="640" name="inst_4BF91C33" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_piece6" x="1472" y="512" name="inst_0F13DFBA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="150"/>
   </instances>
-  <tiles>
-    <tile bgName="background5" x="608" y="512" w="1" h="1" xo="0" yo="0" id="10000012" name="inst_17A96923" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="background5" x="576" y="416" w="1" h="1" xo="0" yo="0" id="10000014" name="inst_6DDFC48E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="background6" x="576" y="384" w="1" h="1" xo="0" yo="0" id="10000017" name="inst_30B1220E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_tiles_chat" x="32" y="640" w="1419" h="463" xo="0" yo="0" id="10000063" name="inst_2164012F" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="fg_chat" x="202" y="761" w="1570" h="295" xo="0" yo="0" id="10000064" name="inst_50F4B1FB" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="background5" x="544" y="544" w="1" h="1" xo="0" yo="0" id="10000016" name="inst_5325756F" depth="-1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-  </tiles>
+  <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>
   <PhysicsWorldLeft>0</PhysicsWorldLeft>
