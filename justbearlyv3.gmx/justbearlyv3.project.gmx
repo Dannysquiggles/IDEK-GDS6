@@ -10,6 +10,10 @@
     <sound>sound\sound0</sound>
   </sounds>
   <sprites name="sprites">
+    <sprites name="endy">
+      <sprite>sprites\spr_flop</sprite>
+      <sprite>sprites\spr_chair</sprite>
+    </sprites>
     <sprites name="date">
       <sprites name="shapes">
         <sprite>sprites\spr_dateshapebubbledale</sprite>
@@ -413,6 +417,7 @@
   <backgrounds name="background">
     <background>background\bg_endsad</background>
     <background>background\bg_black</background>
+    <background>background\bg_bedy</background>
     <background>background\bg_cafe</background>
     <background>background\bg_partyfloor</background>
     <background>background\bg_chat</background>
@@ -501,6 +506,10 @@
   </fonts>
   <objects name="objects">
     <object>objects\obj_font_picker</object>
+    <objects name="end">
+      <object>objects\obj_endcharacter</object>
+      <object>objects\obj_endchair</object>
+    </objects>
     <objects name="resume">
       <object>objects\obj_resume_manager</object>
       <object>objects\obj_mask1</object>
@@ -997,42 +1006,6 @@
   <rooms name="rooms">
     <room>rooms\rm_menu</room>
     <room>rooms\rm_controls</room>
-    <rooms name="chapter 3">
-      <rooms name="chat">
-        <room>rooms\rm_pre_chat</room>
-        <room>rooms\rm_chat</room>
-        <room>rooms\rm_chat2</room>
-        <room>rooms\rm_chatshapes2</room>
-        <room>rooms\rm_chatedial</room>
-        <room>rooms\rm_hands</room>
-      </rooms>
-      <room>rooms\rm_resume</room>
-      <room>rooms\rm_matchmessage2</room>
-      <room>rooms\rm_stayindiallogue</room>
-      <rooms name="morning3">
-        <room>rooms\rm_night3</room>
-        <room>rooms\rm_morning3</room>
-      </rooms>
-      <rooms name="chair">
-        <room>rooms\rm_chair</room>
-      </rooms>
-      <rooms name="tiltrain2">
-        <room>rooms\rm_pre_tilt_train2</room>
-        <room>rooms\rm_titltrain2</room>
-      </rooms>
-      <rooms name="Phone">
-        <room>rooms\rm_grab_phone</room>
-        <room>rooms\rm_phoneend</room>
-        <room>rooms\rm_phonewin</room>
-      </rooms>
-      <rooms name="whichway">
-        <room>rooms\rm_whichway</room>
-      </rooms>
-      <rooms name="tilttrain3">
-        <room>rooms\rm_pre_tilttrain3</room>
-        <room>rooms\rm_tilttrain3</room>
-      </rooms>
-    </rooms>
     <rooms name="chapter 1">
       <rooms name="morning">
         <room>rooms\rm_night1</room>
@@ -1117,6 +1090,43 @@
         <room>rooms\rm_postbat</room>
       </rooms>
       <room>rooms\rm_chap2end</room>
+    </rooms>
+    <rooms name="chapter 3">
+      <rooms name="morning3">
+        <room>rooms\rm_night3</room>
+        <room>rooms\rm_morning3</room>
+      </rooms>
+      <room>rooms\rm_resume</room>
+      <rooms name="tiltrain2">
+        <room>rooms\rm_pre_tilt_train2</room>
+        <room>rooms\rm_titltrain2</room>
+      </rooms>
+      <rooms name="Phone">
+        <room>rooms\rm_grab_phone</room>
+        <room>rooms\rm_phoneend</room>
+        <room>rooms\rm_phonewin</room>
+      </rooms>
+      <room>rooms\rm_matchmessage2</room>
+      <room>rooms\rm_stayindiallogue</room>
+      <rooms name="whichway">
+        <room>rooms\rm_whichway</room>
+      </rooms>
+      <rooms name="tilttrain3">
+        <room>rooms\rm_pre_tilttrain3</room>
+        <room>rooms\rm_tilttrain3</room>
+      </rooms>
+      <rooms name="chair">
+        <room>rooms\rm_chair</room>
+      </rooms>
+      <rooms name="chat">
+        <room>rooms\rm_pre_chat</room>
+        <room>rooms\rm_chat</room>
+        <room>rooms\rm_chat2</room>
+        <room>rooms\rm_chatshapes2</room>
+        <room>rooms\rm_chatedial</room>
+        <room>rooms\rm_hands</room>
+        <room>rooms\room130</room>
+      </rooms>
     </rooms>
     <rooms name="clump">
       <rooms name="wave2">
