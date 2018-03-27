@@ -13,7 +13,20 @@
     <sprites name="date">
       <sprites name="shapes">
         <sprite>sprites\spr_dateshapebubbledale</sprite>
+        <sprite>sprites\spr_dalebubble2</sprite>
+        <sprite>sprites\spr_liforward</sprite>
+        <sprite>sprites\spr_Libubble2</sprite>
+        <sprite>sprites\spr_dalebubble2back</sprite>
         <sprite>sprites\spr_datebubbleback</sprite>
+        <sprite>sprites\spr_Lilaf</sprite>
+        <sprite>sprites\spr_Lileanback</sprite>
+        <sprite>sprites\spr_headback</sprite>
+        <sprite>sprites\spr_daleface</sprite>
+        <sprite>sprites\spr_dial_anything</sprite>
+        <sprite>sprites\spr_awkwardface</sprite>
+        <sprite>sprites\spr_dalechatty</sprite>
+        <sprite>sprites\spr_daleawkward</sprite>
+        <sprite>sprites\spr_daleleaned</sprite>
         <sprite>sprites\spr_dateshapebubble</sprite>
       </sprites>
     </sprites>
@@ -600,11 +613,40 @@
       <object>objects\obj_light</object>
     </objects>
     <objects name="chat">
+      <objects name="dial">
+        <object>objects\obj_pointer_anything</object>
+        <object>objects\obj_dial_anything</object>
+        <object>objects\obj_date_dial_manager</object>
+      </objects>
+      <objects name="stayin">
+        <object>objects\obj_li_forward</object>
+        <object>objects\obj_li_back</object>
+        <object>objects\obj_date_dale</object>
+        <object>objects\obj_date_dale2</object>
+        <object>objects\object402</object>
+        <object>objects\obj_date_face2</object>
+        <object>objects\obj_daleheadback</object>
+        <object>objects\obj_date_monologue_manager</object>
+        <objects name="monologue">
+          <object>objects\obj_top22</object>
+          <object>objects\obj_textplayer2</object>
+          <object>objects\obj_top12</object>
+          <object>objects\obj_top32</object>
+          <object>objects\obj_bot32</object>
+          <object>objects\obj_bot22</object>
+          <object>objects\obj_bot12</object>
+        </objects>
+        <object>objects\obj_date_face</object>
+      </objects>
       <objects name="shape">
         <object>objects\obj_dalebubbleback</object>
+        <object>objects\obj_dalebubbleback2</object>
         <object>objects\obj_daleshapebubble</object>
+        <object>objects\obj_daleshapebubble2</object>
         <object>objects\obj_dateshapebubble</object>
+        <object>objects\obj_dateshapebubble2</object>
         <object>objects\obj_machmessagedatemanager</object>
+        <object>objects\obj_machmessagedatemanager2</object>
         <object>objects\obj_message_circley</object>
         <object>objects\obj_message_hexy</object>
         <object>objects\obj_message_squarey</object>
@@ -960,6 +1002,9 @@
         <room>rooms\rm_pre_chat</room>
         <room>rooms\rm_chat</room>
         <room>rooms\rm_chat2</room>
+        <room>rooms\rm_chatshapes2</room>
+        <room>rooms\rm_chatedial</room>
+        <room>rooms\rm_hands</room>
       </rooms>
       <room>rooms\rm_resume</room>
       <room>rooms\rm_matchmessage2</room>
@@ -987,7 +1032,6 @@
         <room>rooms\rm_pre_tilttrain3</room>
         <room>rooms\rm_tilttrain3</room>
       </rooms>
-      <room>rooms\rm_hands</room>
     </rooms>
     <rooms name="chapter 1">
       <rooms name="morning">

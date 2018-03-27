@@ -27,17 +27,16 @@
             <kind>1</kind>
             <string>///starty bits
 
-hit = false
-
+hit = 0
+al = false
 shield = true
 
 alarm[0] = 3 * room_speed
 
-maxdis = 672
-mindis = 896
+maxdis = 288
+mindis = 389
 
 count = 0
-al = false
 </string>
           </argument>
         </arguments>
@@ -87,11 +86,11 @@ al = false
             <kind>1</kind>
             <string>if !instance_exists(obj_swipe)
     {
-        instance_create(room_width = 1, 0, obj_swipe)        
+        instance_create(room_width, 0, obj_swipe)        
     }
     else
     {
-        with obj_swipe { image_xscale = 4; image_yscale = 4}
+        with obj_swipe { image_xscale = 1; image_yscale = 1}
     }
     
 </string>
@@ -144,10 +143,13 @@ hit = false
 if global.vis = false
 {
     image_alpha = 0
+    with obj_curser {image_xscale = 1; image_yscale = 1}
 }
 else
 {
     image_alpha += 0.01
+    
+    with obj_curser {image_xscale = 0.5; image_yscale = 0.5}
 }
 </string>
           </argument>
@@ -175,7 +177,7 @@ if y &gt; maxdis
 {
     if mouse_y &lt; y
     {
-        y -= 4
+        y -= 2
     }
 }
 
@@ -183,7 +185,7 @@ if y &lt; mindis
 {
     if mouse_y &gt; y
     {
-        y += 4
+        y += 2
     }
 }
 </string>
@@ -213,7 +215,7 @@ if hit = true
     sprite_index = spr_brainfuzz
 
 }
-else
+else if hit == false
 {
     sprite_index = spr_brain
 
@@ -241,14 +243,19 @@ else
             <string>///end
 if count &gt; 2
 {
-    if !instance_exists(obj_swipe)
-    {
-        instance_create(view_xview[0] + view_wview[0], view_yview[0], obj_swipe)        
-    }
-        if !instance_exists(fect_shakeL2)
-    {
-        instance_create(x,y,fect_shakeL2)
-    }
+
+
+    global.cam = -1
+    global.pause = true
+    global.rate = 0
+    global.vis = false
+    global.talking = false
+    global.state = 1
+    instance_destroy(obj_negative_space)
+    instance_destroy(obj_spinny)
+    instance_destroy(obj_daleheadback)
+    count = -1
+    
 }
 </string>
           </argument>
@@ -308,9 +315,12 @@ alarm[1] = 1 * room_speed
     shield = true
     alarm[0] = 2 * room_speed
     count += 1
+    if count &lt; 2
+    {
     if !instance_exists(fect_shake2)
     {
-        instance_create(x,y,fect_shake2)
+       instance_create(x,y,fect_shake2)
+    }
     }
     if al == false
     {
@@ -348,17 +358,21 @@ alarm[1] = 1 * room_speed
     shield = true
     alarm[0] = 2 * room_speed
     count += 1
+    if count &lt; 2
+    {
     if !instance_exists(fect_shake2)
     {
         instance_create(x,y,fect_shake2)
     }
-    if al == false
+    }
+        if al == false
     {
-    global.talking = false
+    global.rate = 0
     global.pause = true
     alarm[2] = 0.5*room_speed
     al = true
     }
+    
 }
 </string>
           </argument>
