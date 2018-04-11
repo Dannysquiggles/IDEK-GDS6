@@ -33,7 +33,7 @@ startx = room_width / 2
 endpos = 0;
 still = true;
 rate = 0;
-instance_create(x,y+50,obj_upperlidshadow)
+//instance_create(x,y+50,obj_upperlidshadow)
 add = 0;
 </string>
           </argument>
@@ -200,10 +200,9 @@ image_angle = 0
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if !instance_exists(obj_title)
-{
+            <string>
 sprite_index = spr_lidup2
-}
+
 </string>
           </argument>
         </arguments>

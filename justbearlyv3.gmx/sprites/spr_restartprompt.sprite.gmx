@@ -7,18 +7,18 @@
   <coltolerance>0</coltolerance>
   <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
-  <bbox_left>12</bbox_left>
-  <bbox_right>298</bbox_right>
-  <bbox_top>44</bbox_top>
-  <bbox_bottom>68</bbox_bottom>
+  <bbox_left>0</bbox_left>
+  <bbox_right>354</bbox_right>
+  <bbox_top>0</bbox_top>
+  <bbox_bottom>242</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroups>
     <TextureGroup0>0</TextureGroup0>
   </TextureGroups>
   <For3D>0</For3D>
-  <width>314</width>
-  <height>131</height>
+  <width>355</width>
+  <height>243</height>
   <frames>
     <frame index="0">images\spr_restartprompt_0.png</frame>
   </frames>

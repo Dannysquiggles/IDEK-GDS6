@@ -60,11 +60,14 @@ alarm[0] = rate1
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if ! instance_exists(obj_swipe)
+            <string>/*if ! instance_exists(obj_swipe)
 {
    //global.stress = 1
    instance_create(room_width,0,obj_swipe)
 }
+*/
+audio_stop_all()
+room_goto_next()
 </string>
           </argument>
         </arguments>
@@ -91,6 +94,7 @@ alarm[0] = rate1
 {
     image_xscale = ox
     image_yscale = oy
+    audio_play_sound(sf_heart2,3,false)
     if !instance_exists(obj_batlight_plus)
     {
         instance_destroy(obj_batlight_plus)
@@ -124,7 +128,7 @@ alarm[0] = rate1
 {
     image_xscale = 1.8
     image_yscale = 1.8
-    
+    audio_play_sound(sf_heart1,3,false)
     alarm[3] = rate2
 }
 </string>
@@ -153,6 +157,7 @@ alarm[0] = rate1
 {
     image_xscale = ox
     image_yscale = oy
+    audio_play_sound(sf_heart2,3,false)
     if !instance_exists(obj_batlight_minus)
     {
         instance_destroy(obj_batlight_minus)
@@ -186,7 +191,7 @@ alarm[0] = rate1
 {
     image_xscale = 1.8
     image_yscale = 1.8
-    
+    audio_play_sound(sf_heart1,3,false)
     alarm[1] = rate2
 }
 </string>
@@ -222,7 +227,7 @@ alarm[0] = rate1
     {
         instance_create(x,y,fect_shakeL)
     }
-    alarm[4] = 3 * room_speed;
+    alarm[4] = 45;
     global.stress += 0.15
     endtime = 2;
     //background_colour = c_white;

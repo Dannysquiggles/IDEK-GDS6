@@ -3,9 +3,9 @@
   <spriteName>spr_mouthbottom</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-7</depth>
+  <depth>-25</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>obj_interest</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">

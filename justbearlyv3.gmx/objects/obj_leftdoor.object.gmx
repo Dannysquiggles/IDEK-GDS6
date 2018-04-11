@@ -60,12 +60,14 @@ else if global.dir = 'rightin'
             <string>if global.dir == 'right'
 {
 sprite_index = spr_doorleft
+audio_play_sound(sf_door,2,true)
 image_speed = 0.25
 depth = -1
 }
 else if global.dir == 'rightin'
 {
 depth = -1
+audio_play_sound(sf_door,2,true)
 sprite_index = spr_doorleft_in
 image_speed = 0.25
 }

@@ -37,7 +37,10 @@ instance_create(x,y+100, obj_space2);
 image_angle = 0;
 text = "";
 maxangle = -180;
-
+sound = 0
+audio_play_sound(sf_cafeamb2,2,true)
+audio_play_sound(sf_heartcon,3,true)
+audio_stop_sound(sf_cafeamb)
 //set rate at wich dial will turn
 rate = 8
 
@@ -95,19 +98,35 @@ draw_set_valign(textY)
             <string>/// destroy shit.
 if image_angle &gt; bracket_1
 {
+    with obj_bubble {x = 1307; y = 462; image_xscale = 0.6; image_yscale = 0.6;}
+    with obj_blackbubble {x = ox; y = oy; image_xscale = 1; image_yscale = 1;}
     with obj_dialouter {instance_destroy()}
     with obj_space2 {instance_destroy()}
     if instance_number(obj_lafmeter) == 0
     {
         instance_create(x,y, obj_lafmeter)
     }
+    if sound == 0
+{
+audio_play_sound(sf_cafeamb,2,true)
+audio_stop_sound(sf_heartcon)
+audio_stop_sound(sf_cafeamb2)
+}
     instance_destroy()
 }
 else
 {
+    with obj_bubble {x = 1307; y = 462; image_xscale = 0.6; image_yscale = 0.6;}
+    with obj_blackbubble {x = ox; y = oy; image_xscale = 1; image_yscale = 1;}
     with obj_dialouter {instance_destroy()}
     with obj_space2 {instance_destroy()}
     with obj_blankscrn {instance_destroy()}
+    if sound == 0
+{
+audio_play_sound(sf_cafeamb,2,true)
+audio_stop_sound(sf_heartcon)
+audio_stop_sound(sf_cafeamb2)
+}
     instance_destroy();
 }
 </string>

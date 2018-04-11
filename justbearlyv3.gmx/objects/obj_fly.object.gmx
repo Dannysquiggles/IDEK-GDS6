@@ -36,7 +36,7 @@ pointY = random_range(roomlimitDown,roomlimitUp);
 
 rate = 10
 ;
-
+audio_play_sound(sf_fly,4,true)
 //guider picker
 global.guides = 1;
 guide = 0 // when target = 0, follow random, when target = 1, follow guide

@@ -28,7 +28,7 @@
             <string> ///initialise variables
 global.oc = 0;
 image_speed = 0.1
-
+audio_play_sound(sf_cafeamb,2,true)
 touched = 0
 
 friction = 1.5

@@ -32,6 +32,9 @@ global.shape = 'circle'
 global.last = 'circle'
 pickedshape = 0
 al = false
+image_alpha = 0
+sound = 0
+audio_play_sound(sf_cafeamb,2,true)
 </string>
           </argument>
         </arguments>
@@ -94,6 +97,12 @@ else
     if !instance_exists(fect_shakeL)
     {
         instance_create(room_width/2, room_height/2, fect_shakeL)
+    }
+    if sound = 0
+    {
+    audio_play_sound(sf_indooramb,2,true)
+    audio_stop_sound(sf_cafeamb)
+    sound = 1
     }
     alarm[2] = 3*room_speed
 }
@@ -174,7 +183,7 @@ if global.state = 2
 if global.state = 3
 {
     global.shape = 'square'
-    with obj_backgrounds {sprite_index = spr_dalebg}
+    with obj_backgrounds {sprite_index = spr_dalebg; image_index = 0}
     with obj_message_friend {sprite_index = spr_dale; y+=60; image_speed = 0.25}
     with obj_friend_message {instance_destroy()}
     with obj_message_speechbubble {instance_destroy()}

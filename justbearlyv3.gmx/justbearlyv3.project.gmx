@@ -6,6 +6,18 @@
   <NewExtensions/>
   <sounds name="sound">
     <sound>sound\sf_trainofthoughts</sound>
+    <sound>sound\sf_cafeamb2</sound>
+    <sound>sound\sf_cafeamb</sound>
+    <sound>sound\sf_indooramb</sound>
+    <sound>sound\sf_streetamb</sound>
+    <sound>sound\sf_trippy</sound>
+    <sound>sound\sf_heart2</sound>
+    <sound>sound\sf_fly</sound>
+    <sound>sound\sf_turn</sound>
+    <sound>sound\sf_heart1</sound>
+    <sound>sound\sf_heartcon</sound>
+    <sound>sound\sf_door</sound>
+    <sound>sound\sf_trainamb</sound>
     <sound>sound\sf_squeak</sound>
     <sound>sound\sound0</sound>
   </sounds>
@@ -13,6 +25,8 @@
     <sprites name="endy">
       <sprite>sprites\spr_flop</sprite>
       <sprite>sprites\spr_chair</sprite>
+      <sprite>sprites\spr_cornered_vignette</sprite>
+      <sprite>sprites\spr_credits</sprite>
     </sprites>
     <sprites name="date">
       <sprites name="shapes">
@@ -55,11 +69,13 @@
     <sprites name="chair">
       <sprite>sprites\spr_froghead</sprite>
       <sprite>sprites\spr_leftcrowd</sprite>
+      <sprite>sprites\spr_poi</sprite>
       <sprite>sprites\spr_playerchairbackward</sprite>
       <sprite>sprites\spr_rightcrowd</sprite>
       <sprite>sprites\spr_chairfg</sprite>
       <sprite>sprites\spr_chairbackground1</sprite>
       <sprite>sprites\spr_playerchairforward</sprite>
+      <sprite>sprites\spr_prechair</sprite>
     </sprites>
     <sprites name="resume">
       <sprite>sprites\spr_piece1</sprite>
@@ -131,10 +147,20 @@
     <sprites name="menu">
       <sprite>sprites\spr_exit</sprite>
       <sprite>sprites\spr_option</sprite>
+      <sprite>sprites\spr_next</sprite>
       <sprite>sprites\spr_restartprompt</sprite>
       <sprite>sprites\spr_bg</sprite>
       <sprite>sprites\spr_strike</sprite>
+      <sprite>sprites\spr_endchapter3</sprite>
       <sprite>sprites\spr_endchapter</sprite>
+      <sprites name="instructions">
+        <sprite>sprites\spr_click</sprite>
+        <sprite>sprites\spr_mash</sprite>
+        <sprite>sprites\spr_move</sprite>
+        <sprite>sprites\spr_pull</sprite>
+      </sprites>
+      <sprite>sprites\spr_clicksplash</sprite>
+      <sprite>sprites\spr_mouse</sprite>
       <sprite>sprites\spr_endchapter2</sprite>
       <sprite>sprites\spr_click_to_continue</sprite>
       <sprite>sprites\spr_play</sprite>
@@ -168,12 +194,15 @@
     </sprites>
     <sprites name="smile">
       <sprite>sprites\spr_mouthbottom</sprite>
+      <sprite>sprites\spr_mouthbottom2</sprite>
       <sprite>sprites\spr_bottumlight</sprite>
       <sprite>sprites\spr_mouthup</sprite>
+      <sprite>sprites\spr_mouthup2</sprite>
       <sprite>sprites\spr_upperliplight</sprite>
       <sprite>sprites\spr_browright</sprite>
       <sprite>sprites\spr_leftbrow</sprite>
       <sprite>sprites\spr_smile_leftup</sprite>
+      <sprite>sprites\spr_smile_leftup2</sprite>
       <sprite>sprites\spr_leftliplight</sprite>
       <sprites name="smile2">
         <sprite>sprites\spr_overlayhead2</sprite>
@@ -181,6 +210,7 @@
         <sprite>sprites\spr_smilebg2</sprite>
       </sprites>
       <sprite>sprites\spr_liprightup</sprite>
+      <sprite>sprites\spr_liprightup2</sprite>
       <sprite>sprites\spr_rightliplight</sprite>
       <sprite>sprites\spr_smileedge</sprite>
     </sprites>
@@ -296,6 +326,7 @@
       </sprites>
       <sprite>sprites\spr_partaybg</sprite>
       <sprite>sprites\spr_curser</sprite>
+      <sprite>sprites\spr_open</sprite>
       <sprite>sprites\spr_curser_closed</sprite>
       <sprite>sprites\spr_curser_eye</sprite>
       <sprite>sprites\spr_curser_mash</sprite>
@@ -340,6 +371,7 @@
     <sprite>sprites\spr_fg_tree</sprite>
     <sprite>sprites\spr_friend_request</sprite>
     <sprites name="bat">
+      <sprite>sprites\spr_postbatbg</sprite>
       <sprite>sprites\spr_batplayer</sprite>
       <sprite>sprites\spr_heart</sprite>
       <sprite>sprites\spr_bat</sprite>
@@ -416,7 +448,10 @@
   </sprites>
   <backgrounds name="background">
     <background>background\bg_endsad</background>
+    <background>background\bg_introback</background>
     <background>background\bg_black</background>
+    <background>background\bg_end</background>
+    <background>background\background49</background>
     <background>background\bg_bedy</background>
     <background>background\bg_cafe</background>
     <background>background\bg_partyfloor</background>
@@ -440,6 +475,7 @@
     <background>background\bg_startscreen</background>
     <background>background\spr_startscreen2</background>
     <background>background\fg_chat</background>
+    <background>background\background51</background>
     <background>background\bg_eyes</background>
     <background>background\bg_lecture</background>
     <background>background\bg_lecture_blur</background>
@@ -507,6 +543,7 @@
   <objects name="objects">
     <object>objects\obj_font_picker</object>
     <objects name="end">
+      <object>objects\obj_credits</object>
       <object>objects\obj_endcharacter</object>
       <object>objects\obj_endchair</object>
     </objects>
@@ -531,6 +568,8 @@
       <object>objects\obj_froghead</object>
       <object>objects\obj_crowdleft</object>
       <object>objects\obj_chairmanager</object>
+      <object>objects\obj_prechair</object>
+      <object>objects\obj_poi</object>
       <object>objects\obj_chaircol1</object>
       <object>objects\obj_chairplayer</object>
       <object>objects\obj_chairbackground</object>
@@ -556,6 +595,8 @@
     <objects name="whichway">
       <object>objects\obl_leftcol</object>
       <object>objects\obj_centrecol</object>
+      <object>objects\obj_leftbutton</object>
+      <object>objects\obj_rightbutton</object>
       <object>objects\obj_rightcol</object>
       <object>objects\rm_manager_whichway</object>
       <object>objects\obj_whichwayplayer</object>
@@ -578,6 +619,10 @@
       <object>objects\obj_crumple_overlay2</object>
       <object>objects\obj_leftbrow</object>
       <object>objects\obj_rightliplight</object>
+      <object>objects\obj_rightlipline</object>
+      <object>objects\obj_leftlipline</object>
+      <object>objects\obj_upperlipline</object>
+      <object>objects\obj_lipdownline</object>
       <object>objects\obj_leflightbrow</object>
       <object>objects\obj_rightbrowlight</object>
       <object>objects\obj_leftliplight</object>
@@ -616,6 +661,7 @@
       <object>objects\obj_bathand</object>
       <object>objects\obj_bathandlead</object>
       <objects name="bookends">
+        <object>objects\obj_postbatbg</object>
         <object>objects\obj_prebatshutter</object>
         <object>objects\obj_postbat</object>
       </objects>
@@ -854,6 +900,23 @@
     <object>objects\obj_testanswer</object>
     <object>objects\obj_yes_no_spawner</object>
     <object>objects\obj_spawner2</object>
+    <objects name="textv2">
+      <object>objects\obj_intro_blank</object>
+      <object>objects\obj_endtemp</object>
+      <object>objects\obj_mouse</object>
+      <object>objects\obj_snap</object>
+      <object>objects\obj_intro_cafe</object>
+      <object>objects\obj_mash</object>
+      <object>objects\obj_pull</object>
+      <object>objects\obj_move</object>
+      <object>objects\obj_intro_chat</object>
+      <object>objects\obj_intro_wave</object>
+      <object>objects\obj_intro_paty</object>
+      <object>objects\obj_intro_morning</object>
+      <object>objects\obj_intro_street</object>
+      <object>objects\obj_intro_train</object>
+      <object>objects\obj_intro_lecture</object>
+    </objects>
     <objects name="Pulsh">
       <object>objects\obj_leftpull</object>
       <object>objects\obj_leftpush</object>
@@ -913,18 +976,6 @@
     <objects name="preroom">
       <object>objects\obj_txt_manage_generic</object>
       <object>objects\obj_txt_wave</object>
-      <objects name="textv2">
-        <object>objects\obj_intro_blank</object>
-        <object>objects\obj_endtemp</object>
-        <object>objects\obj_intro_cafe</object>
-        <object>objects\obj_intro_chat</object>
-        <object>objects\obj_intro_wave</object>
-        <object>objects\obj_intro_paty</object>
-        <object>objects\obj_intro_morning</object>
-        <object>objects\obj_intro_street</object>
-        <object>objects\obj_intro_train</object>
-        <object>objects\obj_intro_lecture</object>
-      </objects>
       <object>objects\obj_txt_chat</object>
       <object>objects\obj_txt_meetppl</object>
       <object>objects\obj_txt_lecture</object>
@@ -1002,12 +1053,14 @@
     </objects>
     <object>objects\obj_fonttest</object>
     <object>objects\obj_timer</object>
+    <object>objects\obj_frame</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_menu</room>
     <room>rooms\rm_controls</room>
     <rooms name="chapter 1">
       <rooms name="morning">
+        <room>rooms\rm_intro_eyes</room>
         <room>rooms\rm_night1</room>
         <room>rooms\rm_morning1</room>
       </rooms>
@@ -1037,6 +1090,7 @@
       <rooms name="cafe4">
         <room>rooms\rm_cafe_laf</room>
       </rooms>
+      <room>rooms\rm_pre_yes_no</room>
       <room>rooms\rm_yes_no</room>
       <rooms name="partay2">
         <room>rooms\rm_party2</room>
@@ -1053,15 +1107,16 @@
     </rooms>
     <rooms name="chapter 2a">
       <rooms name="morning chapter 2">
+        <room>rooms\rm_intro_eyes1</room>
         <room>rooms\rm_nightchap2</room>
         <room>rooms\rm_morningchap2</room>
       </rooms>
       <rooms name="Pulsh">
+        <room>rooms\rm_pre_pulsh</room>
         <room>rooms\rm_Pulsh1</room>
         <room>rooms\rm_pulsh2</room>
       </rooms>
       <rooms name="cafe3">
-        <room>rooms\rm_pre_cafe3</room>
         <room>rooms\rm_cafe_timer</room>
       </rooms>
       <rooms name="staystill">
@@ -1074,17 +1129,21 @@
         <room>rooms\rm_pre_facebook1</room>
         <room>rooms\rm_facebook1</room>
       </rooms>
+      <room>rooms\rm_pre_smile</room>
       <room>rooms\rm_smile</room>
+      <room>rooms\rm_pre_partay2</room>
       <room>rooms\rm_partywhelp</room>
+      <room>rooms\rm_pre_match_message</room>
       <room>rooms\rm_matchmessage</room>
+      <room>rooms\rm_pre_phone</room>
       <room>rooms\rm_breath</room>
       <room>rooms\rm_smile2</room>
       <rooms name="tilt train">
-        <room>rooms\rm_pre_train_tilt1</room>
+        <room>rooms\rm_pre_tilttrain</room>
         <room>rooms\rm_tilttrain</room>
       </rooms>
       <rooms name="bats">
-        <room>rooms\rm_batprebookend</room>
+        <room>rooms\rm_pre_bat</room>
         <room>rooms\rm_bats</room>
         <room>rooms\rm_bat2</room>
         <room>rooms\rm_postbat</room>
@@ -1093,29 +1152,33 @@
     </rooms>
     <rooms name="chapter 3">
       <rooms name="morning3">
+        <room>rooms\rm_pre_night3</room>
         <room>rooms\rm_night3</room>
         <room>rooms\rm_morning3</room>
       </rooms>
+      <room>rooms\rm_preresume</room>
       <room>rooms\rm_resume</room>
       <rooms name="tiltrain2">
-        <room>rooms\rm_pre_tilt_train2</room>
         <room>rooms\rm_titltrain2</room>
       </rooms>
       <rooms name="Phone">
+        <room>rooms\rm_click</room>
         <room>rooms\rm_grab_phone</room>
         <room>rooms\rm_phoneend</room>
         <room>rooms\rm_phonewin</room>
       </rooms>
       <room>rooms\rm_matchmessage2</room>
+      <room>rooms\rm_pre_stayin</room>
       <room>rooms\rm_stayindiallogue</room>
       <rooms name="whichway">
+        <room>rooms\rm_preww</room>
         <room>rooms\rm_whichway</room>
       </rooms>
       <rooms name="tilttrain3">
-        <room>rooms\rm_pre_tilttrain3</room>
         <room>rooms\rm_tilttrain3</room>
       </rooms>
       <rooms name="chair">
+        <room>rooms\rm_pre_chair</room>
         <room>rooms\rm_chair</room>
       </rooms>
       <rooms name="chat">
@@ -1125,139 +1188,16 @@
         <room>rooms\rm_chatshapes2</room>
         <room>rooms\rm_chatedial</room>
         <room>rooms\rm_hands</room>
-        <room>rooms\room130</room>
+        <room>rooms\rm_end</room>
       </rooms>
     </rooms>
-    <rooms name="clump">
-      <rooms name="wave2">
-        <room>rooms\rm_pre_wave</room>
-        <room>rooms\rm_wave2</room>
-      </rooms>
-      <room>rooms\rm_pre_street1</room>
-      <room>rooms\rm_pre_train4</room>
-      <room>rooms\rm_pre_partay2</room>
-      <rooms name="draw">
-        <room>rooms\rm_pre_daw</room>
-        <room>rooms\rm_drawing1</room>
-      </rooms>
-      <room>rooms\rm_startscreen</room>
-      <rooms name="morning5">
-        <room>rooms\rm_morning5</room>
-      </rooms>
-      <rooms name="street4">
-        <rooms name="lecture2">
-          <room>rooms\rm_pre_lecture2</room>
-          <room>rooms\rm_lecture2</room>
-        </rooms>
-        <room>rooms\rm_pre_street4</room>
-        <room>rooms\rm_street4</room>
-      </rooms>
+    <rooms name="draw">
+      <room>rooms\rm_pre_daw</room>
+      <room>rooms\rm_drawing1</room>
     </rooms>
-    <rooms name="DAY 1">
-      <rooms name="train2">
-        <room>rooms\rm_pre_train2</room>
-        <room>rooms\rm_train2</room>
-      </rooms>
-      <rooms name="street1">
-        <room>rooms\rm_street1</room>
-      </rooms>
-      <room>rooms\rm_pre_train3</room>
-    </rooms>
-    <rooms name="DAY 2">
-      <rooms name="morning2">
-        <room>rooms\rm_night2</room>
-      </rooms>
-      <rooms name="street2">
-        <room>rooms\rm_pre_street2</room>
-        <room>rooms\rm_street2</room>
-      </rooms>
-      <rooms name="cafe2">
-        <room>rooms\rm_pre_cafe2</room>
-        <room>rooms\rm_cafe_swaptext</room>
-      </rooms>
-    </rooms>
-    <room>rooms\rm_end</room>
-    <rooms name="DAY 4">
-      <rooms name="morning4">
-        <room>rooms\rm_night4</room>
-        <room>rooms\rm_morning4</room>
-      </rooms>
-      <rooms name="party 3">
-        <room>rooms\rm_pre_party3</room>
-        <room>rooms\rm_party3</room>
-      </rooms>
-    </rooms>
-    <rooms name="DAY5">
-      <rooms name="wave5">
-        <room>rooms\rm_pre_wave2</room>
-        <room>rooms\rm_wave_4</room>
-      </rooms>
-      <rooms name="street5">
-        <room>rooms\rm_pre_street5</room>
-        <room>rooms\rm_street5</room>
-      </rooms>
-      <rooms name="cafe5">
-        <room>rooms\rm_pre_cafe_5</room>
-        <room>rooms\rm_caffee_timer2</room>
-      </rooms>
-      <rooms name="chat1">
-        <room>rooms\rm_pre_chat1</room>
-        <room>rooms\rm_chat1</room>
-      </rooms>
-    </rooms>
-    <rooms name="ROOMS SPARE">
-      <room>rooms\rm_drawing</room>
-      <rooms name="cafe">
-        <room>rooms\rm_cafe_simple</room>
-        <room>rooms\rm_pre_cafe</room>
-      </rooms>
-      <rooms name="facebook">
-        <room>rooms\rm_pre_facebook</room>
-        <room>rooms\rm_facebookv2</room>
-      </rooms>
-      <rooms name="morning">
-        <room>rooms\rm_nightv2</room>
-        <room>rooms\rm_night</room>
-        <room>rooms\rm_morning</room>
-      </rooms>
-      <room>rooms\rm_pre_cafe4</room>
-      <rooms name="party">
-        <room>rooms\rm_pre_partay</room>
-        <room>rooms\rm_party</room>
-      </rooms>
-      <rooms name="tilttrain">
-        <room>rooms\rm_pre_train_tilt</room>
-      </rooms>
-      <rooms name="street">
-        <room>rooms\rm_streetwalk</room>
-        <room>rooms\rm_pre_street</room>
-      </rooms>
-      <rooms name="train5">
-        <room>rooms\rm_pre_train5</room>
-        <room>rooms\rm_train_crouded_day</room>
-      </rooms>
-      <rooms name="street night">
-        <room>rooms\rm_pre_street_night</room>
-        <room>rooms\rrm_street3</room>
-      </rooms>
-      <rooms name="train">
-        <room>rooms\empty_train</room>
-        <room>rooms\rm_trainv2_2</room>
-        <room>rooms\rm_pre_trian3</room>
-        <room>rooms\rm_train_croaded</room>
-        <rooms name="probsnot">
-          <room>rooms\rm_train_2passangers</room>
-        </rooms>
-      </rooms>
-      <rooms name="wavev2">
-        <room>rooms\rm_wavev3</room>
-      </rooms>
-      <rooms name="street3">
-        <room>rooms\rm_pe_street3</room>
-        <room>rooms\rm_street3</room>
-      </rooms>
-    </rooms>
+    <room>rooms\rm_drawing</room>
     <room>rooms\rm_wave</room>
+    <room>rooms\room130</room>
     <room>rooms\rm_preroomgeneric</room>
   </rooms>
   <help>

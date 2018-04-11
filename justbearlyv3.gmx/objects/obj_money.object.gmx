@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>alpha = 0
+            <string>audio_play_sound(sf_indooramb,1,true)
+alpha = 0
 num = 1000.00
 draw_set_colour(c_black)
 draw_set_valign(fa_center)
@@ -87,7 +88,7 @@ if !place_meeting(x,y,obj_logoboi)
     {
     alpha = 1
     }
-    num -= 1.21
+    num -= 25.21
 }
 </string>
           </argument>

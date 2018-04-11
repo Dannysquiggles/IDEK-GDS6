@@ -80,7 +80,7 @@ image_speed = 0;
           </argument>
           <argument>
             <kind>0</kind>
-            <string>2</string>
+            <string>3</string>
           </argument>
           <argument>
             <kind>0</kind>
@@ -131,7 +131,7 @@ image_speed = 0;
           <argument>
             <kind>1</kind>
             <string>///stop animation
-image_index = 1
+image_index = 2
 </string>
           </argument>
         </arguments>

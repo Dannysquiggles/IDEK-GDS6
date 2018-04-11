@@ -59,6 +59,7 @@
     <instance objName="obj_trainfriend3" x="1056" y="1184" name="inst_F595DBAA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tiltrain_negmask" x="1056" y="1187" name="inst_2A8B8003" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_lightvignette" x="288" y="160" name="inst_578EF3A6" locked="0" code="" scaleX="0.699999988079071" scaleY="0.699999988079071" colour="4294967295" rotation="0"/>
+    <instance objName="obj_frame" x="262" y="151" name="inst_8D30171B" locked="0" code="" scaleX="0.720000028610229" scaleY="0.720000028610229" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

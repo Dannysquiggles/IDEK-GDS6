@@ -37,6 +37,10 @@ bracket_2 = minY - 106.66;
 stop = 0;
 rate = 7;
 der = 0; //up
+sound = 0
+audio_play_sound(sf_cafeamb2,2,true)
+audio_play_sound(sf_heartcon,3,true)
+audio_stop_sound(sf_cafeamb)
 image_xscale = 0.5
 image_yscale = 0.5
 image_speed = 1
@@ -65,11 +69,19 @@ image_speed = 1
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>        global.message2 = "HEHEEHEHEHEHEHEHEHE#HAHAHAHAHAHAHAHA#HO HO HO HO HA HA HA HA #HEH HAH HARGH HA HA HA."
+            <string>with obj_bubble {x = 1307; y = 462; image_xscale = 0.6; image_yscale = 0.6;}
+    with obj_blackbubble {x = ox; y = oy; image_xscale = 1; image_yscale = 1;}
+                global.message2 = "HEHEEHEHEHEHEHEHEHE#HAHAHAHAHAHAHAHA#HO HO HO HO HA HA HA HA #HEH HAH HARGH HA HA HA."
         with obj_blackbubble {image_alpha = 255}
         global.oc = 5.3
         //global.col = 'black'
 //zoomout
+if sound == 0
+{
+audio_play_sound(sf_cafeamb,2,true)
+audio_stop_sound(sf_heartcon)
+audio_stop_sound(sf_cafeamb2)
+}
 with obj_rmManager_coffee {grow = 2}
 global.grow = 2
 
@@ -137,11 +149,19 @@ global.grow = 2
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>        global.message2 = "heh heh"
+            <string>with obj_bubble {x = 1307; y = 462; image_xscale = 0.6; image_yscale = 0.6;}
+    with obj_blackbubble {x = ox; y = oy; image_xscale = 1; image_yscale = 1;}
+            global.message2 = "heh heh"
         with obj_blackbubble {image_alpha = 255}
         global.oc = 5.2
         //global.col = 'black'
 //zoomout
+if sound == 0
+{
+audio_play_sound(sf_cafeamb,2,true)
+audio_stop_sound(sf_heartcon)
+audio_stop_sound(sf_cafeamb2)
+}
 with obj_rmManager_coffee {grow = 2}
 global.grow = 2
 </string>
@@ -209,8 +229,16 @@ global.grow = 2
           <argument>
             <kind>1</kind>
             <string>global.message2 = " ... "
+with obj_bubble {x = 1307; y = 462; image_xscale = 0.6; image_yscale = 0.6;}
+    with obj_blackbubble {x = ox; y = oy; image_xscale = 1; image_yscale = 1;}
 with obj_blackbubble {image_alpha = 255}
 global.oc = 5.1
+if sound == 0
+{
+audio_play_sound(sf_cafeamb,2,true)
+audio_stop_sound(sf_heartcon)
+audio_stop_sound(sf_cafeamb2)
+}
 //global.col = 'black'
 //zoomout
 with obj_rmManager_coffee {grow = 2}

@@ -200,10 +200,9 @@ image_angle = 0
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if !instance_exists(obj_title)
-{
+            <string>
 sprite_index = spr_liddown2
-}
+
 </string>
           </argument>
         </arguments>

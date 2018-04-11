@@ -26,11 +26,12 @@
           <argument>
             <kind>1</kind>
             <string>//adjust mouse possition, guide possition
-window_mouse_set(obj_player_tilt.x, obj_player_tilt.y - 733)
+window_mouse_set(obj_player_tilt.x, obj_player_tilt.y - obj_player_tilt.sprite_width)
 //mouse_x = obj_player_tilt.x
 //mouse_y = obj_player_tilt.y - obj_player_tilt.sprite_height
 rate = 0.5
-x = mouse_x
+x = obj_player_tilt.x
+y = obj_player_tilt.y - obj_player_tilt.sprite_width
 ogy = y
 //y = mouse_y
 </string>

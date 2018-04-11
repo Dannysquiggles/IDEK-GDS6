@@ -8,7 +8,7 @@
   <isometric>0</isometric>
   <speed>30</speed>
   <persistent>0</persistent>
-  <colour>12632256</colour>
+  <colour>0</colour>
   <showcolour>-1</showcolour>
   <code></code>
   <enableViews>-1</enableViews>
@@ -31,7 +31,7 @@
     <yoffset>0</yoffset>
   </makerSettings>
   <backgrounds>
-    <background visible="-1" foreground="0" name="bg_train2" x="0" y="0" htiled="-1" vtiled="-1" hspeed="30" vspeed="0" stretch="0"/>
+    <background visible="-1" foreground="0" name="bg_train2" x="0" y="0" htiled="-1" vtiled="0" hspeed="30" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -73,12 +73,13 @@
     <instance objName="frog" x="800" y="384" name="inst_8168A943" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="liz" x="768" y="288" name="inst_567CA110" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_playerguide" x="928" y="672" name="inst_CAC6340C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_frame" x="20" y="20" name="inst_C318DF1A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_eyes" x="20" y="480" w="1920" h="490" xo="0" yo="0" id="10000046" name="inst_6A44711F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_trainv2" x="20" y="20" w="1920" h="1080" xo="0" yo="0" id="10000041" name="inst_C5A81CA4" depth="900000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="fg_trainbar" x="1547" y="109" w="80" h="988" xo="0" yo="0" id="10000058" name="inst_1ABFDF09" depth="-100000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="fg_croudedtrain" x="38" y="360" w="1897" h="737" xo="0" yo="0" id="10000062" name="inst_2B44582C" depth="-100000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="fg_trainbar" x="1549" y="110" w="80" h="988" xo="0" yo="0" id="10000081" name="inst_DAB7B656" depth="-8000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="fg_croudedtrain" x="40" y="359" w="1897" h="737" xo="0" yo="0" id="10000082" name="inst_A59FB85C" depth="-9000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>

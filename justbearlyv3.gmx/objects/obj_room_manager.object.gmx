@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.talking = false
+            <string>audio_play_sound(sf_indooramb,1,true)
+global.talking = false
 
 global.rate = 0
 

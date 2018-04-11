@@ -64,12 +64,14 @@ else
             <string>if global.dir == 'left'
 {
     sprite_index = spr_doorright
+    audio_play_sound(sf_door,2,true)
     image_speed = 0.25
     depth = -1
 }
 if global.dir == 'leftin'
 {
     sprite_index = spr_doorright_in
+    audio_play_sound(sf_door,2,true)
     image_speed = 0.25
     depth = -1
 }

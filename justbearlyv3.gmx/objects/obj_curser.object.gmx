@@ -42,6 +42,7 @@ global.Daycount = 1;
 global.laf = 0;
 //global.rand = false;
 poi = 0;
+click = false
 </string>
           </argument>
         </arguments>
@@ -76,10 +77,15 @@ else
     image_alpha = 0
 }
 //reset poi
-if place_meeting(x,y, obj_interest)
+if place_meeting(x,y, obj_interest) &amp;&amp; click = false
 {
     poi = 1
-    image_speed = 0.25
+    sprite_index = spr_open
+}
+else if place_meeting(x,y, obj_interest) &amp;&amp; click = true
+{
+    poi = 1
+    sprite_index = spr_curser_closed
 }
 else
 {
@@ -101,46 +107,6 @@ else if global.symbol == 'eye' &amp;&amp; poi == 0
 } 
 sound_stop_all()
 </string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>601</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_execute_script</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>9</kind>
-            <script>scr_noinput</script>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
           </argument>
         </arguments>
       </action>
@@ -167,6 +133,7 @@ image_xscale = 1
 image_yscale = 1
 
 sprite_index = spr_curser;
+click = false
 </string>
           </argument>
         </arguments>
@@ -197,6 +164,7 @@ image_yscale = minim
 }
 else if poi = 1
 {
+    click = true
     sprite_index = spr_curser_closed
 }
 

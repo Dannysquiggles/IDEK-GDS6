@@ -173,7 +173,7 @@ else if image_xscale = 1
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.grab = false
+            <string>
 if image_xscale = -1
 {
     sprite_index = spr_phonehandleftswing
@@ -240,6 +240,7 @@ else if image_xscale = 1
           <argument>
             <kind>1</kind>
             <string>///transfer to new animations
+global.grab = false
 if sprite_index == spr_phonehandleftenter &amp;&amp; image_xscale = 1
 {
     sprite_index = spr_phonehandleft

@@ -7,17 +7,17 @@
   <coltolerance>0</coltolerance>
   <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
-  <bbox_left>0</bbox_left>
-  <bbox_right>669</bbox_right>
-  <bbox_top>52</bbox_top>
-  <bbox_bottom>1079</bbox_bottom>
+  <bbox_left>189</bbox_left>
+  <bbox_right>751</bbox_right>
+  <bbox_top>107</bbox_top>
+  <bbox_bottom>592</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroups>
     <TextureGroup0>0</TextureGroup0>
   </TextureGroups>
   <For3D>0</For3D>
-  <width>670</width>
+  <width>1046</width>
   <height>1080</height>
   <frames>
     <frame index="0">images\spr_datebubbleback_0.png</frame>

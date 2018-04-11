@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>///set states
 global.wavestate = 'start'
+audio_play_sound(sf_streetamb,3,true)
 state = 0
 zoom = 0
 alarm[2] = 20*room_speed;

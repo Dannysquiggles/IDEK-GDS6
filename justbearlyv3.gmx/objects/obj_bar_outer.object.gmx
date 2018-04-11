@@ -29,7 +29,7 @@
 Max = image_yscale
 Min = 0
 //image_alpha = 0
-Start = 0.8
+Start = 0.5
 
 Label = "POWER"
 
@@ -43,6 +43,7 @@ ogStress = global.stress
 global.state = 'play'
 
 image_yscale = Start
+
 
 //create inner bar
 //instance_create(x,y, obj_bar_inner)

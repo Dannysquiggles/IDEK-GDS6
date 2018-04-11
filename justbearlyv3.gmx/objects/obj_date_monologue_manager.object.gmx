@@ -28,7 +28,8 @@
             <string>global.talking = false
 global.state = 0
 global.rate = 0
-
+sound = 0
+audio_play_sound(sf_cafeamb,3,false)
 global.vis = false //minigame is invisible
 
 global.cam = false
@@ -148,6 +149,12 @@ if global.cam = true
     else
     {
         global.cam = false
+        if sound == 0
+        {
+            audio_play_sound(sf_cafeamb2,3,false)
+            audio_stop_sound(sf_cafeamb)
+            sound = 1
+        }
     }
 }
 if global.cam = -1
@@ -243,7 +250,11 @@ else if global.state = 4
 }
 else if global.state = 5
 {
-    room_goto_next()
+    if !instance_exists(obj_flash2)
+{
+   instance_create(room_width/2, room_height/2, obj_flash2)
+   //room_goto_next()
+}
 }
 </string>
           </argument>

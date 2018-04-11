@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>///directions at start
-
+audio_play_sound(sf_streetamb,1,true)
 //set if phone is rising or falling
 dir = 'down'
 //pick if phone is transisioning

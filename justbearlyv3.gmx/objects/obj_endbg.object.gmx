@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>///imagespeed
 
-image_speed = 0.2
+image_speed = 0.025
 </string>
           </argument>
         </arguments>

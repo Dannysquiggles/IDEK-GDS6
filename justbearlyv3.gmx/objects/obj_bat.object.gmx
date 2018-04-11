@@ -64,6 +64,7 @@ alarm[0] = rate1
 {
     image_xscale = ox
     image_yscale = oy
+    audio_play_sound(sf_heart2,3,false)
     if !instance_exists(obj_batlight_plus)
     {
         instance_destroy(obj_batlight_plus)
@@ -97,7 +98,7 @@ alarm[0] = rate1
 {
     image_xscale = 0.8
     image_yscale = 0.8
-    
+    audio_play_sound(sf_heart1,3,false)
     alarm[3] = rate2
 }
 </string>
@@ -126,6 +127,7 @@ alarm[0] = rate1
 {
     image_xscale = ox
     image_yscale = oy
+    audio_play_sound(sf_heart2,3,false)
     if !instance_exists(obj_batlight_minus)
     {
         instance_destroy(obj_batlight_minus)
@@ -157,6 +159,7 @@ alarm[0] = rate1
             <kind>1</kind>
             <string>if beat = 1
 {
+    audio_play_sound(sf_heart1,3,false)
     image_xscale = 0.8
     image_yscale = 0.8
     

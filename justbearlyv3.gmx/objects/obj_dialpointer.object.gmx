@@ -31,6 +31,10 @@ image_xscale = 0.5;
 image_speed = 1
 image_yscale = 0.5;
 instance_create(x,y,obj_dialouter);
+sound = 0
+audio_play_sound(sf_cafeamb2,2,true)
+audio_play_sound(sf_heartcon,3,true)
+audio_stop_sound(sf_cafeamb)
 //obj_dialouter.image_index = 1;
 //obj_dialouter.image_speed = 0;
 //instance_create(x,y, obj_blankscrn);
@@ -145,6 +149,7 @@ global.oc = 0.1
           <argument>
             <kind>1</kind>
             <string>///apply outcome 3
+        with obj_bubble {x = 1307; y = 462; image_xscale = 0.6; image_yscale = 0.6;}
         global.oc = 3;
         global.message2 = otc3_text
         with obj_blackbubble {image_alpha = 255}
@@ -154,6 +159,12 @@ global.oc = 0.1
     with obj_rmManager_coffee{grow = 2}
     with obj_rmManager_coffee2{grow = 2}
 //destroyinstances
+if sound == 0
+{
+audio_play_sound(sf_cafeamb,2,true)
+audio_stop_sound(sf_heartcon)
+audio_stop_sound(sf_cafeamb2)
+}
 with obj_dialouter {instance_destroy()}
 with obj_space2 {instance_destroy()}
 instance_destroy();
@@ -181,6 +192,7 @@ instance_destroy();
           <argument>
             <kind>1</kind>
             <string>///apply outcome 2
+        with obj_bubble {x = 1307; y = 462; image_xscale = 0.6; image_yscale = 0.6;}
                 global.oc = 2;
         global.message2 = otc2_text
         with obj_blackbubble {image_alpha = 255}
@@ -191,6 +203,12 @@ instance_destroy();
     with obj_rmManager_coffee{grow = 2}
     with obj_rmManager_coffee2{grow = 2}
 //destroyinstances
+if sound == 0
+{
+audio_play_sound(sf_cafeamb,2,true)
+audio_stop_sound(sf_heartcon)
+audio_stop_sound(sf_cafeamb2)
+}
 with obj_dialouter {instance_destroy()}
 instance_destroy();
     
@@ -217,6 +235,7 @@ instance_destroy();
           <argument>
             <kind>1</kind>
             <string>///apply outcome 1
+        with obj_bubble {x = 1307; y = 462; image_xscale = 0.6; image_yscale = 0.6;}
         global.oc = 1;
         global.message2 = otc1_text
         with obj_blackbubble {image_alpha = 255}
@@ -226,6 +245,12 @@ instance_destroy();
     with obj_rmManager_coffee{grow = 2}
     with obj_rmManager_coffee2{grow = 2}
 //destroyinstances
+if sound == 0
+{
+audio_play_sound(sf_cafeamb,2,true)
+audio_stop_sound(sf_heartcon)
+audio_stop_sound(sf_cafeamb2)
+}
 with obj_dialouter {instance_destroy()}
 instance_destroy();
     

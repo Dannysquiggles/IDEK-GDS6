@@ -30,7 +30,7 @@ global.pause = true
 global.state = -1
 global.shape = 'circle'
 global.last = 'circle'
-
+audio_play_sound(sf_cafeamb2,1,false)
 pickedshape = 0
 image_alpha = 0
 al = false
@@ -112,7 +112,11 @@ cam = false
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto_next()
+            <string>if !instance_exists(obj_flash2)
+{
+   instance_create(room_width/2, room_height/2, obj_flash2)
+   //room_goto_next()
+}
 /*
 if !instance_exists(obj_swipe)
 {
@@ -143,11 +147,11 @@ if !instance_exists(obj_swipe)
             <string>
 if pickedshape == global.shape // win
 {
-    if !instance_exists(obj_flash)
-    {
-        instance_create(room_width/2, room_height/2, obj_flash)
-    }
-    room_goto_next()
+if !instance_exists(obj_flash2)
+{
+   instance_create(room_width/2, room_height/2, obj_flash2)
+   //room_goto_next()
+}
 }
 else
 {

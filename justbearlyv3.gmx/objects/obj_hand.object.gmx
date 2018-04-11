@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>///follow mouse slowly.
 image_speed = 0.25
+audio_play_sound(sf_indooramb,2,true)
 pointX = obj_handLead.x;
 pointY = obj_handLead.y;
 stop = 0;
@@ -258,7 +259,9 @@ else if image_alpha &lt; 0
             <kind>1</kind>
             <string>if col == false
 {
-
+//audio_play_sound(sf_trainamb,1,true)
+audio_stop_sound(sf_fly)
+audio_play_sound(sf_turn,3,false)
 stop = 1
 move_towards_point(x,room_height,0)
 with obj_peeps {image_index = 1}

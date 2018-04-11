@@ -29,6 +29,8 @@
 global.oc = 0 //system of events 
 global.messagew = ""//whats written in Lie's bubble
 global.messageb = ""//whats written in Dale's bubble
+audio_play_sound(sf_cafeamb2,2,true)
+audio_stop_sound(sf_cafeamb)
 
 ogw = view_wview[0]
 ogh = view_hview[0]

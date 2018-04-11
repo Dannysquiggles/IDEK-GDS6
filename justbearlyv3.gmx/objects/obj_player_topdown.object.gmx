@@ -26,7 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>///set speed and image fx
-
+audio_play_sound(sf_indooramb,1,true)
+audio_play_sound(sf_trippy,2,true)
 rate = 5;//speed of character movement
 xplace = x
 yplace= y

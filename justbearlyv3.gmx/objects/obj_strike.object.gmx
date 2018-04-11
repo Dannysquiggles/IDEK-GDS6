@@ -79,7 +79,8 @@ image_alpha = 255
             <string>image_speed = 0
 image_index = 6
 
-with obj_restart_prompt {image_alpha = 255}
+with obj_restart_prompt {fade = true}
+with obj_continue {fade = true}
 
 </string>
           </argument>

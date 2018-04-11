@@ -3,7 +3,7 @@
   <spriteName>spr_smileedge</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-10</depth>
+  <depth>-33</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_speed = 0
+            <string>audio_play_sound(sf_indooramb,1,true)
+image_speed = 0
 image_index = 0
 </string>
           </argument>

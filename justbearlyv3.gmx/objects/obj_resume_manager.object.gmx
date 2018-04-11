@@ -33,6 +33,7 @@ global.state = 1 //pickingupable
 
 global.click = false
 
+audio_play_sound(sf_indooramb,1,true)
 
 image_alpha = 0
 image_speed = 0

@@ -31,7 +31,7 @@ global.open = 0;
 }
 else
 {
-global.open = 5;
+global.open = 0;
 global.rate = 45;
 }
 move = 0

@@ -26,7 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>image_index = image_number-1
-image_speed = -0.5
+instance_create(x,y, fect_shakeL)
+image_speed = -1
 al = 0
 x = room_width/2
 y = room_height/2

@@ -28,7 +28,7 @@
             <string>///starty bits
 
 hit = false
-
+al = false
 shield = true
 
 alarm[0] = 3 * room_speed
@@ -63,6 +63,7 @@ al = false
             <string>    al = false
     global.talking = true
     global.pause = false
+    global.rate = 5
 </string>
           </argument>
         </arguments>
@@ -87,7 +88,8 @@ al = false
             <kind>1</kind>
             <string>if !instance_exists(obj_swipe)
     {
-        instance_create(room_width = 1, 0, obj_swipe)        
+        instance_create(room_width, 0, obj_swipe)  
+         with obj_swipe { image_xscale = 5; image_yscale = 5}      
     }
     else
     {
@@ -274,8 +276,11 @@ if count &gt; 2
             <kind>1</kind>
             <string>global.vis = false
 global.cam = -1
-alarm[1] = 1 * room_speed
-
+if al = false
+{
+    alarm[1] = 1 * room_speed
+    al = true
+}
 /*    if !instance_exists(obj_swipe)
     {
         instance_create(view_xview[0] + view_wview[0], view_yview[0], obj_swipe)        
@@ -354,6 +359,7 @@ alarm[1] = 1 * room_speed
     }
     if al == false
     {
+    global.rate = 0
     global.talking = false
     global.pause = true
     alarm[2] = 0.5*room_speed

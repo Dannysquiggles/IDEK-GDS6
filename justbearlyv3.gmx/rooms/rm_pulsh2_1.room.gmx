@@ -8,7 +8,7 @@
   <isometric>0</isometric>
   <speed>30</speed>
   <persistent>-1</persistent>
-  <colour>12632256</colour>
+  <colour>0</colour>
   <showcolour>-1</showcolour>
   <code></code>
   <enableViews>-1</enableViews>
@@ -57,6 +57,7 @@
     <instance objName="obj_rightpull" x="1280" y="480" name="inst_C25CAB57" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_rightpush" x="1510" y="480" name="inst_BB76F4EE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_camera_ease" x="992" y="544" name="inst_E60CB6B4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_frame" x="20" y="19" name="inst_B7503EF1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="fg_vignette" x="-192" y="-64" w="2304" h="1296" xo="0" yo="0" id="10000077" name="inst_A6F22D19" depth="-1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

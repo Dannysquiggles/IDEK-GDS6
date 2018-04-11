@@ -37,6 +37,7 @@ og_yview = view_yview;
 og_hview = view_hview;
 col = false;
 grow = false;
+audio_play_sound(sf_trippy,2,true)
 //alarm[3] = 360;
 
 
@@ -234,8 +235,8 @@ alarm[0] = 30
             <kind>1</kind>
             <string>if col == false
 {
-instance_create(x+ 10, y, obj_flash_slow)
-stop = 1
+instance_create(x+ 100, y, obj_flash_slow)
+//stop = 1
 
 /*stop = 1
 move_towards_point(x,room_height,0)

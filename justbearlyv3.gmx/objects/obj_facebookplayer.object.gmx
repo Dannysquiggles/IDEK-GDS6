@@ -29,6 +29,8 @@
 with obj_bar_top {image_alpha = 0}
 with obj_bar_stress {image_alpha = 0}
 with obj_bar_inner2 {image_alpha = 0}
+audio_play_sound(sf_indooramb,2,true)
+global.top = -6
 </string>
           </argument>
         </arguments>

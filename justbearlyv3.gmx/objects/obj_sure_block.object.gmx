@@ -3,7 +3,7 @@
   <spriteName>spr_blockbutton</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-15</depth>
+  <depth>-5</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -25,7 +25,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>depth = global.dep - 2
+            <string>    if depth &gt; global.top
+    {
+        global.top -= 1
+        depth = global.top
+    }
 </string>
           </argument>
         </arguments>

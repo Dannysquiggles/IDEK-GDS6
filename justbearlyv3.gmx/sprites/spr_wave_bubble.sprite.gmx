@@ -8,9 +8,9 @@
   <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
   <bbox_left>0</bbox_left>
-  <bbox_right>479</bbox_right>
+  <bbox_right>473</bbox_right>
   <bbox_top>0</bbox_top>
-  <bbox_bottom>258</bbox_bottom>
+  <bbox_bottom>241</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroups>
@@ -34,6 +34,5 @@
     <frame index="11">images\spr_wave_bubble_11.png</frame>
     <frame index="12">images\spr_wave_bubble_12.png</frame>
     <frame index="13">images\spr_wave_bubble_13.png</frame>
-    <frame index="14">images\spr_wave_bubble_14.png</frame>
   </frames>
 </sprite>
