@@ -504,6 +504,8 @@
     <path>paths\path0</path>
   </paths>
   <scripts name="scripts">
+    <script>scripts\scr_continuegame.gml</script>
+    <script>scripts\scr_saveroom.gml</script>
     <script>scripts\scr_dialrotator.gml</script>
     <script>scripts\scr_textManager.gml</script>
     <scripts name="resume">
